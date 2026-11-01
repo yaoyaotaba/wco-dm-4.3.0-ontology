@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WCO Data Model 4.3.0 · Ontology Knowledge Base</title>
+<meta name="description" content="OWL 2 DL ontology, SKOS code lists and SHACL shapes for the WCO Data Model 4.3.0, with an interactive visual explorer.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" role="banner">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" width="34" height="34">
+        <path d="M20 3 35 11.5v17L20 37 5 28.5v-17L20 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M5 11.5 20 20l15-8.5M20 20v17" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="20" cy="20" r="3.2" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="brand-text">
+      <strong>WCO Data Model <span class="ver">4.3.0</span></strong>
+      <small>Ontology Knowledge Base</small>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Main navigation">
+    <a href="#/graph" data-view="graph" class="active">Ontology graph</a>
+    <a href="#/hierarchy" data-view="hierarchy">Class hierarchy</a>
+    <a href="#/properties" data-view="properties">Property index</a>
+    <a href="#/codelists" data-view="codelists">Code lists</a>
+    <a href="#/profiles" data-view="profiles">Package profiles</a>
+    <a href="#/about" data-view="about">About</a>
+  </nav>
+
+  <div class="topsearch">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2"/></svg>
+    <input id="globalSearch" type="search" placeholder="Search classes, IDs, properties…  ( / )" autocomplete="off" aria-label="Search classes or properties">
+    <div id="searchResults" class="search-results" role="listbox"></div>
+  </div>
+
+  <div class="stat-strip" aria-label="Knowledge base statistics">
+    <span><b id="statClasses">274</b><i>classes</i></span>
+    <span><b id="statOps">273</b><i>object props</i></span>
+    <span><b id="statDps">836</b><i>data props</i></span>
+    <span><b id="statCodes">135</b><i>code lists</i></span>
+  </div>
+
+  <a class="lang-switch" id="langSwitch" data-target="index.html" href="index.html" title="切换到中文">中文</a>
+</header>
+
+<main id="app">
+  <!-- ================= GRAPH ================= -->
+  <section id="view-graph" class="view active" aria-label="Ontology graph">
+    <div class="graph-layout">
+      <aside class="panel tree-panel">
+        <div class="panel-head">
+          <div>
+            <h2>Class hierarchy</h2>
+            <p>OIS containment · <span id="treeCount"></span> classes</p>
+          </div>
+          <button class="icon-btn" id="treeExpandAll" title="Expand all">⤢</button>
+        </div>
+        <div class="tree-filter">
+          <input id="treeFilter" type="search" placeholder="Filter by class name or ID…" aria-label="Filter classes">
+          <button id="treeCollapse" title="Collapse all">−</button>
+        </div>
+        <div id="tree" class="tree" role="tree"></div>
+      </aside>
+
+      <section class="canvas-panel" aria-label="Interactive ontology graph">
+        <div class="graph-toolbar">
+          <div id="breadcrumb" class="breadcrumb">OIS</div>
+          <div class="toolbar-actions">
+            <button data-graph-action="expand" title="Expand neighbours of the current class">Expand</button>
+            <button data-graph-action="fit" title="Fit graph to canvas">Fit</button>
+            <button data-graph-action="all" title="Show all classes as an overview">Overview</button>
+            <button data-graph-action="reset" title="Return to the initial view">Reset</button>
+            <button data-graph-action="png" title="Export as PNG">Export</button>
+          </div>
+        </div>
+        <div class="canvas-wrap" id="canvasWrap">
+          <canvas id="graph" aria-label="WCO DM classes and containment graph"></canvas>
+          <div class="graph-hint" id="graphHint">Click a node for details · double-click to expand · scroll to zoom · drag to pan</div>
+          <div class="legend" id="legend">
+            <span><i class="dot metadata"></i>Metadata</span>
+            <span><i class="dot root"></i>Root document</span>
+            <span><i class="dot content"></i>Content</span>
+            <span><i class="dot party"></i>Party</span>
+            <span><i class="dot location"></i>Location</span>
+            <span><i class="dot agency"></i>Government agency</span>
+            <span><i class="dot transport"></i>Transport means</span>
+          </div>
+          <div class="graph-tooltip" id="graphTooltip" hidden></div>
+          <div class="zoom-controls">
+            <button data-graph-action="zoomin" aria-label="Zoom in">＋</button>
+            <button data-graph-action="zoomout" aria-label="Zoom out">−</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel detail-panel" id="details" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- ================= HIERARCHY ================= -->
+  <section id="view-hierarchy" class="view" aria-label="Class hierarchy browser">
+    <div class="hier-layout">
+      <aside class="panel tree-panel wide">
+        <div class="panel-head">
+          <div><h2>OIS class hierarchy</h2><p>Primary containment path · click a class for details</p></div>
+          <button class="icon-btn" id="hierExpandAll" title="Expand all">⤢</button>
+        </div>
+        <div class="tree-filter">
+          <input id="hierFilter" type="search" placeholder="Filter by class name or ID…" aria-label="Filter class hierarchy">
+        </div>
+        <div id="hierTree" class="tree" role="tree"></div>
+      </aside>
+      <aside class="panel detail-panel standalone" id="hierDetails" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- ================= PROPERTIES ================= -->
+  <section id="view-properties" class="view" aria-label="Property index">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>Property index</h1>
+          <p>Global WCO DM 4.3.0 data elements and OIS containment roles — <b id="propTotal"></b> items.</p>
+        </div>
+        <div class="segmented" role="tablist">
+          <button class="active" data-prop-tab="data" role="tab">Data properties <span id="dataCount"></span></button>
+          <button data-prop-tab="object" role="tab">Object properties <span id="opCount"></span></button>
+        </div>
+      </div>
+      <div class="filterbar">
+        <input id="propSearch" type="search" placeholder="Search name, ID, definition, XML tag…" aria-label="Search properties">
+        <select id="propClassFilter" aria-label="Filter by class"><option value="">All classes</option></select>
+        <select id="propCoreFilter" aria-label="Filter by core type"><option value="">All core types</option></select>
+        <button id="propReset" class="ghost-btn">Clear filters</button>
+      </div>
+      <div class="table-wrap panel">
+        <table id="propTable"><thead></thead><tbody></tbody></table>
+        <div class="pager" id="propPager"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CODELISTS ================= -->
+  <section id="view-codelists" class="view" aria-label="Code lists">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>Code-list catalogue</h1>
+          <p>The LIB publishes <b>135</b> named code lists; <b>12</b> list code values, <b>69</b> values in total. Lists without values keep their source note — no code meanings are invented.</p>
+        </div>
+      </div>
+      <div class="filterbar">
+        <input id="codeSearch" type="search" placeholder="Search code-list name or source…" aria-label="Search code lists">
+        <label class="check"><input id="codeOnlyValues" type="checkbox"> Only lists with values</label>
+        <span class="muted" id="codeCountLabel"></span>
+      </div>
+      <div class="code-layout">
+        <div id="codeGrid" class="code-grid"></div>
+        <aside class="panel code-detail" id="codeDetail">
+          <div class="empty-state">Select a code list on the left to view details</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROFILES ================= -->
+  <section id="view-profiles" class="view" aria-label="Package profiles">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>Package profiles</h1>
+          <p>How MDIP, AIP, BIP DEC and BIP LPCO use the core model: class membership, data elements, associations, Min/Max, flags and mappings.</p>
+        </div>
+        <div class="segmented">
+          <span style="padding:6px 10px;color:#64748b">4 packages · 387 profile classes · 1,541 data elements</span>
+        </div>
+      </div>
+      <div id="profileCards" class="profile-cards"></div>
+      <div class="filterbar">
+        <input id="profileSearch" type="search" placeholder="Search class, data element, flag, remark…" aria-label="Search package profiles">
+        <select id="profileClassFilter" aria-label="Filter by class"><option value="">All classes</option></select>
+        <button id="profileReset" class="ghost-btn">Clear filters</button>
+        <span class="muted" id="profileCountLabel"></span>
+      </div>
+      <div class="table-wrap panel">
+        <table id="profileTable"><thead></thead><tbody></tbody></table>
+        <div class="pager" id="profilePager"></div>
+      </div>
+      <p class="small" style="margin-top:10px">
+        Download: <a href="../ontology/wco-dm-4.3.0-profiles.ttl">profiles.ttl</a> ·
+        <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl">profile SHACL</a> ·
+        <a href="../ontology/wco-dm-4.3.0-profiles-sample.ttl">conforming sample</a> ·
+        <a href="../docs/profile-layer.md">modelling notes</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="view-about" class="view" aria-label="About and download">
+    <div class="page about">
+      <div class="hero-small">
+        <div>
+          <div class="eyebrow">W3C STANDARDS · LINKED DATA</div>
+          <h1>WCO Data Model 4.3.0 Ontology Knowledge Base</h1>
+          <p>Built from the official WCO package's <b>LIB</b> (element library) and <b>OIS</b> (Overall Information Structure) workbooks. It provides an OWL 2 DL ontology, SKOS code lists, SHACL shapes and an interactive explorer.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="primary-btn" href="../ontology/wco-dm-4.3.0.ttl" download>Download Turtle</a>
+          <a class="ghost-btn" href="../ontology/wco-dm-4.3.0.owl" download>Download RDF/XML</a>
+        </div>
+      </div>
+
+      <div class="metrics" id="aboutMetrics"></div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>Sources and build method</h2>
+          <p>Source files come from the WCO Data Model <a href="https://datamodel.wcoomd.org/#/package" target="_blank" rel="noreferrer">4.3.0 package page</a>. The package exposes a file tree through <code>GET /datamodel/infopage/4.3.0</code>; files are served under <code>/webpage/4.3.0/…</code>.</p>
+          <ul>
+            <li><b>LIB</b>: 270 class definitions, 835 data elements, formats, core data types, code-list catalogue and UN/CEFACT superclass alignment.</li>
+            <li><b>OIS</b>: 1,993 class occurrences and 7,810 attribute occurrences, used to recover containment roles and context.</li>
+            <li>Union of both: LIB-only <code>42A Declaration</code>, <code>58C AIP</code>, <code>74B LPCO</code> and <code>599 Net weight</code> are added. The three root documents are attached under OIS and explicitly flagged as inferred placement.</li>
+          </ul>
+          <p>Full source list, checksums and download status: <a href="../sources/download-manifest.csv">download-manifest.csv</a>.</p>
+        </article>
+
+        <article class="panel prose">
+          <h2>Standards and serialisations</h2>
+          <ul>
+            <li><b>OWL 2 DL</b>: 274 classes (including the OIS root), 273 object properties and 836 datatype properties; every class is a subclass of <code>wco:DataModelComponent</code>.</li>
+            <li><b>RDF 1.1 Turtle</b> is the canonical serialisation; <b>RDF/XML</b> and <b>JSON-LD 1.1</b> are also provided. All three contain 26,663 triples.</li>
+            <li><b>SKOS</b>: 135 <code>skos:ConceptScheme</code> resources and 69 code values as <code>skos:Concept</code>.</li>
+            <li><b>SHACL</b>: NodeShape/PropertyShape graph with 18,459 triples; class-level datatype, length, pattern, target-class and <code>sh:maxCount 1</code> constraints.</li>
+            <li><b>PROV-O / DCAT 3 / VoID</b>: provenance, build activity, checksums and dataset catalogue.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>Download and load</h2>
+          <div class="download-list">
+            <a href="../ontology/wco-dm-4.3.0.ttl" download><b>Turtle</b><span>Canonical · 971 KB</span></a>
+            <a href="../ontology/wco-dm-4.3.0.owl" download><b>RDF/XML</b><span>Protégé / OWL API friendly</span></a>
+            <a href="../ontology/wco-dm-4.3.0.jsonld" download><b>JSON-LD</b><span>Web / graph database import</span></a>
+            <a href="../ontology/wco-dm-4.3.0-shapes.ttl" download><b>SHACL</b><span>Instance validation shapes</span></a>
+            <a href="../ontology/catalog.ttl" download><b>DCAT / VoID</b><span>Dataset catalogue</span></a>
+            <a href="../ontology/provenance.ttl" download><b>PROV-O</b><span>Sources and checksums</span></a>
+            <a href="../ontology/wco-dm-4.3.0-profiles.ttl" download><b>Profile layer</b><span>Package configuration graph</span></a>
+            <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl" download><b>Profile SHACL</b><span>Per-package validation</span></a>
+          </div>
+          <p class="small">Open the <code>.ttl</code> or <code>.owl</code> file in Protégé. The default IRI base is <code>https://w3id.org/wco-dm/4.3.0#</code>. This base is a locally proposed persistent identifier scheme, not an official WCO resolution endpoint.</p>
+        </article>
+
+        <article class="panel prose">
+          <h2>Example SPARQL</h2>
+          <pre><code>PREFIX wco: &lt;https://w3id.org/wco-dm/4.3.0#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+
+# 1. Data properties of a class
+SELECT ?p ?label ?range WHERE {
+  ?p a owl:DatatypeProperty ;
+     rdfs:domain ?d ;
+     rdfs:range ?range ;
+     rdfs:label ?label .
+  FILTER(?d = wco:C_42A)
+}
+
+# 2. Parents containing GoodsShipment
+SELECT ?parent WHERE {
+  ?parent wco:hasGoodsShipment wco:C_67A .
+}</code></pre>
+          <p class="small">Because domains are union class expressions, a simple triple query does not enumerate all domain members; use the <code>wco:usedByClass</code> annotation as well.</p>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose" style="grid-column:1/-1">
+          <h2>Excel coverage audit: 7 workbooks, 11 sheets</h2>
+          <p><b>4 core sheets fully parsed:</b> LIB DataSet 1.2/1.3/1.4 (classes and attributes), DataSet 1.5 (core data types), DataSet 1.6 (code lists), and the single OIS sheet (containment hierarchy).</p>
+          <p><b>4 package sheets audited with Min/Max ingested:</b> MDIP, AIP, BIP DEC and BIP LPCO, 10,334 rows in total. All 8,212 data-element rows have Min=0 and Max=1; there are 0 new class IDs, 0 new attribute IDs and 0 definition conflicts.</p>
+          <p><b>3 change-log sheets archived only:</b> Introduction, LIB Changes and OIS Changes record version changes, not model content, and are not asserted as ontology axioms.</p>
+          <p class="small">Per-sheet details: <a href="../docs/excel-coverage.md">excel-coverage.md</a> · <a href="../data/package-sheets.csv">package-sheets.csv</a> · <a href="../data/package-cardinalities.csv">package-cardinalities.csv</a></p>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose" style="grid-column:1/-1">
+          <h2>Package profiles (Profile Layer)</h2>
+          <p>The core ontology answers “what a WCO DM class/property is”; the profile layer answers “how a given package uses it”. Four packages are modelled as <code>prof:PackageProfile</code>; package classes are OWL subclasses of core classes (e.g. <code>prof:P_BIP_DEC_C_42A rdfs:subClassOf wco:C_42A</code>); package data elements are <code>prof:ProfileProperty</code> individuals.</p>
+          <p>Profile graph: <b>25,407</b> triples, <b>387</b> profile classes, <b>1,541</b> data elements, <b>1,077</b> associations, <b>37</b> flags; profile SHACL: <b>14,248</b> triples. The conforming sample passes; the duplicate <code>dp_D014</code> sample fails under <code>Max=1</code>.</p>
+          <p class="small">Files: <a href="../ontology/wco-dm-4.3.0-profiles.ttl">profiles.ttl</a> · <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl">profiles-shapes.ttl</a> · <a href="../docs/profile-layer.md">profile-layer.md</a></p>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>Modelling conventions and limitations</h2>
+          <ul>
+            <li>LIB global attributes are modelled as global properties: data elements merge by <code>Attr. ID</code>, roles merge by role name, and domains use <code>owl:unionOf</code> for multiple using classes.</li>
+            <li>Classes are not related by <code>rdfs:subClassOf</code> taxonomy; the OIS hierarchy is containment/composition, so it is represented with object properties.</li>
+            <li>Cardinalities come from the four package sheets: all 8,212 data-element rows are <code>Min=0</code>, <code>Max=1</code>, written as <code>wco:minOccurs</code> / <code>wco:maxOccurs</code> and SHACL <code>sh:maxCount 1</code>. Object-role maxima vary by package and are not asserted globally.</li>
+            <li>Code lists only include values explicitly published in the LIB; no meanings are invented. External UN/EDIFACT and ISO lists keep only their source note.</li>
+            <li>WCO XML dates use CCTS <code>DateTimeString + formatCode</code>; for semantic querying they are normalised to <code>xsd:dateTime</code>, while the original <code>wco:format</code> is retained.</li>
+          </ul>
+        </article>
+        <article class="panel prose">
+          <h2>Licence and disclaimer</h2>
+          <p>WCO source data and code lists remain subject to WCO terms of use. This page and the derived ontology are provided for interoperability, teaching and analysis. They are <b>not an official WCO publication</b> and do not imply WCO endorsement.</p>
+          <p>External code lists (UN/EDIFACT, UN/CEFACT, ISO, IMO, etc.) retain their own copyright and terms. Check the original publisher's terms before reuse or redistribution.</p>
+          <p class="small">Built: <span id="buildTime"></span> · Source page: <a href="https://datamodel.wcoomd.org/#/package" target="_blank" rel="noreferrer">datamodel.wcoomd.org</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>WCO Data Model 4.3.0 · OWL 2 DL / SKOS / SHACL</span>
+  <span class="footer-links">
+    <a href="#/about">Sources &amp; licence</a>
+    <a href="../README.md">README</a>
+    <a href="../docs/validation-report.md">Validation report</a>
+  </span>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+<div id="drawer" class="drawer" hidden></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

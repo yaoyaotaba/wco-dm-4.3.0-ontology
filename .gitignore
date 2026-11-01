@@ -2,6 +2,7 @@
 sources/package/
 sources/xlsx/
 
+# 根目录 assets/ 是 site/assets 的镜像，用于 GitHub Pages 根路径
 # 可重新生成的构建产物（可选取消忽略以纳入版本库）
 # data/model.json
 # site/assets/data.json
