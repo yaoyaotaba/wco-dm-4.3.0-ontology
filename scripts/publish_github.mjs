@@ -17,6 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import http from 'isomorphic-git/http/node/index.cjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.dirname(__dirname);
@@ -137,6 +138,7 @@ async function commitAndPush() {
     remote: 'origin',
     ref: 'main',
     force: false,
+    http,
     onAuth: () => ({ username: token, password: 'x-oauth-basic' }),
   });
   console.log('push:', result.ok ? 'ok' : JSON.stringify(result.error || result));
