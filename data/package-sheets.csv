@@ -1,0 +1,8 @@
+﻿workbook,sheet,rows,classes,attributes,new_class_ids,new_attr_ids,min_values,max_values,definition_mismatches,status
+MDIP,MDIP (MetaData),67,8,49,0,0,0=66; (blank)=1,1=57; unbounded=9; (blank)=1,0,archived; IDs already in core; Min/Max now ingested
+AIP,AIP (RES and InterGov),440,39,119,0,0,0=439; (blank)=1,1=347; unbounded=92; (blank)=1,0,archived; IDs already in core; Min/Max now ingested
+BIP DEC,BIP DEC,9064,243,741,0,0,0=9063; (blank)=1,1=7221; unbounded=1842; (blank)=1,0,archived; IDs already in core; Min/Max now ingested
+BIP LPCO,BIP LPCO,763,97,284,0,0,0=762; (blank)=1,1=591; unbounded=171; (blank)=1,0,archived; IDs already in core; Min/Max now ingested
+Changes,Introduction,7,0,0,0,0,,,0,"change log; archived, not model content"
+Changes,1. LIB Changes,4452,0,0,0,0,,,0,"change log; archived, not model content"
+Changes,2. OIS Changes,26016,0,0,0,0,,,0,"change log; archived, not model content"

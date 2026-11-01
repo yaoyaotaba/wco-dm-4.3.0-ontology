@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WCO 数据模型 4.3.0 · 本体知识库</title>
+<meta name="description" content="WCO Data Model 4.3.0 的 OWL 2 DL 本体、SKOS 代码表与 SHACL 形状，附交互式可视化。">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" role="banner">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 40 40" width="34" height="34">
+        <path d="M20 3 35 11.5v17L20 37 5 28.5v-17L20 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M5 11.5 20 20l15-8.5M20 20v17" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="20" cy="20" r="3.2" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="brand-text">
+      <strong>WCO Data Model <span class="ver">4.3.0</span></strong>
+      <small>本体知识库 · Ontology Knowledge Base</small>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="主导航">
+    <a href="#/graph" data-view="graph" class="active">本体图谱</a>
+    <a href="#/hierarchy" data-view="hierarchy">类层次</a>
+    <a href="#/properties" data-view="properties">属性索引</a>
+    <a href="#/codelists" data-view="codelists">代码表</a>
+    <a href="#/profiles" data-view="profiles">包配置</a>
+    <a href="#/about" data-view="about">关于与下载</a>
+  </nav>
+
+  <div class="topsearch">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2"/></svg>
+    <input id="globalSearch" type="search" placeholder="搜索类、ID、属性…  ( / )" autocomplete="off" aria-label="搜索类或属性">
+    <div id="searchResults" class="search-results" role="listbox"></div>
+  </div>
+
+  <div class="stat-strip" aria-label="知识库统计">
+    <span><b id="statClasses">274</b><i>类</i></span>
+    <span><b id="statOps">273</b><i>对象属性</i></span>
+    <span><b id="statDps">836</b><i>数据属性</i></span>
+    <span><b id="statCodes">135</b><i>代码表</i></span>
+  </div>
+
+  <a class="lang-switch" id="langSwitch" data-target="index-en.html" href="index-en.html" title="Switch to English">EN</a>
+</header>
+
+<main id="app">
+  <!-- ================= GRAPH ================= -->
+  <section id="view-graph" class="view active" aria-label="本体图谱">
+    <div class="graph-layout">
+      <aside class="panel tree-panel">
+        <div class="panel-head">
+          <div>
+            <h2>类层次</h2>
+            <p>OIS 包含结构 · <span id="treeCount"></span> 个类</p>
+          </div>
+          <button class="icon-btn" id="treeExpandAll" title="展开全部">⤢</button>
+        </div>
+        <div class="tree-filter">
+          <input id="treeFilter" type="search" placeholder="过滤类名或 ID…" aria-label="过滤类">
+          <button id="treeCollapse" title="收起全部">−</button>
+        </div>
+        <div id="tree" class="tree" role="tree"></div>
+      </aside>
+
+      <section class="canvas-panel" aria-label="交互式本体图">
+        <div class="graph-toolbar">
+          <div id="breadcrumb" class="breadcrumb">OIS</div>
+          <div class="toolbar-actions">
+            <button data-graph-action="expand" title="展开当前类的邻居">展开邻居</button>
+            <button data-graph-action="fit" title="适应画布">适应</button>
+            <button data-graph-action="all" title="显示全部类">概览</button>
+            <button data-graph-action="reset" title="回到初始视图">重置</button>
+            <button data-graph-action="png" title="导出 PNG">导出</button>
+          </div>
+        </div>
+        <div class="canvas-wrap" id="canvasWrap">
+          <canvas id="graph" aria-label="WCO DM 类与包含关系图"></canvas>
+          <div class="graph-hint" id="graphHint">点击节点查看详情 · 双击展开邻居 · 滚轮缩放 · 拖拽平移</div>
+          <div class="legend" id="legend">
+            <span><i class="dot metadata"></i>元数据</span>
+            <span><i class="dot root"></i>根单据</span>
+            <span><i class="dot content"></i>内容</span>
+            <span><i class="dot party"></i>当事人</span>
+            <span><i class="dot location"></i>地点</span>
+            <span><i class="dot agency"></i>政府机构</span>
+            <span><i class="dot transport"></i>运输工具</span>
+          </div>
+          <div class="graph-tooltip" id="graphTooltip" hidden></div>
+          <div class="zoom-controls">
+            <button data-graph-action="zoomin" aria-label="放大">＋</button>
+            <button data-graph-action="zoomout" aria-label="缩小">−</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel detail-panel" id="details" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- ================= HIERARCHY ================= -->
+  <section id="view-hierarchy" class="view" aria-label="类层次浏览">
+    <div class="hier-layout">
+      <aside class="panel tree-panel wide">
+        <div class="panel-head">
+          <div><h2>OIS 类层次</h2><p>主包含路径 · 点击类查看详情</p></div>
+          <button class="icon-btn" id="hierExpandAll" title="展开全部">⤢</button>
+        </div>
+        <div class="tree-filter">
+          <input id="hierFilter" type="search" placeholder="过滤类名或 ID…" aria-label="过滤类层次">
+        </div>
+        <div id="hierTree" class="tree" role="tree"></div>
+      </aside>
+      <aside class="panel detail-panel standalone" id="hierDetails" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <!-- ================= PROPERTIES ================= -->
+  <section id="view-properties" class="view" aria-label="属性索引">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>属性索引</h1>
+          <p>WCO DM 4.3.0 的全局数据元素与 OIS 包含角色，共 <b id="propTotal"></b> 条。</p>
+        </div>
+        <div class="segmented" role="tablist">
+          <button class="active" data-prop-tab="data" role="tab">数据属性 <span id="dataCount"></span></button>
+          <button data-prop-tab="object" role="tab">对象属性 <span id="opCount"></span></button>
+        </div>
+      </div>
+      <div class="filterbar">
+        <input id="propSearch" type="search" placeholder="搜索名称、ID、定义、XML 标签…" aria-label="搜索属性">
+        <select id="propClassFilter" aria-label="按类过滤"><option value="">全部类</option></select>
+        <select id="propCoreFilter" aria-label="按核心类型过滤"><option value="">全部核心类型</option></select>
+        <button id="propReset" class="ghost-btn">清除筛选</button>
+      </div>
+      <div class="table-wrap panel">
+        <table id="propTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+        <div class="pager" id="propPager"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CODELISTS ================= -->
+  <section id="view-codelists" class="view" aria-label="代码表">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>代码表目录</h1>
+          <p>LIB 发布的 <b>135</b> 个命名代码表；其中 <b>12</b> 个在 LIB 中列出代码值，共 <b>69</b> 个值。未列值的表保留来源说明，不推测代码含义。</p>
+        </div>
+      </div>
+      <div class="filterbar">
+        <input id="codeSearch" type="search" placeholder="搜索代码表名称或来源…" aria-label="搜索代码表">
+        <label class="check"><input id="codeOnlyValues" type="checkbox"> 仅显示含代码值的表</label>
+        <span class="muted" id="codeCountLabel"></span>
+      </div>
+      <div class="code-layout">
+        <div id="codeGrid" class="code-grid"></div>
+        <aside class="panel code-detail" id="codeDetail">
+          <div class="empty-state">选择左侧代码表查看详情</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PROFILES ================= -->
+  <section id="view-profiles" class="view" aria-label="包配置剖面">
+    <div class="page">
+      <div class="page-head">
+        <div>
+          <h1>包配置剖面</h1>
+          <p>MDIP、AIP、BIP DEC、BIP LPCO 如何使用核心模型：类成员、数据元素、关联、Min/Max、使用标记与映射。</p>
+        </div>
+        <div class="segmented">
+          <span style="padding:6px 10px;color:#64748b">4 个包 · 387 个 profile 类 · 1,541 个数据元素</span>
+        </div>
+      </div>
+      <div id="profileCards" class="profile-cards"></div>
+      <div class="filterbar">
+        <input id="profileSearch" type="search" placeholder="搜索类、数据元素、标记、备注…" aria-label="搜索包配置">
+        <select id="profileClassFilter" aria-label="按类过滤"><option value="">全部类</option></select>
+        <button id="profileReset" class="ghost-btn">清除筛选</button>
+        <span class="muted" id="profileCountLabel"></span>
+      </div>
+      <div class="table-wrap panel">
+        <table id="profileTable"><thead></thead><tbody></tbody></table>
+        <div class="pager" id="profilePager"></div>
+      </div>
+      <p class="small" style="margin-top:10px">
+        下载：<a href="../ontology/wco-dm-4.3.0-profiles.ttl">profiles.ttl</a> ·
+        <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl">profile SHACL</a> ·
+        <a href="../ontology/wco-dm-4.3.0-profiles-sample.ttl">合规样例</a> ·
+        <a href="../docs/profile-layer.md">建模说明</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="view-about" class="view" aria-label="关于与下载">
+    <div class="page about">
+      <div class="hero-small">
+        <div>
+          <div class="eyebrow">W3C STANDARDS · LINKED DATA</div>
+          <h1>WCO 数据模型 4.3.0 本体知识库</h1>
+          <p>从 WCO 官方发布包中的 <b>LIB</b>（元素库）与 <b>OIS</b>（总体信息结构）工作簿构建，提供 OWL 2 DL 本体、SKOS 代码表、SHACL 形状与可交互浏览页面。</p>
+        </div>
+        <div class="hero-actions">
+          <a class="primary-btn" href="../ontology/wco-dm-4.3.0.ttl" download>下载 Turtle</a>
+          <a class="ghost-btn" href="../ontology/wco-dm-4.3.0.owl" download>下载 RDF/XML</a>
+        </div>
+      </div>
+
+      <div class="metrics" id="aboutMetrics"></div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>数据来源与构建方法</h2>
+          <p>源文件来自 WCO 数据模型应用发布的 <a href="https://datamodel.wcoomd.org/#/package" target="_blank" rel="noreferrer">4.3.0 包页面</a>。发布包通过公开接口 <code>GET /datamodel/infopage/4.3.0</code> 提供文件树，实际文件位于 <code>/webpage/4.3.0/…</code>。</p>
+          <ul>
+            <li><b>LIB</b>：270 个类的定义、835 个数据元素、格式、核心数据类型、代码表目录与 UN/CEFACT 超类对齐信息。</li>
+            <li><b>OIS</b>：1,993 个类出现位置与 7,810 个属性出现位置，用于恢复类之间的包含角色与上下文。</li>
+            <li>对两者取并集：补入仅出现在 LIB 的 <code>42A Declaration</code>、<code>58C AIP</code>、<code>74B LPCO</code> 与 <code>599 Net weight</code>；这三类作为根单据挂在 OIS 下，并显式标注为推断放置。</li>
+          </ul>
+          <p>完整来源清单、校验和与下载状态见 <a href="../sources/download-manifest.csv">download-manifest.csv</a>。</p>
+        </article>
+
+        <article class="panel prose">
+          <h2>标准与序列化</h2>
+          <ul>
+            <li><b>OWL 2 DL</b>：274 个类（含 OIS 根）、273 个对象属性、836 个数据类型属性；全部类均为 <code>wco:DataModelComponent</code> 的子类。</li>
+            <li><b>RDF 1.1 Turtle</b> 为规范序列化；同时提供 <b>RDF/XML</b> 与 <b>JSON-LD 1.1</b>，三者均为 26,663 个三元组。</li>
+            <li><b>SKOS</b>：135 个 <code>skos:ConceptScheme</code>，69 个代码值作为 <code>skos:Concept</code>。</li>
+            <li><b>SHACL</b>：18,459 个三元组的 NodeShape/PropertyShape，按类约束数据类型、长度、模式、关联目标类，并对数据元素设置 <code>sh:maxCount 1</code>。</li>
+            <li><b>PROV-O / DCAT 3 / VoID</b>：来源、构建活动、校验和与数据集目录。</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>下载与加载</h2>
+          <div class="download-list">
+            <a href="../ontology/wco-dm-4.3.0.ttl" download><b>Turtle</b><span>规范序列化 · 971 KB</span></a>
+            <a href="../ontology/wco-dm-4.3.0.owl" download><b>RDF/XML</b><span>Protégé / OWL API 友好</span></a>
+            <a href="../ontology/wco-dm-4.3.0.jsonld" download><b>JSON-LD</b><span>Web / 图数据库导入</span></a>
+            <a href="../ontology/wco-dm-4.3.0-shapes.ttl" download><b>SHACL</b><span>实例校验形状</span></a>
+            <a href="../ontology/catalog.ttl" download><b>DCAT / VoID</b><span>数据集目录</span></a>
+            <a href="../ontology/provenance.ttl" download><b>PROV-O</b><span>来源与校验和</span></a>
+            <a href="../ontology/wco-dm-4.3.0-profiles.ttl" download><b>Profile 层</b><span>包配置知识图谱</span></a>
+            <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl" download><b>Profile SHACL</b><span>按包校验</span></a>
+          </div>
+          <p class="small">在 Protégé 中打开 <code>.ttl</code> 或 <code>.owl</code> 即可；默认 IRI 基址为 <code>https://w3id.org/wco-dm/4.3.0#</code>。该基址为本地拟定的持久标识方案，并非 WCO 官方发布的解析地址。</p>
+        </article>
+
+        <article class="panel prose">
+          <h2>示例 SPARQL</h2>
+          <pre><code>PREFIX wco: &lt;https://w3id.org/wco-dm/4.3.0#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+
+# 1. 某类的数据属性
+SELECT ?p ?label ?range WHERE {
+  ?p a owl:DatatypeProperty ;
+     rdfs:domain ?d ;
+     rdfs:range ?range ;
+     rdfs:label ?label .
+  FILTER(?d = wco:C_42A)
+}
+
+# 2. 包含 GoodsShipment 的父类
+SELECT ?parent WHERE {
+  ?parent wco:hasGoodsShipment wco:C_67A .
+}</code></pre>
+          <p class="small">由于域为并集类表达式，简单三元组查询不会直接给出全部域成员；可结合 <code>wco:usedByClass</code> 注解查询。</p>
+        </article>
+      </div>
+
+
+      <div class="about-grid">
+        <article class="panel prose" style="grid-column:1/-1">
+          <h2>Excel 覆盖审计：7 个工作簿、11 个 sheet</h2>
+          <p><b>4 个核心 sheet 已全量解析：</b>LIB 的 DataSet 1.2/1.3/1.4（类与属性）、DataSet 1.5（核心数据类型）、DataSet 1.6（代码表），以及 OIS 的 1 个 sheet（包含层次）。</p>
+          <p><b>4 个包级模型 sheet 已审计并吸收 Min/Max：</b>MDIP、AIP、BIP DEC、BIP LPCO，共 10,334 行；其中 8,212 个数据元素行的 Min 全部为 0、Max 全部为 1，且 0 个新类 ID、0 个新属性 ID、0 个定义冲突。</p>
+          <p><b>3 个变更日志 sheet 仅归档：</b>Introduction、LIB Changes、OIS Changes 记录的是版本变更说明，不是模型内容，未作为本体公理。</p>
+          <p class="small">逐 sheet 明细见 <a href="../docs/excel-coverage.md">excel-coverage.md</a> · <a href="../data/package-sheets.csv">package-sheets.csv</a> · <a href="../data/package-cardinalities.csv">package-cardinalities.csv</a></p>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose" style="grid-column:1/-1">
+          <h2>包配置剖面（Profile Layer）</h2>
+          <p>核心本体回答“WCO DM 类/属性是什么”；profile 层回答“某个包如何使用它”。4 个包被建模为 <code>prof:PackageProfile</code>，包内类被建模为核心类的 OWL 子类（如 <code>prof:P_BIP_DEC_C_42A rdfs:subClassOf wco:C_42A</code>），包内数据元素被建模为 <code>prof:ProfileProperty</code> 个体。</p>
+          <p>profile 图：<b>25,407</b> 个三元组、<b>387</b> 个 profile 类、<b>1,541</b> 个数据元素、<b>1,077</b> 个关联、<b>37</b> 个使用标记；profile SHACL 形状 <b>14,248</b> 个三元组。合规样例通过，重复 <code>dp_D014</code> 的违规样例按 <code>Max=1</code> 失败。</p>
+          <p class="small">文件：<a href="../ontology/wco-dm-4.3.0-profiles.ttl">profiles.ttl</a> · <a href="../ontology/wco-dm-4.3.0-profiles-shapes.ttl">profiles-shapes.ttl</a> · <a href="../docs/profile-layer.md">profile-layer.md</a></p>
+        </article>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel prose">
+          <h2>建模约定与限制</h2>
+          <ul>
+            <li>把 LIB 的全局属性建模为全局属性：数据元素按 <code>Attr. ID</code> 合并，关联角色按角色名合并；域使用 <code>owl:unionOf</code> 表示多个使用类。</li>
+            <li>类之间不是 <code>rdfs:subClassOf</code> 的语义分类，而是 OIS 的包含/组合关系；因此用对象属性而非子类公理表达层次。</li>
+            <li>基数来自 4 个包级数据模型 sheet：8,212 个数据元素行全部为 <code>Min=0</code>、<code>Max=1</code>，已写入 <code>wco:minOccurs</code> / <code>wco:maxOccurs</code> 与 SHACL <code>sh:maxCount 1</code>。对象角色的最大值随包变化，因此不写全局 max。</li>
+            <li>代码表只收录 LIB 明确列出的代码值；没有描述时不编造含义。UN/EDIFACT、ISO 等外部代码表仅保留来源说明。</li>
+            <li>WCO 的日期时间在 XML 中使用 CCTS <code>DateTimeString + formatCode</code>；本体为语义查询方便统一映射为 <code>xsd:dateTime</code>，同时保留原始 <code>wco:format</code>。</li>
+          </ul>
+        </article>
+        <article class="panel prose">
+          <h2>许可与声明</h2>
+          <p>WCO 源数据及其代码表仍受 WCO 使用条款约束。本页与派生本体用于互操作、教学与分析，<b>不是 WCO 官方出版物</b>，也不代表 WCO 认可。</p>
+          <p>外部代码表（UN/EDIFACT、UN/CEFACT、ISO、IMO 等）各自保留其版权与使用条件。引用与再分发前请核对原发布方条款。</p>
+          <p class="small">构建时间：<span id="buildTime"></span> · 源页面：<a href="https://datamodel.wcoomd.org/#/package" target="_blank" rel="noreferrer">datamodel.wcoomd.org</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>WCO Data Model 4.3.0 · OWL 2 DL / SKOS / SHACL</span>
+  <span class="footer-links">
+    <a href="#/about">来源与许可</a>
+    <a href="../README.md">README</a>
+    <a href="../docs/validation-report.md">校验报告</a>
+  </span>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+<div id="drawer" class="drawer" hidden></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

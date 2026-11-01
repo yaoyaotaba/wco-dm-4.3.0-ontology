@@ -1,0 +1,38 @@
+# PROV-O provenance for the WCO DM 4.3.0 ontology build
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wco: <https://w3id.org/wco-dm/4.3.0#> .
+
+<https://w3id.org/wco-dm/4.3.0/agent/generator> a prov:SoftwareAgent ;
+  rdfs:label "wco-ontology-builder"@en .
+
+<https://w3id.org/wco-dm/4.3.0/activity/build> a prov:Activity ;
+  rdfs:label "Build WCO DM 4.3.0 ontology"@en ;
+  prov:startedAtTime "2026-11-01T14:18:35+00:00"^^xsd:dateTime ;
+  prov:endedAtTime "2026-11-01T14:18:35+00:00"^^xsd:dateTime ;
+  prov:wasAssociatedWith <https://w3id.org/wco-dm/4.3.0/agent/generator> ;
+  prov:used <https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-lib-430-xlsx> , <https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-ois-430-xlsx> , <https://w3id.org/wco-dm/4.3.0/source/sources-package-tree-json> ;
+  prov:generated <https://w3id.org/wco-dm/4.3.0/entity/ontology> .
+
+<https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-lib-430-xlsx> a prov:Entity ;
+  rdfs:label "WCO DM 4.3.0 Library (LIB) workbook"@en ;
+  dcterms:format "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+  wco:sha256 "026a335f18426fffa4ad7032d37fb3c9881d85a383a70442d81486c1f04d7d54" ;
+  prov:atLocation "sources/xlsx/wco_lib_430.xlsx" .
+<https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-ois-430-xlsx> a prov:Entity ;
+  rdfs:label "WCO DM 4.3.0 Overall Information Structure (OIS) workbook"@en ;
+  dcterms:format "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ;
+  wco:sha256 "4f69b7d810f78191f036a8e7630a3d53bc0313e178b5df292a614f2ad940d63a" ;
+  prov:atLocation "sources/xlsx/wco_ois_430.xlsx" .
+<https://w3id.org/wco-dm/4.3.0/source/sources-package-tree-json> a prov:Entity ;
+  rdfs:label "WCO package tree (GET /datamodel/infopage/4.3.0)"@en ;
+  dcterms:format "application/json" ;
+  wco:sha256 "01a660d299ae24e02fb3ee3a329fde5d9bcd92e3d37f1fe07cab02db6510cbc7" ;
+  prov:atLocation "sources/package-tree.json" .
+
+<https://w3id.org/wco-dm/4.3.0/entity/ontology> a prov:Entity ;
+  rdfs:label "WCO DM 4.3.0 OWL 2 ontology"@en ;
+  prov:wasGeneratedBy <https://w3id.org/wco-dm/4.3.0/activity/build> ;
+  prov:wasDerivedFrom <https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-lib-430-xlsx> , <https://w3id.org/wco-dm/4.3.0/source/sources-xlsx-wco-ois-430-xlsx> , <https://w3id.org/wco-dm/4.3.0/source/sources-package-tree-json> .

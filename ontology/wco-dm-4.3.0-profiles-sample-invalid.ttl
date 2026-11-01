@@ -1,0 +1,8 @@
+# Invalid BIP DEC profile instance: dp_D014 occurs twice (Max=1).
+@prefix prof: <https://w3id.org/wco-dm/4.3.0/profile#> .
+@prefix wco: <https://w3id.org/wco-dm/4.3.0#> .
+@prefix ex: <http://example.org/> .
+
+ex:declaration a prof:P_BIP_DEC_C_42A ;
+  wco:dp_D014 "DOC-001" ;
+  wco:dp_D014 "DOC-002" .

@@ -1,0 +1,80 @@
+# DCAT 3 / VoID description of the WCO DM 4.3.0 ontology
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wco: <https://w3id.org/wco-dm/4.3.0#> .
+
+<https://w3id.org/wco-dm/4.3.0/catalog> a dcat:Catalog, void:Dataset ;
+  dcterms:title "WCO Data Model 4.3.0 ontology catalogue"@en ;
+  dcterms:description "Catalogue entry for the derived OWL 2 DL / SKOS / SHACL knowledge base."@en ;
+  dcat:dataset <https://w3id.org/wco-dm/4.3.0/dataset> , <https://w3id.org/wco-dm/4.3.0/dataset/profiles> .
+
+<https://w3id.org/wco-dm/4.3.0/dataset> a dcat:Dataset, void:Dataset ;
+  dcterms:title "WCO Data Model 4.3.0 ontology"@en ;
+  dcterms:description "OWL 2 DL classes and properties, SKOS code-list catalogue, and SHACL shapes derived from the official WCO DM 4.3.0 LIB and OIS workbooks."@en ;
+  dcterms:issued "2026-10-31"^^xsd:date ;
+  dcterms:modified "2026-11-01T14:18:35+00:00"^^xsd:dateTime ;
+  dcterms:source <https://datamodel.wcoomd.org/#/package> ;
+  dcterms:conformsTo <http://www.w3.org/TR/owl2-syntax/> ;
+  dcterms:conformsTo <http://www.w3.org/TR/skos-reference/> ;
+  dcterms:conformsTo <http://www.w3.org/TR/shacl/> ;
+  dcat:keyword "WCO"@en, "customs"@en, "data model"@en, "OWL"@en, "SKOS"@en, "SHACL"@en ;
+  void:triples 26663 ;
+  void:classes 274 ;
+  void:properties 1109 ;
+  void:distinctSubjects 3055 ;
+  void:feature <http://www.w3.org/ns/formats/Turtle> ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "Turtle (canonical)"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:byteSize "993978"^^xsd:nonNegativeInteger ;
+  ] ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "RDF/XML"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0.owl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/rdf+xml> ;
+    dcat:byteSize "1906047"^^xsd:nonNegativeInteger ;
+  ] ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "JSON-LD 1.1"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0.jsonld> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/ld+json> ;
+    dcat:byteSize "1787260"^^xsd:nonNegativeInteger ;
+  ] ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "SHACL shapes"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0-shapes.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:byteSize "696153"^^xsd:nonNegativeInteger ;
+  ] .
+
+<https://w3id.org/wco-dm/4.3.0/dataset/profiles> a dcat:Dataset, void:Dataset ;
+  dcterms:title "WCO Data Model 4.3.0 package profiles"@en ;
+  dcterms:description "Profile knowledge graph for MDIP, AIP, BIP DEC and BIP LPCO: package membership, data elements, associations, Min/Max, sequence, usage flags, remarks and mappings."@en ;
+  dcterms:source <https://datamodel.wcoomd.org/#/package> ;
+  dcterms:conformsTo <http://www.w3.org/TR/owl2-syntax/> ;
+  dcterms:conformsTo <http://www.w3.org/TR/shacl/> ;
+  dcat:keyword "WCO"@en, "profile"@en, "package"@en, "OWL"@en, "SHACL"@en ;
+  void:triples 25407 ;
+  void:classes 387 ;
+  void:properties 2618 ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "Profile Turtle"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0-profiles.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:byteSize "1034278"^^xsd:nonNegativeInteger ;
+  ] ;
+  dcat:distribution [
+    a dcat:Distribution ;
+    dcterms:title "Profile SHACL shapes"@en ;
+    dcat:downloadURL <https://w3id.org/wco-dm/4.3.0/ontology/wco-dm-4.3.0-profiles-shapes.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:byteSize "390806"^^xsd:nonNegativeInteger ;
+  ] .

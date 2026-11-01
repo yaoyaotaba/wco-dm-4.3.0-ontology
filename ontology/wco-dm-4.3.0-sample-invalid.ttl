@@ -1,0 +1,5 @@
+# An intentionally invalid instance: dp_030 must be xsd:dateTime, not a string.
+@prefix wco: <https://w3id.org/wco-dm/4.3.0#> .
+
+wco:invalidGoodsShipment a wco:C_67A ;
+  wco:dp_030 "not-a-date" .

@@ -1,0 +1,18 @@
+{
+  "name": "wco-dm-4.3.0-ontology",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OWL 2 DL / SKOS / SHACL knowledge base for the WCO Data Model 4.3.0, with a static visual explorer.",
+  "scripts": {
+    "validate": "node scripts/validate-serializations.mjs",
+    "build": "python3 scripts/build_all.py",
+    "serve": "python3 -m http.server 8765"
+  },
+  "devDependencies": {
+    "jsonld": "8.3.2",
+    "n3": "1.17.2",
+    "rdf-validate-shacl": "0.5.4",
+    "rdfxml-streaming-parser": "2.4.0"
+  }
+}

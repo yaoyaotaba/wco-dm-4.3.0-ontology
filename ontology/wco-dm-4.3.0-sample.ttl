@@ -1,0 +1,11 @@
+# A small conforming WCO DM 4.3.0 instance used to exercise the SHACL shapes.
+@prefix wco: <https://w3id.org/wco-dm/4.3.0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wco:sampleGoodsShipment a wco:C_67A ;
+  wco:dp_006 "1"^^xsd:decimal ;
+  wco:dp_094 "10" ;
+  wco:dp_030 "2026-10-31T10:00:00Z"^^xsd:dateTime ;
+  wco:hasConsignee wco:sampleConsignee .
+
+wco:sampleConsignee a wco:C_27A .

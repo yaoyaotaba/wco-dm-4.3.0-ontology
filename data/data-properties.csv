@@ -1,0 +1,901 @@
+﻿id,name,definition,format,datatype,core_type,code_list,code_list_name,class_count,classes,xml_tag,json_tag,super_element,min_occurs,max_occurs
+L099,Acceptance location identifier,Identification of the location where the goods are taken over by the carrier from the consignor.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,01A,ID,id,S003 identification,0,1
+L011,Acceptance location name,Name of the location where the goods are taken over by the carrier from the consignor.,an..256,xsd:string,Text,,,1,01A,Name,name,S002 name,0,1
+578,Account identifier,Identification of an account related to deferred payment.,an..35,xsd:string,Identifier,,,1,53C,AccountID,accountId,,0,1
+MD01,Acknowledgement request indicator,Indicator requesting acknowledgement of the interchange.,n1,xsd:boolean,Indicator,,,1,1MD,AcknowledgementRequestIndicator,acknowledgementRequestIndicator,,0,1
+460,Action code,Code specifying the action to be taken or already taken.,an..3,xsd:string,Code,UN/EDIFACT code list 1229 OR User code list,ActionCode,3,28A; 29A; 31B,ActionCode,actionCode,,0,1
+514,Action type code,Code specifying the type of action to be taken.,an..3,xsd:string,Code,UN/EDIFACT code list 1229 OR User code list,ActionCode,1,24C,TypeCode,typeCode,,0,1
+451,Actual authentication date/time,Date and time when this authentication was actually signed or otherwise authenticated.,an..35,xsd:dateTime,Date Time,,,1,61B,ActualDateTime,actualDateTime,,0,1
+544,Actual authentication location identifier,Identification of the location where a document was signed or otherwise authenticated.,an..17,xsd:string,Identifier,,,1,61B,ActualLocationID,actualLocationId,,0,1
+320,Actual temperature,Measure of temperature.,n..15,xsd:decimal,Measure,,,2,20B; 60B,ActualTemperatureMeasure,actualTemperatureMeasure,,0,1
+567,Ad valorem tax base rate,"Rate used in combination with rate of duty, tax or fee and unit of measure to provide multiple rates in for a single duty, tax or fee in the form of percentage.","n..18,5",xsd:decimal,Numeric,,,1,40C,adValoremTaxBaseRateNumeric,adValoremTaxBaseRateNumeric,,0,1
+D050,Additional document amount,Amount covered by the additional document.,"n..16,3",xsd:decimal,Amount,,,1,02A,AmountAmount,amountAmount,S022 amount,0,1
+D005,Additional document identifier,Identification of a document providing additional information.,an..70,xsd:string,Identifier,,,1,02A,ID,id,S031 identification,0,1
+D001,Additional document issuer identifier,Identification of the party having issued the additional document.,an..17,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,02A,IssuingPartyID,issuingPartyId,S035 issuingParty,0,1
+389,Additional document issuer name,Name of the party having issued the document.,an..70,xsd:string,Text,,,1,02A,IssuerName,issuerName,,0,1
+D002,Additional document issuing date/time,"Date and time of issuing an additional document and when needed, signed or otherwise authenticated.",an..35,xsd:dateTime,Date Time,,,1,02A,IssueDateTime,issueDateTime,S032 issue,0,1
+D004,Additional document issuing location identifier,"Identification of location at which an additional document was issued and when needed, signed or otherwise authenticated.",an..5,xsd:string,Identifier,UN/LOCODE,,1,02A,IssueLocationID,issueLocationId,S033 issueLocationIdentification,0,1
+D003,Additional document issuing location name,Name of the location where a document was issued.,an..256,xsd:string,Text,,,1,02A,IssueLocation,issueLocation,S034 issueLocationName,0,1
+D028,Additional document name,Name of the additional document.,an..35,xsd:string,Text,,,1,02A,Name,name,S038 name,0,1
+313,Additional document quantity,Quantity specifying the amount provided on the additional document.,n..16,xsd:decimal,Quantity,,,1,02A,QuantityQuantity,quantityQuantity,,0,1
+D006,Additional document type code,Code specifying the type of an additional document.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,02A,TypeCode,typeCode,S042 type,0,1
+D038,Additional document verification indicator,Indicator to verify that the declarant has the required additional document in its possession.,n1,xsd:boolean,Indicator,,,1,02A,VerificationIndicator,verificationIndicator,S044 verification,0,1
+511,Additional identifier,Identification of an additional party (e.g. VAT number).,an..35,xsd:string,Identifier,"International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes ""Identification Scheme. Identifier"" and ""Identification Scheme Agency. Identifier"" to make the information unique.",,1,23C,ID,id,,0,1
+579,Additional identifier,Identification of the reference providing additional information.,an..70,xsd:string,Identifier,,,1,52C,ID,id,,0,1
+593,Additional information package type code,"Code specifying the type of additional information package (Response, InterGov).",an..3,xsd:string,Code,WCO code list/AIPTypeCode,AIPTypeCode,2,58C; 999,PackageTypeCode,packageTypeCode,,0,1
+538,Additional name,"Additional name of a party (e.g. short name, operating name).",an..70,xsd:string,Text,,,1,23C,Name,name,,0,1
+572,Additional procedure code,Code specifying an additional procedure.,an..7,xsd:string,Code,User code list (see EU CDM code list for DE 11 10 001 000),AdditionalProcedureCode,1,59C,ProcedureCode,procedureCode,,0,1
+580,Additional reference type code,Code specifying the name of an additional reference.,an..4,xsd:string,Code,"UN/EDIFACT code list 1153.
+For EU CDM usage:
+Additional references must be entered in the form of a code defined in Title I.
+The list of additional references and their respective codes can be found in the TARIC database, their format is a1an3.
+Member States may define national codes, national codes must have the format n1an3",ReferenceTypeCode,1,52C,TypeCode,typeCode,,0,1
+598,Additional statement amount,Amount expressed on the additional statement.,"n..16,3",xsd:decimal,Amount,,,1,03A,StatementAmountAmount,statementAmountAmount,,0,1
+226,Additional statement code,Code specifying the form of an additional statement.,an..17,xsd:string,Code,User code list,,1,03A,StatementCode,statementCode,,0,1
+225,Additional statement description,Description of an additional statement.,an..512,xsd:string,Text,,,1,03A,StatementDescription,statementDescription,,0,1
+581,Additional statement indicator,Indicator of an additional statement.,n1,xsd:boolean,Indicator,,,1,03A,StatementIndicator,statementIndicator,,0,1
+369,Additional statement type code,Code specifying the subject of the additional statement.,an..3,xsd:string,Code,UN/EDIFACT code list 4451,StatementTypeCode,1,03A,StatementTypeCode,statementTypeCode,,0,1
+410,Address type code,Code specifying the type of address.,an..3,xsd:string,Code,UN/EDIFACT code list 3131,AddressTypeCode,1,04A,TypeCode,typeCode,,0,1
+R143,AEO mutual recognition party identifier,Identification of the AEO mutual recognition party.,an..35,xsd:string,Identifier,,,1,16C,ID,id,S009 identification,0,1
+628,AEO program established year date/time,Date and time the AEO program was established.,an..35,xsd:dateTime,Date Time,,,1,71C,EstablishedYearDateTime,establishedYearDateTime,,0,1
+626,AEO program name,Name of the country’s Authorized Economic Operator (AEO) program.,an..35,xsd:string,Text,,,1,71C,ProgramName,programName,,0,1
+629,AEO program type code,"Code specifying whether the country’s Authorized Economic Operator (AEO) program is a security based program, compliance based, or both.",an..3,xsd:string,Code,WCO code list/AEOProgramTypeCode,AEOProgramTypeCode,1,71C,TypeCode,typeCode,,0,1
+MD24,Agency assigned customization code,"Code specifying the agency responsible for the design and maintenance of the message type concerned, which further identifies the message.",an..6,xsd:string,Code,User code list,,1,3MD,AgencyAssignedCustomizationCode,agencyAssignedCustomizationCode,,0,1
+MD25,Agency assigned customization version code,Code specifying the version of the agency assigned customization.,an..3,xsd:string,Code,User code list,,1,3MD,AgencyAssignedCustomizationVersionCode,agencyAssignedCustomizationVersionCode,,0,1
+631,Agency name,Name of the agency responsible for the country’s program or partner profile.,an..35,xsd:string,Text,,,1,72C,AgencyName,agencyName,,0,1
+R004,Agent identifier,Identification of a party authorized to act on behalf of another party.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,05A,ID,id,S009 identification,0,1
+R003,Agent name,Name of a party authorized to act on behalf of another party.,an..70,xsd:string,Text,,,1,05A,Name,name,S008 name,0,1
+249,Agent quality assurance code,Code specifying where quality assurance level of the agent should be used.,an..3,xsd:string,Code,UN/EDIFACT code list 7365 subset (codes 166 and 167),AgentQualityAssuranceCode,1,05A,QualityAssuranceCode,qualityAssuranceCode,,0,1
+102,Agent status code,Code specifying the capacity in which the agent is acting.,an..3,xsd:string,Code,"UN/EDIFACT code list 4405
+For use with the EU CDM:
+- code 2 (Representative (direct representation within the meaning of Article 18(1) of the code))
+- code 3 (Representative (indirect representation within the meaning of Article 18(1) of the code))",,1,05A,FunctionCode,functionCode,,0,1
+531,All waste delivery indicator,Indicator of whether the ship is delivering all waste on board the ship.,n1,xsd:boolean,Indicator,,,1,36C,AllDeliveryIndicator,allDeliveryIndicator,,0,1
+099,Amendment code,Code specifying the reason for a change.,an..3,xsd:string,Code,User code list,,1,06A,ChangeReasonCode,changeReasonCode,,0,1
+461,Anchorage indicator,Indicator of the arrival of vessels at anchorage location or departure of vessels from anchorage location.,n1,xsd:boolean,Indicator,,,2,09A; 45A,AnchorageIndicator,anchorageIndicator,,0,1
+416,Annual quota quantity,Quantity specifying the current annual quota for the species concerned.,n..15,xsd:decimal,Quantity,,,1,65A,AnnualQuotaQuantity,annualQuotaQuantity,,0,1
+G001,Appeal office identifier,Identification of the location of a government office at which an appeal can be lodged.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,07A,ID,id,S001 identification,0,1
+R151,Applicant identifier,Identification of a party who applies for something.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,30C,ID,id,S009 identification,0,1
+R150,Applicant name,Name of a party who applies for something.,an..70,xsd:string,Text,,,1,30C,Name,name,S008 name,0,1
+MD02,Application reference identifier,"Identification of the application area assigned by the sender, to which the messages in the interchange relate (e.g. the message identifier if all the messages in the interchange are of the same type).",an..70,xsd:string,Identifier,,,1,1MD,ApplicationReferenceID,applicationReferenceId,,0,1
+L057,Approved establishment location name,Name of the location of a facility approved for a specific purpose by a government authority.,an..256,xsd:string,Text,,,1,08A,Name,name,S002 name,0,1
+L058,Approved establishment location name identifier,Identification of a facility approved for a specific purpose by a government authority.,an..35,xsd:string,Identifier,"UN/LOCODE (an..5) + user codes (an..30)
+Or user codes",,1,08A,ID,id,S003 identification,0,1
+267,Arrival at first port of arrival in the customs territory with the intent to unload date/time,Date and time on which the conveyance transporting the merchandise from the foreign country arrived at the first domestic port with the intent to unload.,an..35,xsd:dateTime,Date Time,,,1,15A,ConveyanceFirstPortOfArrivalDateTime,conveyanceFirstPortOfArrivalDateTime,,0,1
+162,Arrival confirmation code,Code specifying whether the start date of a customs control is confirmed or not.,an..3,xsd:string,Code,UN/EDIFACT code list 7365 subset (codes 164 and 165),ArrivalConfirmationCode,1,28A,ArrivalConfirmationCode,arrivalConfirmationCode,,0,1
+L054,Arrival conveyance facility location identifier,"Identification of a terminal, warehouse or yard where a means of transport arrives.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,09A,ID,id,S003 identification,0,1
+L107,Arrival conveyance facility location name,"Name of the location of the terminal, warehouse or yard where a means of transport arrives.",an..256,xsd:string,Text,,,1,09A,Name,name,S002 name,0,1
+L108,Arrival port name,"Name of the arrival location. This would be a port for sea, airport for air and border post for land crossing.",an..256,xsd:string,Text,,,1,11C,Name,name,S002 name,0,1
+T001,Arrival transport means name,Name to identify the means of transport used for the carriage of the goods at the time of arrival.,an..70,xsd:string,Text,,,1,10A,Name,name,S049 name,0,1
+361,Arriving crew member location in-country name,Name of the location of a crew member during stay in the destination country.,an..256,xsd:string,Text,,,1,39A,ArrivalInCountryLocationName,arrivalInCountryLocationName,,0,1
+R110,Assembler identifier,Identification of the party responsible for putting together various components or parts into a product or commodity in its form or condition as imported.,an..35,xsd:string,Identifier,,,1,50B,ID,id,S009 identification,0,1
+R109,Assembler name,Name of the party responsible for putting together various components or parts into a product or commodity.,an..70,xsd:string,Text,,,1,50B,Name,name,S008 name,0,1
+R135,Assigning party identifier,Identification of the party who assigns any identifier to a shipment.,an..35,xsd:string,Identifier,,,1,71B,ID,id,S009 identification,0,1
+233,Associated government procedure code,Code specifying which governmental procedure is associated with the declaration.,an..4,xsd:string,Code,"UN/EDIFACT code list 7365
+For Customs: User code list, categorized based on the revised Kyoto Convention",,1,29A,AssociatedGovernmentProcedureCode,associatedGovernmentProcedureCode,,0,1
+D008,Associated transport document identifier,Identification of a previous transport document number or other assigned reference number associated with the shipment. Applies to secondary cargo document report only.,an..70,xsd:string,Identifier,,,1,11A,ID,id,S031 identification,0,1
+D009,Associated transport document type code,Code specifying the type of associated transport document in a secondary cargo report.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,11A,TypeCode,typeCode,S042 type,0,1
+387,Attached transport equipment code,"Code specifying a type of equipment attached to another piece of transport equipment, such as loading tackle, sheets, ropes, chains.",an..3,xsd:string,Code,UN/EDIFACT code list 8053,EquipmentTypeCode,1,31B,AttachedTypeCode,attachedTypeCode,,0,1
+452,Authentication identifier,Identification of the authentication.,an..17,xsd:string,Identifier,,,1,61B,ID,id,,0,1
+104,Authentication statement,Statement providing proof that the document has been authenticated.,an..256,xsd:string,Text,,,1,61B,Authentication,authentication,,0,1
+453,Authentication type code,Code specifying the type of authentication.,an..3,xsd:string,Code,User code list,,1,61B,TypeCode,typeCode,,0,1
+R008,Authenticator identifier,Identification of a party which certifies that a document is authentic.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,12A,ID,id,S009 identification,0,1
+R007,Authenticator name,Name of the party which certifies that a document is authentic.,an..70,xsd:string,Text,,,1,12A,Name,name,S008 name,0,1
+R144,Authorization holder identifier,Identification of the person being the holder of the authorization.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,17C,ID,id,S009 identification,0,1
+549,Authorization holder type code,Code specifying the type of person being the holder of the authorization.,an..4,xsd:string,Code,User code list,,1,17C,CategoryCode,categoryCode,,0,1
+595,Authorization identifier,Identification of the authorized location concerned as assigned by the relevant government agency.,an..35,xsd:string,Identifier,,,1,64A,AuthorizationID,authorizationId,,0,1
+D062,Authorization number identifier,Identification of an authorization necessary for the declaration or notification.,an..70,xsd:string,Identifier,,,1,88B,ID,id,S031 identification,0,1
+D059,Authorization type code,Code specifying the type of authorization necessary for the declaration or notification.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,88B,TypeCode,typeCode,S042 type,0,1
+R068,Authorized person identifier,Identification of a person designated under relevant legislation for the purpose of issuing official assurances.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,13A,ID,id,S009 identification,0,1
+R067,Authorized person name,Name of a person designated under relevant legislation for the purpose of issuing official assurances.,an..70,xsd:string,Text,,,1,13A,Name,name,S008 name,0,1
+336,Ballast or cargo type code,"Code specifying whether the vessel entered the port in ballast, with bulk cargo or general cargo.",an..3,xsd:string,Code,UN/EDIFACT code list 7085,BallastOrCargoTypeCode,1,15A,BallastOrCargoTypeCode,ballastOrCargoTypeCode,,0,1
+372,Bank account identifier,Identification of the bank account.,an..35,xsd:string,Identifier,IBAN /SWIFT /BIC Codes,,1,14A,AccountID,accountId,,0,1
+546,Bank for deposit of duties/taxes/fees identifier,"Identification of the bank that is to receive the deposit for duties, taxes, and fees.",an..17,xsd:string,Identifier,"SWIFT Code, IBAN Code or International code list (e.g. DUNS, EAN) OR User code list",,1,14A,ReferenceID,referenceId,,0,1
+L121,Berth location identifier,Identification of the location in port where the means of transport will berth.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,74C,ID,id,S003 identification,0,1
+L120,Berth location name,Name of the location in port where the means of transport will berth.,an..256,xsd:string,Text,,,1,74C,Name,name,S002 name,0,1
+561,Binary file access information,Information on access for this binary file such as security and download parameters.,an..256,xsd:string,Text,,,1,72B,Access,access,,0,1
+553,Binary file author name,Name of the author for this binary file.,an..70,xsd:string,Text,,,1,72B,AuthorName,authorName,,0,1
+559,Binary file character set code,Code specifying the character set for this binary file.,n..17,xsd:decimal,Code,,,1,72B,CharacterSetCode,characterSetCode,,0,1
+562,Binary file description,Description of this binary file.,an..256,xsd:string,Text,,,1,72B,Description,description,,0,1
+558,Binary file encoding code,Code specifying the encoding of this binary file.,an..17,xsd:string,Code,,,1,72B,EncodingCode,encodingCode,,0,1
+551,Binary file identifier,Identification of this binary file.,an..256,xsd:string,Identifier,,,1,72B,ID,id,,0,1
+560,Binary file included binary object,Binary object included for this file.,NA,xsd:base64Binary,Binary Object,,,1,72B,IncludedBinaryObject,includedBinaryObject,,0,1
+557,Binary file MIME code,Code specifying the Multipurpose Internet Mail Extensions (MIME) type for this binary file.,an..255,xsd:string,Code,,,1,72B,MIMECode,mimeCode,,0,1
+555,Binary file name,Name of the file usually including the file type for this binary file.,an..256,xsd:string,Text,,,1,72B,FileNameText,fileNameText,,0,1
+563,Binary file size,Measure of the size of this binary file.,"n..16,6",xsd:decimal,Measure,,,1,72B,SizeMeasure,sizeMeasure,,0,1
+552,Binary file title,Title of this binary file.,an..256,xsd:string,Text,,,1,72B,Title,title,,0,1
+564,Binary file type code,"Code specifying the type of binary file, such as photo, spreadsheet.",an..6,xsd:string,Code,,,1,72B,TypeCode,typeCode,,0,1
+556,Binary file URI identifier,Identification of the Uniform Resource Identifier (URI) for this binary file.,an..2048,xsd:string,Identifier,,,1,72B,URIID,uriid,,0,1
+554,Binary file version identifier,Identification of the version for this binary file.,an..17,xsd:string,Identifier,,,1,72B,VersionID,versionId,,0,1
+448,Binding tariff reference identifier,Identification of the national or regional standard tariff classification of goods in the tariff nomenclature / statistics based on the Harmonized System by reference number.,an..35,xsd:string,Identifier,,,1,21A,BindingTariffReferenceID,bindingTariffReferenceId,,0,1
+596,Birth country code,Code specifying the referenced person's country of birth as shown on the person's identity document.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,60C,BirthCountryCode,birthCountryCode,,0,1
+425,Birth date/time,Date and time an individual was born.,an..35,xsd:dateTime,Date Time,,,1,60C,BirthDateTime,birthDateTime,,0,1
+426,Birth location name,Name of the location where a person is or was born.,an..35,xsd:string,Text,,,1,60C,BirthPlace,birthPlace,,0,1
+314,Boarded quantity,Quantity specifying the total number shown on bill of lading or on split shipment. It will be the actual number of pieces boarded on the conveyance. (Not necessarily the smallest external packaging unit for the shipment).,n..16,xsd:decimal,Quantity,,,1,28A,BoardedQuantity,boardedQuantity,,0,1
+609,Booking date/time,Date and time of the booking.,an..35,xsd:dateTime,Date Time,,,1,66B,BookingDateTime,bookingDateTime,,0,1
+602,Booking reference identifier,Identification of the booking or reservation.,an..35,xsd:string,Identifier,,,1,65C,BookingReferenceID,bookingReferenceId,,0,1
+G022,Bordering office identifier,"Identification of the government agency office across the border, facing the current object.",an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,42C,ID,id,S001 identification,0,1
+138,Brief cargo description,Description of the cargo in general terms only.,an..256,xsd:string,Text,,,3,13C; 15A; 23A,CargoDescription,cargoDescription,,0,1
+MD09,Business process context identifier,Identification of the interaction between trading partners to achieve a given business objective.,an..35,xsd:string,Identifier,"These values will be summarized and will be hierarchical where applicable. 
+This list can be extended.
+Default value ""ALL"" if no restrictions apply.",,1,2MD,BusinessProcessID,businessProcessId,,0,1
+MD14,Business process role context identifier,"Identification of the roles played by the trading partners. 
+These can be derived from the Business Process.",an..35,xsd:string,Identifier,"To be supplied by the producer of My IP.
+Default value ""ALL"" if no restrictions apply. 
+<Examples: Broker, ImpORter, forwarder etc.",,1,2MD,BusinessProcessRoleID,businessProcessRoleId,,0,1
+517,Business type code,Code specifying the business type of a party.,an..7,xsd:string,Code,ISIC code list OR User code list,,1,28C,BusinessType,businessType,,0,1
+R010,Buyer identifier,Identification of a party to which merchandise or services are sold.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,16A,ID,id,S009 identification,0,1
+R009,Buyer name,Name of the party to which merchandise or services are sold.,an..70,xsd:string,Text,,,1,16A,Name,name,S008 name,0,1
+605,Cabin identifier,Identification of the specific cabin or room on board.,an..35,xsd:string,Identifier,,,1,66C,ID,id,,0,1
+606,Cabin type identifier,Identification of the type of cabin or room on board.,an..35,xsd:string,Identifier,,,1,66C,TypeID,typeId,,0,1
+L052,Cargo facility location name,"Name of the terminal, warehouse, or yard where the goods are to be on or off loaded.",an..256,xsd:string,Text,,,1,17A,Name,name,S002 name,0,1
+495,Carriage amount,"Amount declared by the shipper or his agent solely for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.","n..16,2",xsd:decimal,Amount,,,1,28A,ForCarriageDeclaredValueAmount,forCarriageDeclaredValueAmount,,0,1
+R012,Carrier identifier,Identification of a party providing the transport of goods between named points.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,18A,ID,id,S009 identification,0,1
+R011,Carrier name,Name of the party providing the transport of goods between named points.,an..70,xsd:string,Text,,,1,18A,Name,name,S008 name,0,1
+011,Carrier split consignment code,Code specifying split consignment for each load assigned by a carrier.,an..3,xsd:string,Code,UN/EDIFACT code list 7365 subset (codes 156 and 157),CarrierSplitConsignmentCode,1,28A,TransportSplitCode,transportSplitCode,,0,1
+R159,Category of person code,"Code specifying the category of person (e.g. natural person, legal person).",n1,xsd:decimal,Code,User code list (preferably new WCO codes),,5,09B; 16A; 27A; 30A; 89A,PersonCategoryCode,personCategoryCode,S061 personCategory,0,1
+180,Certificate of export documents indicator,Indicator by exporter/declarant whether they need certificate of export or other documents from customs or not.,n1,xsd:boolean,Indicator,,,1,03A,ExportCertificateIndicator,exportCertificateIndicator,,0,1
+R096,Certificate of responsibility holder identifier,Identification of the party holding the Certificate of Financial Responsibility (COFR).,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,19A,ID,id,S009 identification,0,1
+R048,Certifier name,Name of the party who has provided the certification.,an..70,xsd:string,Text,,,1,20A,Name,name,S008 name,0,1
+R049,Certifying party identifier,Identification of a party which certifies something.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,20A,ID,id,S009 identification,0,1
+454,Characteristic type code,Code specifying the subject of the characteristic.,an..17,xsd:string,Code,User code list,,1,94B,TypeCode,typeCode,,0,1
+455,Characteristic value code,Code specifying the form of a characteristic value.,an..3,xsd:string,Code,UN/EDIFACT code list 7111 / User code list,,1,94B,ValueCode,valueCode,,0,1
+121,Charges amount,"Amount indicating the total cost of freight, insurance and all other costs and expenses from the foreign exit location to the entry location.","n..16,3",xsd:decimal,Amount,,,1,41A,ExitToEntryChargeAmount,exitToEntryChargeAmount,,0,1
+371,Charges type code,Code specifying the type of charge or deduction.,an..3,xsd:string,Code,UN/EDIFACT code list 5025,,1,58B,ChargesTypeCode,chargesTypeCode,,0,1
+241,City name,Name of a city.,an..35,xsd:string,Text,,,1,04A,CityName,cityName,,0,1
+326,Commercial description,Description of the commercial product as stated on the invoice and any other pertinent document.,an..256,xsd:string,Text,,,1,23A,CommercialDescription,commercialDescription,,0,1
+296,Commercial driver's license country code,Code specifying the country or political entity issuing the commercial driver's license.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,22A,CountryCode,countryCode,,0,1
+359,Commercial driver's license endorsement code,Code specifying the type of special service authorization present on the commercial driver’s license.,an..3,xsd:string,Code,User code list,,1,22A,EndorsementCode,endorsementCode,,0,1
+297,"Commercial driver's license state, province, or country subdivision code","Code specifying the state, province, or country subdivision issuing the commercial driver's license.",an..9,xsd:string,Code,ISO 3166-2,,1,22A,CountrySubdivisionCode,countrySubdivisionCode,,0,1
+R065,Commercial verifier name,Name of the person recognized under relevant legislation to undertake official assurance verification.,an..70,xsd:string,Text,,,1,41B,Name,name,S008 name,0,1
+456,Commodity acquisition date/time,Date and time the commodity was acquired.,an..35,xsd:dateTime,Date Time,,,1,23A,AcquisitionDateTime,acquisitionDateTime,,0,1
+306,Commodity amount,Amount indicating the value of the commodity (not to be used for customs valuation purposes).,"n..16,3",xsd:decimal,Amount,,,1,23A,ValueAmount,valueAmount,,0,1
+328,Commodity category code,"Code specifying the grouping of similar products into non-commercial categories that are assigned by and useful to regulatory authorities. More specific than the Goods group name (WCO ID 331) and Goods group name, coded (WCO ID 332).",an..17,xsd:string,Code,UN/EDIFACT code list 7009,CommodityCategoryCode,1,23A,CategoryCode,categoryCode,,0,1
+329,Commodity category qualifier code,Code specifying the grouping of similar products identifying categories that are assigned by and useful to the cross-border regulatory authorities.,an..17,xsd:string,Code,UN/EDIFACT code list 3055 / User code list (1131),,1,23A,CategoryQualifierCode,categoryQualifierCode,,0,1
+260,Commodity characteristic code,"Code specifying the commodity characteristics such as goods grading, genetic modification, quality, etc. that distinguishes the commodity from similar commodities.",an..17,xsd:string,Code,User code list,,1,48B,TypeCode,typeCode,,0,1
+334,Commodity characteristic qualifier code,Code specifying the various forms of commodity characteristics.,an..3,xsd:string,Code,UN/EDIFACT code list 7081,,1,48B,QualifierCode,qualifierCode,,0,1
+229,Commodity characteristics description,"Description of the commodity characteristics (e.g. goods grading, genetic modification, quality, etc.) that distinguishes the commodity from similar commodities.",an..256,xsd:string,Text,,,1,48B,Description,description,,0,1
+518,Commodity classification description,Description of the classification in plain language.,an..256,xsd:string,Text,,,1,21A,Description,description,,0,1
+145,Commodity classification identifier,Identification of the non-commercial categorization of a commodity by a standard-setting organization.,an..18,xsd:string,Identifier,,,1,21A,ID,id,,0,1
+346,Commodity classification name code,"Code specifying the scientific name of original plant/animal used as a material for food products, medications, cosmetics, medical materials, etc.",an..35,xsd:string,Code,UN/EDIFACT code list 7357,ClassificationNameCode,1,21A,NameCode,nameCode,,0,1
+337,Commodity classification type code,"Code specifying the commodity classification (e.g. Harmonized Tariff Schedule (HTS), Export Control Classification Code (ECCC), UNDG Code list, International Code of Zoological Nomenclature).",an..3,xsd:string,Code,UN/EDIFACT code list 7143,,1,21A,IdentificationTypeCode,identificationTypeCode,,0,1
+341,Commodity dangerous goods packing group code,Code specifying packing requirements based on the relative degree of danger represented by the hazardous material.,an..3,xsd:string,Code,UN/EDIFACT code list 7233,CommodityDangerousGoodsPackingGroupCode,1,24A,DangerousGoodsPackingRequirementGroupCode,dangerousGoodsPackingRequirementGroupCode,,0,1
+257,Commodity identifier,Identification of the commercial categorization of a commodity (e.g. PLU number).,an..35,xsd:string,Identifier,,,1,23A,CommercialCategorizationID,commercialCategorizationId,,0,1
+338,Commodity identifier type code,Code specifying the type of commodity identifier.,an..3,xsd:string,Code,UN/EDIFACT code list 7143,,1,46B,IDTypeCode,idTypeCode,,0,1
+347,Commodity identity number qualifier code,"Code specifying the type of unique number affixed by the manufacturer to one instance of a product for identification purposes, such as a serial number, vehicle identification number (VIN).",an..3,xsd:string,Code,UN/EDIFACT code list 7405,CommodityIdentityNumberQualifierCode,1,23A,IdentityQualifierCode,identityQualifierCode,,0,1
+265,Commodity lot identifier,Identification of the production lot by number.,an..70,xsd:string,Identifier,,,1,23A,LotNumberID,lotNumberId,,0,1
+258,Commodity name,"Name or term that identifies the goods assigned by a seller as distinct from those of other sellers, in legal terms known as trademark, which helps to identify one item, a family of items, or all items of that seller.",an..35,xsd:string,Text,,,1,47B,Description,description,,0,1
+335,Commodity name qualifier code,"Code specifying the commodity name (e.g. common name, registered name, brand name).",an..3,xsd:string,Code,UN/EDIFACT code list 7081,,1,47B,QualifierCode,qualifierCode,,0,1
+325,Commodity physical state code,Code specifying the physical state of the commodity being imported.,an..3,xsd:string,Code,UN/EDIFACT code list 7007,CommodityPhysicalStateCode,1,23A,PhysicalStateCode,physicalStateCode,,0,1
+597,Commodity previously used indicator,Indicator on whether or not the commodity has been previously used.,an1,xsd:boolean,Indicator,,,1,48B,PreviouslyUsedIndicator,previouslyUsedIndicator,,0,1
+269,Commodity process performed date/time,Date and time on which the process associated with the commodity was performed.,an..35,xsd:dateTime,Date Time,,,1,60B,DurationDateTime,durationDateTime,,0,1
+339,Commodity process type description,Description of the production method or other process applied to the commodity.,an..70,xsd:string,Text,,,1,60B,TypeDescription,typeDescription,,0,1
+340,Commodity process type identification code,"Code specifying the process or production associated with the commodity (e.g. method of growing, pretreatment, etc.).",an..17,xsd:string,Code,UN/EDIFACT code list 7187,CommodityProcessTypeIdentificationCode,1,60B,TypeIdentificationCode,typeIdentificationCode,,0,1
+315,Commodity quantity,Quantity specifying the number of regulated items.,n..16,xsd:decimal,Quantity,,,1,23A,CountQuantity,countQuantity,,0,1
+322,Commodity size,Measure specifying the dimensions or weight of the commodity.,an..18,xsd:decimal,Measure,,,1,23A,SizeMeasure,sizeMeasure,,0,1
+319,Commodity temperature category code,Code specifying the storage condition of a commodity.,an..17,xsd:string,Code,UN/EDIFACT code list 6155,TemperatureCategoryCode,1,20B,CategoryCode,categoryCode,,0,1
+240,Communication identifier,Identification of the communication address.,an..256,xsd:string,Identifier,,,1,25A,ID,id,,0,1
+636,Communication name,Name of the communication identifier.,an..35,xsd:string,Text,,,1,25A,Name,name,,0,1
+253,Communication number type code,Code specifying the type of communication address.,an..3,xsd:string,Code,UN/EDIFACT code list 3155,CommunicationMeansTypeCode,1,25A,TypeCode,typeCode,,0,1
+MD03,Communications agreement identifier,Identification of the type of agreement under which the interchange takes place by name or code.,an..35,xsd:string,Identifier,,,1,1MD,CommunicationsAgreementID,communicationsAgreementId,,0,1
+R070,Company security officer name,Name of the company security officer as described in IMO Circular MSC 1130.,an..70,xsd:string,Text,,,1,26A,Name,name,S008 name,0,1
+T038,Connection transport means name,Name to identify the means of transport used for connection.,an..70,xsd:string,Text,,,1,65C,Name,name,S049 name,0,1
+R015,Consignee identifier,Identification of a party to which goods are consigned.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,27A,ID,id,S009 identification,0,1
+R014,Consignee name,Name of the party to which goods are consigned.,an..70,xsd:string,Text,,,1,27A,Name,name,S008 name,0,1
+110,Consignment amount,"Amount declared for customs purposes of those goods in a consignment whether or not they are subject to the same customs procedure, tariff/statistical heading, country information and duty regime.","n..16,3",xsd:decimal,Amount,,,1,28A,ValueAmount,valueAmount,,0,1
+414,Consignment item identifier,"Identification of the consignment item (e.g. for CITES codes A, B, C, D).",an..17,xsd:string,Identifier,,,1,29A,ID,id,,0,1
+031,Consignment loading date/time,Date and time of initial loading onto a ship or airplane during one journey from export location to import location.,an..35,xsd:dateTime,Date Time,,,1,83A,LoadingDateTime,loadingDateTime,,0,1
+029,Consignment unloading date/time,Date and time the cargo was outturned.,an..35,xsd:dateTime,Date Time,,,1,15A,DischargeCompletedDateTime,dischargeCompletedDateTime,,0,1
+R021,Consignor identifier,Identification of the party consigning goods as stipulated in the transport contract by the party ordering the transport.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,30A,ID,id,S009 identification,0,1
+R020,Consignor name,Name of the party consigning goods as stipulated in the transport contract by the party ordering transport.,an..70,xsd:string,Text,,,1,30A,Name,name,S008 name,0,1
+523,Consolidation indicator,Indicator of the cargo shipping method in which a freight forwarder at the place/port of origin combines several individual consignments to make up a full load.,an1,xsd:boolean,Indicator,,,2,21C; 28A,ConsolidationIndicator,consolidationIndicator,,0,1
+R019,Consolidator identifier,Identification of the freight forwarder combining individual smaller consignments into a single larger consignment (in a consolidation process) that is sent to a counterpart who mirrors the consolidator's activity by dividing the consolidated consignment into its original components.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,31A,ID,id,S009 identification,0,1
+R018,Consolidator name,Name of the party who has combined a number of smaller consignments into a single larger consignment.,an..70,xsd:string,Text,,,1,31A,Name,name,S008 name,0,1
+R108,Consortium carrier identifier,Identification of a consortium carrier.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,32A,ID,id,S009 identification,0,1
+R107,Consortium carrier name,Name of the consortium carrier.,an..70,xsd:string,Text,,,1,32A,Name,name,S008 name,0,1
+363,Constituent element or component active ingredient indicator,Indicator of which of the constituent element(s) in the mixture is the active ingredient.,an1,xsd:boolean,Indicator,,,1,33A,ElementActiveIngredientIndicator,elementActiveIngredientIndicator,,0,1
+349,Constituent element or component code,Code specifying representation of the constituent element.,an..3,xsd:string,Code,User code list,,1,33A,ElementCode,elementCode,,0,1
+259,Constituent element or component description,Description of the materials contained within the product.,an..256,xsd:string,Text,,,1,33A,ElementDescription,elementDescription,,0,1
+348,Constituent element or component name,Name of the specified material within the product (e.g. asbestos or milk solids).,an..35,xsd:string,Text,,,1,33A,ElementName,elementName,,0,1
+311,Constituent element or component percentage,Percentage of a specified material contained within the product.,"n..10,2",xsd:decimal,Numeric,,,1,33A,ElementPercentNumeric,elementPercentNumeric,,0,1
+317,Constituent element or component quantity,Quantity specifying the identified constituent element or component contained in the shipment.,n..16,xsd:decimal,Quantity,,,1,33A,IdentifiedElementQuantity,identifiedElementQuantity,,0,1
+370,Constituent element or component yield measure,Measure of the specific material actually produced or estimated to be produced from the commodity.,n..16,xsd:decimal,Measure,,,1,33A,ElementYieldAmount,elementYieldAmount,,0,1
+288,Construction of vessel location identifier,Identification of the location where a conveyance such as a vessel has been constructed.,an..17,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,15A,ConstructionPlaceID,constructionPlaceId,,0,1
+G002,Contact office identifier,Identification of the location of a government office where contact can be made.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,35A,ID,id,S001 identification,0,1
+157,Container legal status code,Code specifying the container's legal status with respect to the International Convention on Containers.,an..3,xsd:string,Code,UN/EDIFACT code list 7365 subset (codes 162 and 163),ContainerLegalStatusCode,1,31B,LegalStatusCode,legalStatusCode,,0,1
+R044,Container operator identifier,"Identification of the party owning, operating or controlling the transport equipment (e.g. container).",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,36A,ID,id,S009 identification,0,1
+R089,Container terminal operator identifier,Identification of the party operating a container terminal or similar facility.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,37A,ID,id,S009 identification,0,1
+096,Container transport code,Code specifying whether or not goods are transported in a container.,an..3,xsd:string,Code,"UN/EDIFACT code list 7365 subset (codes 68 and 69)
+For use with the EU CDM:
+- code 0 (Goods not transported in containers)
+- code 1 (Goods transported in containers)",ContainerTransportCode,2,23B; 28A,ContainerCode,containerCode,,0,1
+091,Contract and carriage condition code,Code specifying the conditions of contract and carriage.,an..3,xsd:string,Code,UN/EDIFACT code list 4065,TransportContractDocumentConditionCode,2,30B; 31B,ConditionCode,conditionCode,,0,1
+G025,Control office identifier,Identification of the location of a relevant governmental office where goods are available for further governmental control.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,47C,ID,id,S001 identification,0,1
+G024,Control office type code,Code specifying the type of control office (e.g. 5 - Customs).,an.3,xsd:string,Code,UN/EDIFACT code list 9415,GovernmentAgencyTypeCode,1,47C,TypeCode,typeCode,S058 type,0,1
+415,Control quantity,"Quantity specifying the control results of an inspection, carried out by cross border regulatory agencies.",n..15,xsd:decimal,Quantity,,,1,83B,CountQuantity,countQuantity,,0,1
+490,Control quantity,Quantity specifying the control or quarantine purposes.,n..15,xsd:decimal,Quantity,,,1,38A,UsedQuantity,usedQuantity,,0,1
+444,Control result code,Code specifying the results of a control.,an..3,xsd:string,Code,User code list,,1,83B,IdentificationCode,identificationCode,,0,1
+235,Control results at departure code,Code specifying the results of the controls carried out by the authorized consignor prior to departure.,an2,xsd:string,Code,User code list,,1,24B,ResultCode,resultCode,,0,1
+497,Control results description,Description of the control results.,an..512,xsd:string,Text,,,1,83B,Description,description,,0,1
+449,Control type code,Code specifying the type of governmental examination.,an..3,xsd:string,Code,User code list,,1,38A,TypeCode,typeCode,,0,1
+268,Conveyance built year date/time,Date and time the vessel was built.,n4,xsd:dateTime,Date Time,,,1,15A,BuiltYearDateTime,builtYearDateTime,,0,1
+149,Conveyance identifier,"Identification of the journey of a means of transport, for example voyage number, flight number, trip number.",an..17,xsd:string,Identifier,,,2,15A; 29B,JourneyID,journeyId,,0,1
+270,Conveyance port activity date/time,"Date and time of conveyance activity (e.g. cargo loading or unloading, fueling, etc.).",an..35,xsd:dateTime,Date Time,,,2,15A; 81A,PortActivityDateTime,portActivityDateTime,,0,1
+R158,Counterpart name,"Name of the party opposing to something or someone, especially in a process.",an..70,xsd:string,Text,,,1,44C,Name,name,S008 name,0,1
+625,Country agency name,Name of the agency responsible for the country’s Authorized Economic Operator (AEO) program.,an..35,xsd:string,Text,,,1,71C,CountryAgencyName,countryAgencyName,,0,1
+242,Country code,Code specifying the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3.,a2,xsd:string,Code,ISO 3166-1,CountryCode,4,04A; 45C; 71C; 72C,CountryCode,countryCode,,0,1
+412,Country name,Name of the country or other geographical entity.,an..35,xsd:string,Text,,,1,04A,CountryName,countryName,,0,1
+592,Country of dispatch code,Code specifying the country from which goods were initially dispatched to the country in which the goods are located at the time of their release into the customs procedure.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,54C,CountryCode,countryCode,,0,1
+447,Country of exclusion code,Code specifying the country of exclusion.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,89B,CountryCode,countryCode,,0,1
+062,Country of exportation code,Code specifying the country from which the goods are originally exported without any commercial transaction taken place in intermediate countries.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,95B,CountryCode,countryCode,,0,1
+457,Country of exportation name,Name of the country from which the goods are originally exported without any commercial transaction taken place in intermediate countries.,an..35,xsd:string,Text,,,1,95B,CountryName,countryName,,0,1
+063,Country of origin code,"Code specifying the country in which the goods have been produced or manufactured, according to criteria laid down for the application of the Customs tariff or quantitative restrictions, or any measure related to trade.",a2,xsd:string,Code,ISO 3166-1,CountryCode,1,92A,CountryCode,countryCode,,0,1
+413,Country of origin name,"Name of the country in which the goods have been produced or manufactured, according to criteria laid down for the application of the Customs tariff or quantitative restrictions, or any measure related to trade.",an..35,xsd:string,Text,,,1,92A,CountryName,countryName,,0,1
+064,Country of routing code,Code specifying the country through which goods or passengers are routed between the country of original departure and final destination.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,81A,RoutingCountryCode,routingCountryCode,,0,1
+106,Country relationship code,"Code specifying whether the place specified for the performance of a (contractual) obligation is located in the country where the declaration is made, in another member country of the same economic or Customs union, or in a third country.",an..3,xsd:string,Code,User code list,,1,22B,CountryRelationshipCode,countryRelationshipCode,,0,1
+293,Country sub-division of transport equipment registration code,Code specifying the country sub-division of transport equipment registration.,an..9,xsd:string,Code,ISO 3166-2,,1,31B,RegistrationCountrySubdivisionCode,registrationCountrySubdivisionCode,,0,1
+244,Country sub-entity identification code,Code specifying the name of a country subdivision.,an..9,xsd:string,Code,ISO 3166-2 OR User code list,,1,04A,CountrySubDivisionCode,countrySubDivisionCode,,0,1
+243,Country sub-entity name,Name of a country subdivision.,an..35,xsd:string,Text,,,1,04A,CountrySubDivisionName,countrySubDivisionName,,0,1
+R033,Crew member identifier,Identification of conveyance crew member.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,39A,ID,id,S009 identification,0,1
+305,Criteria conformance code,Code specifying conformance with statutory and regulatory requirements.,an..17,xsd:string,Code,User code list,,1,49B,TypeCode,typeCode,,0,1
+304,Criteria conformance statement,Statement indicating specific conformance with statutory and regulatory requirements.,an..512,xsd:string,Text,,,1,49B,Description,description,,0,1
+T005,Crossing the border transport means name,Name to identify the means of transport used for the carriage of the goods in crossing the border.,an..70,xsd:string,Text,,,1,15A,Name,name,S049 name,0,1
+135,Currency code,Code specifying a monetary unit or currency.,a3,xsd:string,Code,ISO 4217,CurrencyCode,2,40A; 41C,CurrencyTypeCode,currencyTypeCode,,0,1
+108,Customs amount,"Amount declared for customs purposes of those goods in a consignment which are subject to the same customs procedure, and have the same tariff/statistical heading, country information and duty regime.","n..16,3",xsd:decimal,Amount,,,2,29A; 68A,CustomsValueAmount,customsValueAmount,,0,1
+G023,Customs office of duty/tax payment declaration identifier,Identification of a customs office location of duty/tax payment at which a subsequent declaration is lodged.,an..17,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,61C,ID,id,S001 identification,0,1
+R142,Dangerous goods contact party identifier,Identification of the dangerous goods contact person/party who can provide detailed information regarding dangerous goods.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,37B,ID,id,S009 identification,0,1
+R047,Dangerous goods contact party name,Name of the dangerous goods contact person/party who can provide detailed information regarding dangerous goods.,an..70,xsd:string,Text,,,1,37B,Name,name,S008 name,0,1
+527,Dangerous goods identifier,Identification of the emergency schedule identifier (e.g. as identified in IMO EmS Guide - Emergency Response Procedures for Ships Carrying Dangerous Goods).,an..18,xsd:string,Identifier,,,1,34C,DangerousGoodsNumberID,dangerousGoodsNumberId,,0,1
+528,Dangerous goods pollutant type code,Code specifying the type of pollutant properties for the referenced dangerous goods (e.g. IMO IMDG Code or IBC Code/MARPOL Convention).,an..3,xsd:string,Code,MARPOL as defined in IMDG and IBC,,1,12C,PollutantTypeCode,pollutantTypeCode,,0,1
+505,Dangerous goods regulations code,Code specifying the agency responsible for a set of classifications.,an..3,xsd:string,Code,UN/EDIFACT code list 8273,DangerousGoodsRegulationsCode,1,12C,RegulationCode,regulationCode,,0,1
+529,Dangerous goods subsidiary risk code,Code specifying any risk to the class of the referenced dangerous goods (e.g. according to the IMO IMDG Code).,an..4,xsd:string,Code,To be defined,,1,35C,IdentificationCode,identificationCode,,0,1
+537,Dangerous goods technical name,Chemical or biological name of the referenced dangerous goods.,an..256,xsd:string,Text,,,1,12C,TechnicalName,technicalName,,0,1
+R123,Declarant identifier,"Identification of a party who makes a declaration to an official body or - where legally permitted - in whose name, or on whose behalf, a declaration to an official body is made.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,57B,ID,id,S009 identification,0,1
+R124,Declarant name,"Name of the party who makes a declaration to an official body or - where legally permitted - in whose name, or on whose behalf, a declaration to an official body is made.",an..70,xsd:string,Text,,,1,57B,Name,name,S008 name,0,1
+548,Declarant status code,Code specifying the capacity in which the declarant is acting.,an..3,xsd:string,Code,UN/EDIFACT code list 4405,,1,57B,FunctionCode,functionCode,,0,1
+G013,Declaration office identifier,Identification of a location at which a declaration is lodged.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,10C,ID,id,S001 identification,0,1
+379,Declaration processing status code,Code specifying the processing status of a document.,an..3,xsd:string,Code,UN/EDIFACT code list 4405 OR User code list,,1,12B,NameCode,nameCode,,0,1
+289,Declaration review location identifier,"Identification of the location where the declaration is reviewed by appropriate government agency. This may be different from place where declaration is lodged, paid, or acquitted.",an..17,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,38A,ReviewPlaceID,reviewPlaceId,,0,1
+439,Declaration review location name,"Name of the location where the declaration is reviewed by appropriate government agency. This may be different from place where declaration is lodged, paid, or acquitted.",an..256,xsd:string,Text,,,1,38A,ReviewPlaceName,reviewPlaceName,,0,1
+R023,Deconsolidator identifier,"Identification of the receiving party of a consolidated shipment, who divides the latter into its original single consignments and undertakes to make them available to be delivered.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,43A,ID,id,S009 identification,0,1
+R022,Deconsolidator name,"Name of the receiving party of a consolidated shipment, who divides the latter into its original single consignments and undertakes to make them available to be delivered.",an..70,xsd:string,Text,,,1,43A,Name,name,S008 name,0,1
+127,Deducted quantity,Quantity specifying the amount to be deducted from the tariff quantity to calculate the duty/tax/fee assessment basis for Customs.,"n..16,6",xsd:decimal,Quantity,,,1,50A,DeductionQuantity,deductionQuantity,,0,1
+467,Defects description,Description of the defects noted.,an..512,xsd:string,Text,,,1,04C,Description,description,,0,1
+R028,Deliver to party identifier,Identification of the party to whom goods are to be delivered as required by national legislation or according to national requirements.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,44A,ID,id,S009 identification,0,1
+R027,Deliver to party name,Name of the party to which goods are to be delivered.,an..70,xsd:string,Text,,,1,44A,Name,name,S008 name,0,1
+487,Department or employee - contact function code,Code specifying the function of a contact (e.g. department or person).,an..3,xsd:string,Code,UN/EDIFACT code list 3139,ContactFunctionCode,1,34A,FunctionCode,functionCode,,0,1
+246,Department or employee contact name,Name of a department or employee.,an..70,xsd:string,Text,,,1,34A,Name,name,,0,1
+L053,Departure conveyance facility location identifier,"Identification of a terminal, warehouse or yard where a means of transport departs.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,45A,ID,id,S003 identification,0,1
+L106,Departure conveyance facility location name,"Name of the terminal, warehouse or yard where a means of transport departs.",an..256,xsd:string,Text,,,1,45A,Name,name,S002 name,0,1
+463,Departure country code,Code specifying the country of departure.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,98B,CountryCode,countryCode,,0,1
+462,Departure country name,Name of the country of departure.,an..35,xsd:string,Text,,,1,98B,CountryName,countryName,,0,1
+156,Departure date/time,Date and time of departure of the means of transport.,an..35,xsd:dateTime,Date Time,,,4,15A; 20C; 25B; 98B,DepartureDateTime,departureDateTime,,0,1
+030,Departure date/time,Date and time of the departure of the goods from original consignor.,an..35,xsd:dateTime,Date Time,,,1,67A,DispatchDateTime,dispatchDateTime,,0,1
+L101,Departure location identifier,Identification of the place of departure of the goods.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,98B,ID,id,S003 identification,0,1
+L100,Departure location name,Name of the departure location.,an..256,xsd:string,Text,,,1,98B,Name,name,S002 name,0,1
+T003,Departure means of transport name,Name to identify the means of transport used for the carriage of the goods at the time of departure.,an..70,xsd:string,Text,,,1,46A,Name,name,S049 name,0,1
+476,Departure region identifier,Identification of a country's subdivision of departure.,an..9,xsd:string,Identifier,,,1,98B,RegionID,regionId,,0,1
+T004,Departure transport means identifier,Identification of the means of transport at the time of departure.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,46A,ID,id,S050 identification,0,1
+465,Destination country code,Code specifying the country of destination.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,99B,CountryCode,countryCode,,0,1
+464,Destination country name,Name of the country of destination.,an..35,xsd:string,Text,,,1,99B,CountryName,countryName,,0,1
+L103,Destination location identifier,Identification of the location of goods destination.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,99B,ID,id,S003 identification,0,1
+L102,Destination location name,Name of the destination location.,an..256,xsd:string,Text,,,1,99B,Name,name,S002 name,0,1
+477,Destination region identifier,Identification of a country's subdivision of destination.,an..9,xsd:string,Identifier,,,1,99B,RegionID,regionId,,0,1
+615,Disembarkation date/time,Date and time of disembarkation of a person on board.,an..35,xsd:dateTime,Date Time,,,1,63B,DisembarkationDateTime,disembarkationDateTime,,0,1
+L091,Disembarkation location identifier,Identification of a port or location of disembarkation.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,63B,ID,id,S003 identification,0,1
+L090,Disembarkation location name,Name of a port or location of disembarkation.,an..256,xsd:string,Text,,,1,63B,Name,name,S002 name,0,1
+R072,Distiller identifier,Identification of the person or company whose business it is to extract alcoholic liquors by distillation.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,47A,ID,id,S009 identification,0,1
+R071,Distiller name,Name of the person or company whose business it is to extract alcoholic liquors by distillation.,an..70,xsd:string,Text,,,1,47A,Name,name,S008 name,0,1
+R030,Distributor identifier,Identification of the party distributing goods.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,48A,ID,id,S009 identification,0,1
+R029,Distributor name,Name of the party who has distributed the goods.,an..70,xsd:string,Text,,,1,48A,Name,name,S008 name,0,1
+D048,Document acceptance date/time,Date and time of acceptance of a document in accordance with governmental legislation.,an..35,xsd:dateTime,Date Time,,,6,42A; 68B; 74B; 90A; 999; 99A,AcceptanceDateTime,acceptanceDateTime,S023 acceptance,0,1
+539,Document authentication location name,Name of a location where a document was signed or otherwise authenticated.,an..256,xsd:string,Text,,,1,61B,LocationName,locationName,,0,1
+D031,Document category code,Code specifying the category of a document.,an..3,xsd:string,Code,User code list,,5,02A; 34B; 74B; 999; 99A,CategoryCode,categoryCode,S025 category,0,1
+D052,Document effective date/time,"Date and time of effectiveness of the document (e.g. license, visa, permit, certificate, bond).",an..35,xsd:dateTime,Date Time,,,6,02A; 42A; 68B; 74B; 90A; 999,EffectiveDateTime,effectiveDateTime,S026 effective,0,1
+276,Document effective date/time,"Date and time the document (e.g. license, visa, permit, certificate) is effective.",an..35,xsd:dateTime,Date Time,,,2,89B; 90B,EffectiveDateTime,effectiveDateTime,,0,1
+275,Document expiration (expiry) date/time,"Date and time of expiration of the document (e.g. license, visa, permit, certificate).",an..35,xsd:dateTime,Date Time,,,2,89B; 90B,ExpirationDateTime,expirationDateTime,,0,1
+D051,Document expiration date/time,"Date and time of expiration of the document (e.g. license, visa, permit, certificate, bond).",an..35,xsd:dateTime,Date Time,,,8,02A; 34B; 42A; 68B; 74B; 90A; 92B; 999,ExpirationDateTime,expirationDateTime,S027 expiration,0,1
+D039,Document function,Purpose of the document.,an..35,xsd:string,Text,,,2,74B; 999,FunctionName,functionName,S029 functionName,0,1
+D014,Document identifier,Identification of a specific document.,an..70,xsd:string,Identifier,,,5,42A; 58C; 74B; 90A; 999,ID,id,S031 identification,0,1
+D011,Document issuing date/time,"Date and time the document was issued and when appropriate, signed or otherwise authenticated.",an..35,xsd:dateTime,Date Time,,,5,42A; 58C; 74B; 90A; 999,IssueDateTime,issueDateTime,S032 issue,0,1
+D012,Document issuing location identifier,"Identification of the location at which a document was issued and when appropriate, signed or otherwise authenticated.",an..5,xsd:string,Identifier,UN/LOCODE,,3,42A; 74B; 999,IssueLocationID,issueLocationId,S033 issueLocationIdentification,0,1
+D034,Document issuing location name,"Name of the location at which a document was issued and when needed, signed or otherwise authenticated.",an..256,xsd:string,Text,,,2,74B; 999,IssueLocationName,issueLocationName,S034 issueLocationName,0,1
+D032,Document name,Name of the document.,an..35,xsd:string,Text,,,2,74B; 999,Name,name,S038 name,0,1
+D013,Document name code,Code specifying the name of a document.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,4,42A; 58C; 74B; 999,TypeCode,typeCode,S042 type,0,1
+D033,Document original indicator,Indicator to differentiate whether an exchanged CITES e-permitting document is a legal original or not.,an1,xsd:boolean,Indicator,,,2,74B; 999,OriginalIndicator,originalIndicator,S039 original,0,1
+541,Document usage code,"Code specifying whether the document (e.g. permit, bond, license) is for single use or multiple use.",an..3,xsd:string,Code,User code list,,2,74B; 999,UsageCode,usageCode,,0,1
+D053,Document/message cancellation date/time,Date and time when the document/message was cancelled.,an..35,xsd:dateTime,Date Time,,,3,42A; 90A; 999,CancellationDateTime,cancellationDateTime,S024 cancellation,0,1
+D054,Document/message rejection date/time,Date and time when the document/message was rejected.,an..35,xsd:dateTime,Date Time,,,3,42A; 74B; 999,RejectionDateTime,rejectionDateTime,S040 rejection,0,1
+375,Document/message section code,Code specifying a section of a document/message.,an..3,xsd:string,Code,UN/EDIFACT code list 1049,DocumentMessageSectionCode,1,97A,DocumentSectionCode,documentSectionCode,,0,1
+D047,Document/message status code,Code specifying the status of a document.,an..3,xsd:string,Code,UN/EDIFACT code list 1373,DocumentStatusCode,5,02A; 42A; 88B; 90A; 999,StatusCode,statusCode,S041 status,0,1
+R119,Domestic duty tax party identifier,Identification of a party responsible for the national VAT or Goods & Services Tax.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,55B,ID,id,S009 identification,0,1
+R118,Domestic duty tax party name,"Name of the party responsible for the national tax (e.g. Goods and Services Tax, Value-Added Tax).",an..70,xsd:string,Text,,,1,55B,Name,name,S008 name,0,1
+478,DPG list ship class indicator,Indicator whether the vessel has a dangerous and/or polluting goods (DPG) list on board.,n1,xsd:boolean,Indicator,,,1,15A,DPGListIndicator,dpgListIndicator,,0,1
+R074,Drayman/lighterman identifier,Identification of the bonded party that moves goods within port limits on either land or water.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,49A,ID,id,S009 identification,0,1
+R073,Drayman/lighterman name,Name of the bonded party that moves goods within port limits on either land or water.,an..70,xsd:string,Text,,,1,49A,Name,name,S008 name,0,1
+107,Duty/tax payment method code,Code specifying a method of payment.,a1,xsd:string,Code,WCO code list/PaymentMethodCode,PaymentMethodCode,1,94A,MethodCode,methodCode,,0,1
+116,Duty/tax/fee assessment basis amount,"Amount on which a duty, tax, or fee will be assessed.","n..16,3",xsd:decimal,Amount,,,2,39C; 56C,AdValoremTaxBaseAmount,adValoremTaxBaseAmount,,0,1
+129,Duty/tax/fee assessment basis in quantity,Quantity specifying the amount on which duty or tax or fee will be assessed.,"n..16,6",xsd:decimal,Quantity,,,3,41C; 50A; 56C,SpecificTaxBaseQuantity,specificTaxBaseQuantity,,0,1
+115,Duty/tax/fee rate,"Rate of duty, tax, or fee applicable to commodities or of tax applicable to services.","n..17,3",xsd:decimal,Numeric,,,3,40C; 50A; 56C,TaxRateNumeric,taxRateNumeric,,0,1
+111,Duty/tax/fee reduced assessed amount,Amount of deduction from a duty or tax.,"n..16,3",xsd:decimal,Amount,,,1,50A,DeductAmount,deductAmount,,0,1
+120,Duty/tax/fee reduced assessed amount,"Amount of assessed duty, tax or fee due (includes all types of charges and duties) and amount of reduction (if applicable). Assessed per duty, tax or fee type by item and/or declaration.","n..16,3",xsd:decimal,Amount,,,2,57C; 94A,TaxAssessedAmount,taxAssessedAmount,,0,1
+113,Duty/tax/fee type code,Code specifying a type of duty or tax applicable to commodities or a type of tax or fee applicable to services.,an..3,xsd:string,Code,UN/EDIFACT code list 5153 OR User code list,,1,50A,TypeCode,typeCode,,0,1
+R160,Economic operator identifier,Identification of an economic operator in whose premises the goods can be controlled.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,50C,ID,id,S009 identification,0,1
+419,Effects description,Description of personal belongings in the possession of individual crew members or passengers which according to regulations in force at the location of arrival of a means of transport are dutiable or subject to prohibitions or restrictions.,an..256,xsd:string,Text,,,1,65B,Description,description,,0,1
+524,Effects description code,"Code specifying the type of personal belongings in the possession of individual crew members or passengers, which according to regulations in force at the place of arrival of a means of transport, are dutiable or subject to prohibitions or restrictions.",an..3,xsd:string,Code,To be defined by IMO,,1,65B,DescriptionTypeCode,descriptionTypeCode,,0,1
+418,Effects identifier,Identification of the personal effects.,an..35,xsd:string,Identifier,,,1,65B,ID,id,,0,1
+420,Effects quantity,Quantity specifying the number of personal belongings in the possession of individual crew members or passengers which according to regulations in force at the place of arrival of a means of transport are dutiable or subject to prohibitions or restrictions.,"n..16,6",xsd:decimal,Quantity,,,1,65B,QuantityQuantity,quantityQuantity,,0,1
+272,Elected entry date/time,Date and time used at the discretion of the filer for duty calculation of non-quota goods when there is no immediate transport entry date (related to immediate delivery).,an..35,xsd:dateTime,Date Time,,,1,50A,ElectedEntryDateTime,electedEntryDateTime,,0,1
+489,Embarkation date/time,Date and time of embarkation of a person on board.,an..35,xsd:dateTime,Date Time,,,1,64B,EmbarkationDateTime,embarkationDateTime,,0,1
+L093,Embarkation location identifier,Identification of a port or location of embarkation.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,64B,ID,id,S003 identification,0,1
+L092,Embarkation location name,Name of a port or location of embarkation.,an..256,xsd:string,Text,,,1,64B,Name,name,S002 name,0,1
+394,Endorsement type code,Code specifying the type of special service a conveyance crew member is allowed to perform.,an..3,xsd:string,Code,User code list,,1,39A,EndorsementTypeCode,endorsementTypeCode,,0,1
+600,Entitlements description,Description of the entitlements available.,an..70,xsd:string,Text,,,1,63C,EntitlementsDescription,entitlementsDescription,,0,1
+G004,Entry office identifier,Identification of the regulatory office at which the goods enter the customs territory of destination.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,51A,ID,id,S001 identification,0,1
+159,Equipment identifier,"Identification of the equipment (e.g. unit load device by marks, letters, and/or numbers).",an..17,xsd:string,Identifier,"ISO 6346, IATA",,2,31B; 73B,ID,id,,0,1
+R094,Equipment owner identifier,Identification of the owner of the transport equipment.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,52A,ID,id,S009 identification,0,1
+152,Equipment size and type code,Code specifying the characteristics (e.g. size and type of a piece of transport equipment).,an..10,xsd:string,Code,"ISO, IATA, EDIFACT (8053 or 8155) OR User code list",,1,31B,CharacteristicCode,characteristicCode,,0,1
+151,Equipment supplier type code,Code specifying a type of party that is the supplier of transport equipment.,n1,xsd:decimal,Code,UN/EDIFACT code list 8077,TransportEquipmentSupplierPartyTypeCode,1,31B,SupplierPartyTypeCode,supplierPartyTypeCode,,0,1
+377,Error code,Code specifying a data validation error.,an..8,xsd:string,Code,User code list,,1,53A,ValidationCode,validationCode,,0,1
+095,Error condition override code,Code specifying a request to override automatic processing procedures.,an..3,xsd:string,Code,User code list,,1,03A,RequestOverrideCode,requestOverrideCode,,0,1
+488,Error description,Description of a data validation error.,an..512,xsd:string,Text,,,1,53A,Description,description,,0,1
+498,Estimated/actual indicator,Indicator to differentiate between estimated and actual information (e.g. estimated and actual offices of entry or estimated and actual date of arrival).,an1,xsd:boolean,Indicator,,,7,09A; 10C; 11C; 15A; 31C; 51A; 98B,ActualIndicator,actualIndicator,,0,1
+356,Event end date/time,Date and time at which a specified event is completed.,an..35,xsd:dateTime,Date Time,,,7,25C; 38A; 60B; 80B; 84B; 86B; 90A,EventEndDateTime,eventEndDateTime,,0,1
+622,Event name,Name of the exhibition in cases where goods are sent from the territory of the exporting Party for exhibition in another country and sold during or after the exhibition for importation into the territory of a Party.,an..70,xsd:string,Text,,,1,69C,Name,"name
+name",,0,1
+355,Event start date/time,Date and time at which a specified event becomes effective.,an..35,xsd:dateTime,Date Time,,,3,38A; 60B; 90A,EventStartDateTime,eventStartDateTime,,0,1
+623,Event type code,Code specifying the type of an exhibition event.,an..3,xsd:string,Code,User code list,,1,69C,TypeCode,"typeCode
+typeCode",,0,1
+405,Examination image,Digital information resulting from an inspection or examination (e.g. x-ray scan of a container).,NA,xsd:base64Binary,Binary Object,,,1,83B,ExaminationImageBinaryObject,examinationImageBinaryObject,,0,1
+L029,Examination location identifier,Identification of a location where goods are to be examined if different from the specified goods item location.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,54A,ID,id,S003 identification,0,1
+L069,Examination location name,Name of the location where goods are to be examined if different from the specified goods item location.,an..256,xsd:string,Text,,,1,54A,Name,name,S002 name,0,1
+L113,Examination location type code,Code specifying the type of examination place.,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,54A,TypeCode,typeCode,S004 type,0,1
+118,Exchange rate,Rate at which one specified currency is expressed in another specified currency.,"n..12,8",xsd:decimal,Numeric,,,2,39C; 40A,RateNumeric,rateNumeric,,0,1
+R076,Exhibitor identifier,Identification of the party who offers items for exhibit or show.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,55A,ID,id,S009 identification,0,1
+R075,Exhibitor name,Name of the party who is offering the items for exhibit or show.,an..70,xsd:string,Text,,,1,55A,Name,name,S008 name,0,1
+024,Exit date/time,"Date and time when the goods depart from last port, airport, or border post of customs territory whence consigned (country of export).",an..35,xsd:dateTime,Date Time,,,1,67A,ExitDateTime,exitDateTime,,0,1
+G005,Exit office identifier,Identification of the location of the regulatory office at which the goods leave or are intended to leave the customs territory of dispatch.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,56A,ID,id,S001 identification,0,1
+411,Expected arrival of goods in the country of destination date/time,Date and time that goods are expected to arrive in the country of destination.,an..35,xsd:dateTime,Date Time,,,1,28A,ExpectedArrivalDateTime,expectedArrivalDateTime,,0,1
+G027,Export office identifier,Identification of the office where the export formalities are completed.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,49C,ID,id,S001 identification,0,1
+417,Exported to date in current year quantity,Quantity specifying the total number of specimens exported in the current calendar year (1 January to 31 December) (including those covered by the present permit).,n..15,xsd:decimal,Quantity,,,1,65A,ExportedInCurrentYearQuantity,exportedInCurrentYearQuantity,,0,1
+R032,Exporter identifier,"Identification of the party who makes, or on whose behalf the export declaration is made, and who is the owner of the goods or has similar rights of disposal over them at the time when the declaration is accepted.",an..35,xsd:string,Identifier,,,1,57A,ID,id,S009 identification,0,1
+R031,Exporter name,"Name of the person who makes, or on whose behalf the export declaration is made, and who is the owner of the goods or has similar right of disposal over them at the time when the declaration is accepted.",an..70,xsd:string,Text,,,1,57A,Name,name,S008 name,0,1
+L051,Facility location identifier,Identification of a building or location that provides a particular service or is used for a particular industry.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,58A,ID,id,S003 identification,0,1
+L050,Facility location name,Name of the building or location that provides a particular service or is used for a particular industry.,an..256,xsd:string,Text,,,1,58A,Name,name,S002 name,0,1
+L047,Facility type code,Code specifying the facility type.,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,58A,TypeCode,typeCode,S004 type,0,1
+421,Family name,Family name of a person as mentioned in an official document.,an..70,xsd:string,Text,,,1,60C,FamilyName,familyName,,0,1
+611,Fare type description,Description of the applicable fare type.,an..70,xsd:string,Text,,,1,64C,FareTypeDescription,fareTypeDescription,,0,1
+R077,Feedlot name,Name of a commercial establishment that feeds livestock.,an..70,xsd:string,Text,,,1,59A,Name,name,S008 name,0,1
+R078,Feedlot party identifier,Identification of a commercial establishment that feeds livestock.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,59A,ID,id,S009 identification,0,1
+L084,Final transport means loading location identifier,Identification of a location where a consignment is placed aboard the final means of transport for the journey to a customs territory of a country or union of countries.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,60A,ID,id,S003 identification,0,1
+612,Financial card expiration date/time,Date and time of expiry up to which this financial card is valid.,an..35,xsd:dateTime,Date Time,,,1,67C,ExpirationDateTime,expirationDateTime,,0,1
+607,Financial card holder name,"Name of the cardholder as it appears on this financial card.
+This may include both an individual authorized to use the card as well as the organization that owns the card.",an..70,xsd:string,Text,,,1,67C,HolderName,holderName,,0,1
+608,Financial card identifier,Identification of the financial card.,an..35,xsd:string,Identifier,,,1,67C,ID,id,,0,1
+172,First port of arrival in customs territory date/time,"Date and time of arrival (actual or scheduled) of the means of transport at the first port (e.g. seaport, airport, freight terminal, rail station).",an..35,xsd:dateTime,Date Time,,,2,11C; 15A,ArrivalDateTime,arrivalDateTime,,0,1
+468,First product best before date/time,Date and time best before of the first product in a range.,an..35,xsd:dateTime,Date Time,,,1,03C,FirstBestBeforeDateTime,firstBestBeforeDateTime,,0,1
+469,First product expiration (expiry) date/time,"Date and time of expiration of the document (e.g. license, visa, permit, certificate).",an..35,xsd:dateTime,Date Time,,,1,03C,FirstExpiryDateTime,firstExpiryDateTime,,0,1
+388,Flashpoint temperature,Measure of the flashpoint temperature of dangerous goods.,an..8,xsd:decimal,Measure,,,2,12C; 20B,FlashpointMeasure,flashpointMeasure,,0,1
+273,Free trade zone commodity status assignment date/time,"Date and time of filing that corresponds to the current status of the commodity in the free trade zone (e.g. the original admission filing, the filing of a status change request).",an..35,xsd:dateTime,Date Time,,,1,12B,RequestedAssignmentDateTime,requestedAssignmentDateTime,,0,1
+L066,Free trade zone identifier,Identification of Free Trade Zone (or Foreign Free Zone) where a particular consignment is to be or has been located.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,61A,ID,id,S003 identification,0,1
+L065,Free trade zone name,Name of Free Trade Zone (or Foreign Free Zone) were a particular consignment is to be or has been located.,an..256,xsd:string,Text,,,1,61A,Name,name,S002 name,0,1
+303,Free trade zone status code,Code specifying that consignment into a free trade zone is a preliminary or final shipment.,an..3,xsd:string,Code,UN/EDIFACT code list 4405,,1,67A,FreeTradeZoneStatusCode,freeTradeZoneStatusCode,,0,1
+117,Freight costs amount,"Amount indicating the total costs incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance (i.e., to the extent that they relate to the freight cost).","n..16,3",xsd:decimal,Amount,,,1,41A,FreightChargeAmount,freightChargeAmount,,0,1
+310,Freight rate amount,Amount of actual freight rate charged for each mode of transportation used for an import or export freight movement.,"n..15,2",xsd:decimal,Amount,,,1,62A,ActualRateAmount,actualRateAmount,,0,1
+308,Freight rate quantity,Quantity specifying the freight rate used such as 100 (if per 100 weight) 1000 if for 1000 kg.,n..9,xsd:decimal,Quantity,,,1,62A,RateQuantity,rateQuantity,,0,1
+309,Freight rate type code,"Code specifying the freight rate type: ocean, foreign inland, domestic inland, etc.",an..3,xsd:string,Code,UN/EDIFACT code list 5419,RateTypeCode,1,62A,RateTypeCode,rateTypeCode,,0,1
+MD26,Functional definition,Definition of the function of the message.,an..512,xsd:string,Text,,,1,3MD,FunctionalDefinition,functionalDefinition,,0,1
+D026,Functional identifier,Identification of a specific information exchange.,an..70,xsd:string,Identifier,,,5,02A; 42A; 58C; 74B; 999,FunctionalReferenceID,functionalReferenceId,S030 functionalReference,0,1
+427,Gender code,Code specifying the gender of a person.,an..3,xsd:string,Code,UN/EDIFACT code list 3499,PersonGenderCode,1,60C,GenderCode,genderCode,,0,1
+MD12,Geopolitical context identifier,Identification of where the business process is to be conducted.,an..35,xsd:string,Identifier,"ISO 3166 including ISO 3166_1 and ISO 3166_2.
+Default value ""ALL"" if no restrictions apply.",,1,2MD,GeopoliticalID,geopoliticalId,,0,1
+422,Given name,Given name of a person as mentioned in an official document.,an..70,xsd:string,Text,,,1,60C,GivenName,givenName,,0,1
+L023,Goods consigned location name,Name of the location in a country from which the goods were initially dispatched to the importing country.,an..256,xsd:string,Text,,,1,63A,Name,name,S002 name,0,1
+L024,Goods consigned location/country identifier,Identification of the location in country or country from which the goods were initially dispatched to the importing country.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR ISO 3166-1,,1,63A,ID,id,S003 identification,0,1
+137,Goods description,"Description of the nature of a goods item sufficient to identify it for cross-border regulatory purposes such as customs, phytosanitary, statistical or transport.",an..512,xsd:string,Text,,,1,23A,Description,description,,0,1
+332,Goods group code,Code specifying general character or structure held in common by goods considered as a group.,an..3,xsd:string,Code,UN/EDIFACT code list 7059,GoodsGroupNameCode,1,23A,GoodsGroupCode,goodsGroupCode,,0,1
+331,Goods group name,Name of the general character or structure held in common by goods considered as a group.,an..70,xsd:string,Text,,,1,23A,GoodsGroupName,goodsGroupName,,0,1
+L017,Goods location identifier,Identification of the location of goods.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,64A,ID,id,S003 identification,0,1
+L016,Goods location name,Name of the location where goods are located.,an..256,xsd:string,Text,,,1,64A,Name,name,S002 name,0,1
+L110,Goods location type code,Code specifying the type of goods location.,an..3,xsd:string,Code,"UN/EDIFACT code list 3227
+For use with the EU CDM:
+- Code A Designated location
+- Code B Authorised place
+- Code C Approved place
+- Code D Other",,1,64A,TypeCode,typeCode,S004 type,0,1
+479,Goods measure function code,Code specifying the purpose of the measurement.,an..3,xsd:string,Code,UN/EDIFACT code list 6311,GoodsMeasureFunctionCode,1,65A,FunctionCode,functionCode,,0,1
+L004,Goods receipt location identifier,Identification of the location at which the goods have been or are to be received by the consignee.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,66A,ID,id,S003 identification,0,1
+L003,Goods receipt location name,Name of the location at which the goods have been or are to be received by the consignee.,an..256,xsd:string,Text,,,1,66A,Name,name,S002 name,0,1
+094,Goods status code,Code specifying the status of goods as identified by customs for regulation purposes or as a result of an action by the declarant or government agency.,an..3,xsd:string,Code,UN/EDIFACT code list 4405 OR User code list,,4,28A; 29A; 67A; 68A,GoodsStatusCode,goodsStatusCode,,0,1
+466,Goods taking over date/time,Date and time when the goods are taken over.,an..35,xsd:dateTime,Date Time,,,1,01A,TakingOverGoodsDateTime,takingOverGoodsDateTime,,0,1
+R080,Government officer identifier,Identification of a person appointed to some position of responsibility or authority in the government.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,69A,ID,id,S009 identification,0,1
+R079,Government officer name,Name of a person appointed to some position of responsibility or authority in the government.,an..70,xsd:string,Text,,,1,69A,Name,name,S008 name,0,1
+166,Government procedure code,Code specifying a procedure.,an..7,xsd:string,Code,"UN/EDIFACT code list 7365
+For Customs: User code list, categorized based on the revised Kyoto Convention",,1,70A,CurrentCode,currentCode,,0,1
+353,Government procedure description,Description of a government procedure.,an..256,xsd:string,Text,,,1,70A,Description,description,,0,1
+R081,Government service requestor identifier,"Identification of the person or party requesting inspection, grading, or other government service.",an..35,xsd:string,Identifier,,,1,71A,ID,id,S009 identification,0,1
+R082,Government service requestor name,"Name of the person or party requesting inspection, grading or other government service.",an..70,xsd:string,Text,"International code list (e.g. DUNS, EAN) OR User code list",,1,71A,Name,name,S008 name,0,1
+132,Gross tonnage,"Measure of the overall size of a ship determined in accordance with the provisions of the international convention on tonnage measurement of ships, 1969.","n..14,3",xsd:decimal,Measure,,,1,15A,GrossWeightMeasure,grossWeightMeasure,,0,1
+470,Gross volume,"Measure of the gross volume of the item, including unoccupied volume of the packaging.","n..16,6",xsd:decimal,Measure,,,1,65A,GrossVolumeMeasure,grossVolumeMeasure,,0,1
+131,Gross weight,Weight of goods including packing but excluding carrier's equipment.,"n..16,6",xsd:decimal,Measure,,,1,65A,GrossWeightMeasure,grossWeightMeasure,,0,1
+R084,Grower identifier,Identification of the person or organization who grows commercial crops.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,72A,ID,id,S009 identification,0,1
+R083,Grower name,Name of the person or organization who grows commercial crops.,an..70,xsd:string,Text,,,1,72A,Name,name,S008 name,0,1
+499,Guarantee access code,Code specifying access as associated with a given guarantee reference number.,an..4,xsd:string,Code,User code list,,1,90A,AccessCode,accessCode,,0,1
+621,Guarantee activity type code,Code specifying the type of activity being guaranteed.,an..3,xsd:string,Code,User code list,,1,90A,ActivityTypeCode,activityTypeCode,,0,1
+620,Guarantee amount,Amount indicating the total value of the guarantee.,"n..16,3",xsd:decimal,Amount,,,1,90A,ValueAmount,valueAmount,,0,1
+232,Guarantee invalid country code,Code specifying the country where the guarantee is invalid.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,90A,InvalidTransitCountryCode,invalidTransitCountryCode,,0,1
+G014,Guarantee office identifier,Identification of the location of a guarantee office.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,14C,ID,id,S001 identification,0,1
+100,Guarantee reference identifier,"Identification of the undertaking given as a written guarantee in cash, bond, or by other such means in order to ensure that an obligation will be fulfilled by reference number.",an..35,xsd:string,Identifier,,,2,90A; 92B,ReferenceID,referenceId,,0,1
+092,Handling instructions,Directions for handling a consignment and/or delivery directions for a shipment.,an..256,xsd:string,Text,,,1,73A,Instructions,instructions,,0,1
+093,Handling instructions code,Code specifying the directions for handling a shipment and/or delivery for a shipment.,an..3,xsd:string,Code,UN/EDIFACT code list 4079,HandlingCode,1,73A,InstructionsCode,instructionsCode,,0,1
+T016,Harvesting transport means identifier,Identification of the harvesting transport means.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,76B,ID,id,S050 identification,0,1
+565,Hash code,Hash code of the binary file.,an..256,xsd:string,Text,,,1,72B,HashCode,hashCode,,0,1
+566,Hash code algorithm ID code,Code specifying the algorithm used to calculate the hash code (e.g. MD5).,an..6,xsd:string,Code,,,1,72B,HashCodeAlgorithmIDCode,hashCodeAlgorithmIdCode,,0,1
+507,Hazard class identifier,Identification of the hazard class applicable to dangerous goods as defined by the relevant regulation authority such as the IMDG Class Number of the SOLAS Convention of IMO and the ADR/RID Class Number for the road/rail environment.,an..7,xsd:string,Identifier,,,1,12C,HazardClassID,hazardClassId,,0,1
+570,Heavy or bulky goods indicator,Indicator stating that the goods are of a heavy or bulky nature and therefore cannot be transported in a sealable transport equipment.,an1,xsd:boolean,Indicator,,,1,28A,HeavyOrBulkyGoodsIndicator,heavyOrBulkyGoodsIndicator,,0,1
+520,House identifier,Identification of a house by number.,an..17,xsd:string,Identifier,,,1,04A,HouseNumberID,houseNumberId,,0,1
+521,House number addition,Identification of a house by additional number.,an..17,xsd:string,Text,,,1,04A,HouseNumberAddition,houseNumberAddition,,0,1
+R147,Identification issuing country code,Code specifying the issuing country of the identification.,a2,xsd:string,Code,ISO 3166-1,CountryCode,79,01B; 01C; 02B; 02C; 03B; 04B; 05A; 06B; 08C; 09B; 10B; 12A; 13A; 13B; 16A; 16B; 16C; 17B; 17C; 18A; 18B; 18C; 19A; 19B; 20A; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 36A; 36B; 37A; 37B; 39A; 40B; 41B; 42B; 43A; 44A; 47A; 48A; 49A; 4MD; 50B; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 5MD; 69B; 70B; 71A; 71B; 72A; 74A; 75A; 76A; 77A; 80A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 98A,IdentificationIssuingCountryCode,identificationIssuingCountryCode,S057 identificationIssuingCountry,0,1
+550,Identification issuing country code,Code specifying the issuing country of the identification.,a2,xsd:string,Code,ISO 3166-1,CountryCode,2,08B; 23C,IdentificationIssuingCountryCode,identificationIssuingCountryCode,,0,1
+R153,IMO company identifier,Identification of the company shown in the Continuous Synopsis Record (CSR).,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,33C,ID,id,S009 identification,0,1
+R152,IMO company name,Name of the company shown in the Continuous Synopsis Record (CSR).,an..70,xsd:string,Text,,,1,33C,Name,name,S008 name,0,1
+271,Importation into port limits date/time,Date and time on which the conveyance transporting the merchandise from the foreign country arrived within the limits of the domestic port with the intent to unload.,an..35,xsd:dateTime,Date Time,,,1,15A,ImportationIntoPortLimitsDateTime,importationIntoPortLimitsDateTime,,0,1
+R038,Importer identifier,"Identification of a party who makes, or on whose behalf a customs clearing agent or other authorized person makes, an import declaration. This may include a person who has possession of the goods or to whom the goods are consigned.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,74A,ID,id,S009 identification,0,1
+R037,Importer name,"Name of the party who makes, or on whose behalf a customs clearing agent or other authorized person makes, an import declaration. This may include a person who is in possession of the goods or to whom the goods are consigned.",an..70,xsd:string,Text,,,1,74A,Name,name,S008 name,0,1
+090,Incoterms code,Code specifying the delivery or transport terms.,a3,xsd:string,Code,UN/EDIFACT code list 4053,TradetermConditionCode,1,22B,ConditionCode,conditionCode,,0,1
+545,Incoterms country code,Code specifying the country code to cover the cases when UNLOCODE is not available to define a delivery terms location in IM/EX declarations.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,22B,CountryCode,countryCode,,0,1
+089,Incoterms description,Description of delivery or transport terms.,an..70,xsd:string,Text,,,1,22B,Description,description,,0,1
+543,Incoterms location identifier,"Identification of the location or port of departure, shipment or destination, as required under the applicable delivery term.",an..17,xsd:string,Identifier,UN/LOCODE,,1,22B,LocationID,locationId,,0,1
+542,Incoterms location name,"Name of the location or port of departure, shipment or destination, as required under the applicable terms of delivery (i.e., Incoterms).",an..256,xsd:string,Text,,,1,22B,LocationName,locationName,,0,1
+MD11,Industry classification context identifier,Identification of the relevant trading partner industries.,an..35,xsd:string,Identifier,"UN International Standard Industrial Classification (ISIC).
+Default value ""ALL"" if no restrictions apply.",,1,2MD,IndustryClassificationID,industryClassificationId,,0,1
+471,INF ship class code,"Code specifying the International Safe Carriage of Packaged Irradiated Nuclear Fuel, Plutonium and High-Level Radioactive Wastes on Board Ships, as assigned to a ship carrying INF cargo.",an..4,xsd:string,Code,Chapter VII of SOLAS (Carriage of dangerous goods),INFShipClassCode,1,15A,INFShipClassCode,infShipClassCode,,0,1
+430,Information verified indicator,Indicator if the information is verified (boolean).,n1,xsd:boolean,Indicator,,,1,60C,InformationVerifiedIndicator,informationVerifiedIndicator,,0,1
+316,Innermost packaging unit quantity,Quantity specifying the total number of individual units packaged within the smallest unit of containment.,n..8,xsd:decimal,Quantity,,,1,24A,InnermostUnitQuantity,innermostUnitQuantity,,0,1
+480,Insurance amount,Amount of premium paid/payable to the insurance company for insuring the goods.,"n..16,3",xsd:decimal,Amount,,,1,41A,InsuranceAmount,insuranceAmount,,0,1
+R040,Insurance company identifier,Identification of a company engaged in the business of insurance.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,75A,ID,id,S009 identification,0,1
+R039,Insurance company name,Name of the company engaged to provide the insurance for the cargo.,an..70,xsd:string,Text,,,1,75A,Name,name,S008 name,0,1
+330,Intended use code,Code specifying the intended use of the commodity.,an..17,xsd:string,Code,WCO code list/IntendedUseCode OR User code list,IntendedUseCode,1,23A,IntendedUseCode,intendedUseCode,,0,1
+327,Intended use statement,Statement regarding the intended use of the commodity.,an..256,xsd:string,Text,,,1,23A,IntendedUseStatement,intendedUseStatement,,0,1
+R106,Intermediate carrier identifier,"Identification of the carrier who transports the goods from consignor to exporting carrier and/or from importing carrier to consignee or between other named points, for a transit (in-bond) movement.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,76A,ID,id,S009 identification,0,1
+R105,Intermediate carrier name,Name of the carrier who transports the goods from consignor to exporting carrier and/or from importing carrier to consignee or between other named points.,an..70,xsd:string,Text,,,1,76A,Name,name,S008 name,0,1
+R036,Intermediate consignee identifier,"Identification of the intermediate consignees who may take possession of the goods from consignor to exporting carrier and/or from importing carrier to consignee, for a transit (in-bond) movement.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,77A,ID,id,S009 identification,0,1
+D058,Invoice amount,Amount indicating the total of a given invoice.,"n..16,3",xsd:decimal,Amount,,,1,78A,AmountAmount,amountAmount,S022 amount,0,1
+D016,Invoice identifier,Identification of an invoice by reference number.,an..70,xsd:string,Identifier,,,1,78A,ID,id,S031 identification,0,1
+D015,Invoice issue date/time,Date and time of issue of an invoice.,an..35,xsd:dateTime,Date Time,,,1,78A,IssueDateTime,issueDateTime,S032 issue,0,1
+D063,IPR identifier,"Identification of the Intellectual Property Rights, for example the unique number affixed by the authentication agency to a IPR for identification purposes.",an..25,xsd:string,Identifier,,,1,68B,ID,id,S031 identification,0,1
+R130,ISPS responsible party identifier,Identification of the International Ship and Port Facility Security Code (ISPS) responsible party.,an..35,xsd:string,Identifier,,,1,80A,ID,id,S009 identification,0,1
+R085,ISPS responsible party name,Name of the International Ship and Port Facility Security Code (ISPS) responsible party.,an..70,xsd:string,Text,,,1,80A,Name,name,S008 name,0,1
+R168,Issuer identifier,Identification of the party having issued the document.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,70C,ID,id,S009 identification,0,1
+R167,Issuer name,Name of the party having issued the document.,an..70,xsd:string,Text,,,1,70C,Name,name,S008 name,0,1
+112,Item amount,Amount due for each chargeable item of goods or services.,"n..16,3",xsd:decimal,Amount,,,1,79A,ItemChargeAmount,itemChargeAmount,,0,1
+208,Itinerary arrival date/time,Date and time of arrival at itinerary port of the means of transport.,an..35,xsd:dateTime,Date Time,,,3,09A; 45A; 81A,ArrivalDateTime,arrivalDateTime,,0,1
+209,Itinerary departure date/time,Date and time of departure at itinerary port of the means of transport.,an..35,xsd:dateTime,Date Time,,,3,09A; 45A; 81A,DepartureDateTime,departureDateTime,,0,1
+L006,Itinerary location identifier,Identification of a single port of call or other location of the itinerary of a means of transport.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,81A,ID,id,S003 identification,0,1
+L005,Itinerary location name,Name of a single port of call or other location in the itinerary of a means of transport.,an..256,xsd:string,Text,,,1,81A,Name,name,S002 name,0,1
+251,Itinerary location type code,Code specifying the type of the itinerary location.,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,81A,FunctionCode,functionCode,,0,1
+G009,Itinerary office identifier,Identification of the location of the government agency office related to the itinerary.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,82B,ID,id,S001 identification,0,1
+423,Job title,Job title or the rank of a person.,an..70,xsd:string,Text,,,1,60C,Designation,designation,,0,1
+582,Job title code,Code specifying the job title or the rank of a person.,an..3,xsd:string,Code,ISO 28005 annex C,,1,60C,JobTitleCode,jobTitleCode,,0,1
+274,Jurisdiction (authority) date/time,"Date and time of landing, bringing, or introduction at any place subject to a country's jurisdiction whether or not such landing, bringing, or introduction constitutes an import (e.g. the date of import used in US tariff laws).",an..35,xsd:dateTime,Date Time,,,3,23A; 42A; 999,JurisdictionDateTime,jurisdictionDateTime,,0,1
+L075,Landing location identifier,"Identification of a landing location, wharf, or quay where ships may tie up and load, unload, or lie at rest.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,82A,ID,id,S003 identification,0,1
+L074,Landing location name,"Name of the location of landing, wharf, or quay where ships may tie up and load, unload, or to lie at rest.",an..256,xsd:string,Text,,,1,82A,Name,name,S002 name,0,1
+D041,Language code,Code specifying the language used or requested.,an..3,xsd:string,Code,UN/EDIFACT code list 3453,LanguageCode,5,02A; 42A; 58C; 74B; 999,LanguageCode,languageCode,S036 language,0,1
+472,Last product best before date/time,Date and time best before of the last product in a range.,an..35,xsd:dateTime,Date Time,,,1,03C,LastBestBeforeDateTime,lastBestBeforeDateTime,,0,1
+473,Last product expiration (expiry) date/time,"Date and time of expiration of the document (e.g. license, visa, permit, certificate).",an..35,xsd:dateTime,Date Time,,,1,03C,LastExpiryDateTime,lastExpiryDateTime,,0,1
+585,Latitude,Angular distance of a place north or south of the Earth's equator.,an..17,xsd:decimal,Measure,,,1,48C,LatitudeMeasure,latitudeMeasure,,0,1
+264,Limit date/time,Date and time by when the event has to be completed.,an..35,xsd:dateTime,Date Time,,,4,03A; 24B; 38A; 80B,LimitDateTime,limitDateTime,,0,1
+221,Loading location arrival date/time,Date and time when declared goods were/will be carried into designated location.,an..35,xsd:dateTime,Date Time,,,2,43B; 83A,ArrivalDateTime,arrivalDateTime,,0,1
+169,Loading location departure date/time,Date and time / scheduled date and time of the goods departing from the place of loading.,an..35,xsd:dateTime,Date Time,,,1,83A,DepartureDateTime,departureDateTime,,0,1
+L010,Loading location identifier,"Identification of a seaport, airport, freight terminal, rail station or other location at which goods are loaded onto the means of transport being used for their carriage.",an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,83A,ID,id,S003 identification,0,1
+L009,Loading location name,"Name of a seaport, airport, freight terminal, rail station or other location at which goods are loaded onto the means of transport being used for their carriage.",an..256,xsd:string,Text,,,1,83A,Name,name,S002 name,0,1
+512,Location in document,Location in the document in syntax (e.g. XPath).,an..512,xsd:string,Text,,,1,97A,Location,location,,0,1
+586,Longitude,Angular distance of a place east or west of the standard (Greenwich) meridian.,an..17,xsd:decimal,Measure,,,1,48C,LongitudeMeasure,longitudeMeasure,,0,1
+D065,Loyalty program identifier,Identification of the loyalty program.,an..35,xsd:string,Identifier,,,1,63C,ID,id,S031 identification,0,1
+D066,Loyalty program status description,Description of the membership status of the loyalty program.,an..70,xsd:string,Text,,,1,63C,StatusDescription,statusDescription,,0,1
+R086,LPCO authorized party identifier,"Identification of the party to whom the license, permit, certificate, or other required document (LPCO) is issued.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,85A,ID,id,S009 identification,0,1
+R087,LPCO authorized party name,"Name of the party to whom the license, permit, certificate, or other required document (LPCO) is issued.",an..70,xsd:string,Text,,,1,85A,Name,name,S008 name,0,1
+360,LPCO exemption code,"Code specifying the type of exemption from a license, permit, certificate, or other document (LPCO) or indication that no LPCO is required.",an.3,xsd:string,Code,UN/EDIFACT code list 4183,,1,02A,LPCOExemptionCode,lpcoExemptionCode,,0,1
+577,Main component indicator,Indicator if it's the main component of a product.,an1,xsd:boolean,Indicator,,,1,23A,MainComponentIndicator,mainComponentIndicator,,0,1
+442,Manufacture date/time,"Date and time that the commodity was manufactured, produced, or grown.",an..35,xsd:dateTime,Date Time,,,1,23A,ManufactureDateTime,manufactureDateTime,,0,1
+R043,Manufacturer identifier,Identification of a party which manufactures goods.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,86A,ID,id,S009 identification,0,1
+R042,Manufacturer name,Name of the party that manufactures goods.,an..70,xsd:string,Text,,,1,86A,Name,name,S008 name,0,1
+G021,Master data office identifier,Identification of the master data government agency office.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,45C,ID,id,S001 identification,0,1
+573,Master data office name,Name of the master data government agency office.,an..70,xsd:string,Text,,,1,45C,Name,name,,0,1
+R149,Master data party identifier,Identification of the party in the context of master data.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,28C,ID,id,S009 identification,0,1
+R148,Master data party name,Name of the party in the context of master data.,an..70,xsd:string,Text,,,1,28C,Name,name,S008 name,0,1
+516,Master data party short name,Short name of the party in the context of master data.,an..70,xsd:string,Text,,,1,28C,ShortName,shortName,,0,1
+G017,Master data recipient identifier,Identification of the regulatory office that receives the master data.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,26C,ID,id,S001 identification,0,1
+G016,Master data recipient type code,Code specifying the type of regulatory office that receives the master data.,an.3,xsd:string,Code,UN/EDIFACT code list 9415,GovernmentAgencyTypeCode,1,26C,TypeCode,typeCode,S058 type,0,1
+G019,Master data sender identifier,Identification of the regulatory office that sends the master data.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,27C,ID,id,S001 identification,0,1
+G018,Master data sender type code,Code specifying the type of regulatory office that sends the master data.,an.3,xsd:string,Code,UN/EDIFACT code list 9415,GovernmentAgencyTypeCode,1,27C,TypeCode,typeCode,S058 type,0,1
+404,Maximum storage requirement temperature,"Maximum temperature required to be maintained for a commodity, or in a container, or in a conveyance.",n..15,xsd:decimal,Measure,,,1,20B,MaximumStorageRequirementMeasure,maximumStorageRequirementMeasure,,0,1
+486,Means of transport maneuvering speed,Maneuvering speed of the means of transport at the pilot station location or port area entrance.,n..18,xsd:decimal,Measure,,,1,15A,ManeuveringSpeedMeasure,maneuveringSpeedMeasure,,0,1
+483,Means of transport width,Maximum distance from side to side of the means of transport.,n..18,xsd:decimal,Measure,,,1,15A,WidthMeasure,widthMeasure,,0,1
+D046,Message function code,Code specifying the function of a document.,n..2,xsd:decimal,Code,UN/EDIFACT code list 1225,DocumentFunctionCode,4,42A; 58C; 74B; 999,FunctionCode,functionCode,S028 function,0,1
+MD19,Message type code,Code specifying the WCO Type.,an..6,xsd:string,Code,WCO code list/WCOType,,1,3MD,WCOTypeCode,wcoTypeCode,,0,1
+403,Minimum storage requirement temperature,"Minimum temperature required to be maintained for a commodity, or in a container, or in a conveyance.",n..15,xsd:decimal,Measure,,,1,20B,MinimumStorageRequirementMeasure,minimumStorageRequirementMeasure,,0,1
+T037,Mode of connection transport means code,Code specifying the mode of transport used for connection.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,65C,ModeCode,modeCode,S055 mode,0,1
+T024,Mode of harvesting transport means code,Code specifying the mode of transport used for harvesting.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,76B,ModeCode,modeCode,S055 mode,0,1
+T020,Mode of transport at arrival code,Code specifying mode of transport used for carriage of the goods at arrival.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,10A,ModeCode,modeCode,S055 mode,0,1
+T021,Mode of transport at departure code,Code specifying the mode of transport used for the carriage of the goods at departure.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,46A,ModeCode,modeCode,S055 mode,0,1
+T022,Mode of transport crossing the border code,Code specifying mode of transport used for the carriage of the goods in crossing the border.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,15A,ModeCode,modeCode,S055 mode,0,1
+T023,Mode of transport used for transit code,Code specifying the mode of transport used for transit.,n1,xsd:decimal,Code,UN/Recommendation 19,TransportMeansModeCode,1,29B,ModeCode,modeCode,S055 mode,0,1
+T035,Mode/type of means of intermediate transport code,Code specifying the mode and type of means of transport which transports the goods from consignor to exporting carrier and from importing carrier to consignee.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,29B,IntermediateTransportMeansModeAndTypeIdentificationCode,intermediateTransportMeansModeAndTypeIdentificationCode,S054 intermediateTransportMeansModeAndTypeIdentification,0,1
+T025,Movement type description code,Code specifying a type of transport movement.,an..3,xsd:string,Code,UN/EDIFACT code list 8335,TransportMeansMovementDescriptionCode,1,15A,MovementDescriptionCode,movementDescriptionCode,S056 movementDescription,0,1
+446,National reference identifier,Identification of the government registration.,an..35,xsd:string,Identifier,,,1,91B,ID,id,,0,1
+450,National reference issuing country code,Code specifying the name of the national reference issuing country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,91B,IssuingCountryCode,issuingCountryCode,,0,1
+424,Nationality code,Code specifying the nationality of a person.,an..3,xsd:string,Code,UN/EDIFACT code list 3207,PersonNationalityCode,1,60C,NationalityCode,nationalityCode,,0,1
+T012,Nationality of means of transport at arrival code,Code specifying nationality of active means of transport used for the carriage of the goods at place of arrival (import).,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,10A,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+T013,Nationality of means of transport at departure code,Code specifying the nationality of the active means of transport used at the location of departure.,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,46A,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+T014,Nationality of means of transport crossing the border code,Code specifying nationality of the active means of transport used for the carriage of the goods in crossing the border.,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,15A,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+T015,Nationality of means of transport used for transit code,Code specifying the nationality of means of transport used for transit.,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,29B,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+T028,Nationality of passive means of transport code,Code specifying the nationality of passive transport means.,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,19C,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+T033,Nationality of transhipment means of transport code,Code specifying the nationality of transhipment means of transport.,a2,xsd:string,Code,UN/EDIFACT code list 8453,TransportMeansRegistrationNationalityCode,1,20C,RegistrationNationalityCode,registrationNationalityCode,S053 registrationNationality,0,1
+103,Nature of transaction code,Code specifying the nature of a transaction associated with a shipment.,n..2,xsd:decimal,Code,"WCO code list/TransactionNatureTypeCode (n1) + User code (n1)
+Remark:
+* First digit indicates WCO code table value;
+* Second digit can be used as additional user code to further define first digit",TransactionNatureTypeCode,2,67A; 68A,TransactionNatureCode,transactionNatureCode,,0,1
+128,Net net weight,Weight of the goods themselves without any packing.,"n..16,6",xsd:decimal,Measure,,,1,65A,NetNetWeightMeasure,netNetWeightMeasure,,0,1
+133,Net tonnage,"Measure of the useful capacity of a ship determined in accordance with the provisions of international convention on tonnage measurements of ships, 1969.","n..14,3",xsd:decimal,Measure,,,1,15A,NetWeightMeasure,netWeightMeasure,,0,1
+474,Net volume,"Measure of the gross volume of the item, excluding unoccupied volume of the packaging.","n..16,6",xsd:decimal,Measure,,,1,65A,NetVolumeMeasure,netVolumeMeasure,,0,1
+599,Net weight,Weight of goods including any packaging that normally go with the goods.,"n..16,6",xsd:decimal,Measure,,,1,65A,NetWeightMeasure,netWeightMeasure,,0,1
+R013,Non vessel operating carrier identifier,Identification of a common carrier that does not operate the vessels.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,88A,ID,id,S009 identification,0,1
+R046,Notify party identifier,Identification of a party to be notified.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,89A,ID,id,S009 identification,0,1
+R045,Notify party name,Name of party to be notified.,an..70,xsd:string,Text,,,1,89A,Name,name,S008 name,0,1
+627,Number of AEO members,Quantity specifying the number of members in a country’s Authorized Economic Operator (AEO) program.,n..6,xsd:decimal,Quantity,,,1,71C,MembersQuantity,membersQuantity,,0,1
+150,Number of containers,Quantity specifying the total number of freight containers or similar unit load devices.,n..6,xsd:decimal,Quantity,,,1,15A,TransportEquipmentQuantity,transportEquipmentQuantity,,0,1
+119,Number of crew,"Quantity specifying the total number of the members of the crew, including the captain/master, of a means of a transport.",n..4,xsd:decimal,Quantity,,,1,15A,CrewQuantity,crewQuantity,,0,1
+013,Number of loading lists,"Quantity specifying the number of loading lists, manifests or similar documents.",n..5,xsd:decimal,Quantity,,,3,42A; 74B; 999,LoadingListQuantity,loadingListQuantity,,0,1
+144,Number of packages,Quantity specifying the number of individual items packaged in such a way that they cannot be divided without first undoing the packing.,n..8,xsd:decimal,Quantity,,,2,84B; 93A,PackageQuantity,packageQuantity,,0,1
+140,Number of passengers,"Quantity specifying the total number of the passengers on board, embarking, or disembarking a means of transport.",n..4,xsd:decimal,Quantity,,,1,15A,PassengerQuantity,passengerQuantity,,0,1
+227,Number of seals,Quantity specifying the number of seals affixed.,n..4,xsd:decimal,Quantity,,,3,31B; 42A; 999,SealsAffixedQuantity,sealsAffixedQuantity,,0,1
+510,Number of split-consignments,Quantity specifying the total number of split-consignments for a transit declaration.,n..16,xsd:decimal,Quantity,,,2,42A; 999,SplitConsignmentQuantity,splitConsignmentQuantity,,0,1
+MD13,Official constraints context identifier,Identification of any legal restrictions or requirements on this business process.,an..35,xsd:string,Identifier,"Proposed guideline: Use relevant laws, treaties OR regulations : User code list and abbreviations are allowed. 
+Default value ""NONE"" if no restrictions apply.",,1,2MD,OfficialConstraintslID,officialConstraintslId,,0,1
+R017,Operator identifier,"Identification of the operator of a mode of transport (e.g. pilot, driver, master of vessel).",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,87A,ID,id,S009 identification,0,1
+R016,Operator name,"Name of the operator of a mode of transport (e.g. pilot, driver, master of vessel).",an..70,xsd:string,Text,,,1,87A,Name,name,S008 name,0,1
+R088,Operator of property identifier,Identification of the registered operator of a property.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,02B,ID,id,S009 identification,0,1
+R092,Organic certifying organization identifier,Identification of an accredited organization whose business it is to certify organic growth processes.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,91A,ID,id,S009 identification,0,1
+R091,Organic certifying organization name,Name of an accredited organization whose business it is to certify organic growth processes.,an..70,xsd:string,Text,,,1,91A,Name,name,S008 name,0,1
+501,Origin type code,Code specifying the differentiation between different types of origin (e.g. preferential and non-preferential country of origin codes).,an..3,xsd:string,Code,User code list,,1,92A,TypeCode,typeCode,,0,1
+181,Other charges/deductions amount,Amount added or subtracted from the total invoice price (depending on the trade terms) not previously taken into account when determining the customs value.,"n..16,3",xsd:decimal,Amount,,,1,58B,OtherChargeDeductionAmount,otherChargeDeductionAmount,,0,1
+522,P.O. box identifier,Identification of a Post-Office Box.,an..17,xsd:string,Identifier,,,1,04A,PostOfficeBoxID,postOfficeBoxId,,0,1
+440,Package dimension diameter,Diameter of the package.,n..15,xsd:decimal,Measure,,,1,93A,DiameterMeasure,diameterMeasure,,0,1
+402,Package dimension height,Height of the package.,n..15,xsd:decimal,Measure,,,1,93A,HeightMeasure,heightMeasure,,0,1
+367,Package dimension length,Length of the package.,n..15,xsd:decimal,Measure,,,1,93A,LengthMeasure,lengthMeasure,,0,1
+368,Package dimension width,Width of the package.,n..15,xsd:decimal,Measure,,,1,93A,WidthMeasure,widthMeasure,,0,1
+362,Package filler description,Description of the material found within a package used to cushion the commodity or otherwise empty space.,an..256,xsd:string,Text,,,1,24A,FillerDescription,fillerDescription,,0,1
+333,Package hierarchy code,"Code specifying the level of packaging (e.g. inner, intermediate, outer, shipment level).",an..3,xsd:string,Code,UN/EDIFACT code list 7075,PackageHierarchyCode,1,24A,HierarchyCode,hierarchyCode,,0,1
+366,Package level indicator,Indicator to identify if the package in an inner or outer package.,an..3,xsd:boolean,Indicator,,,1,24A,LevelIndicator,levelIndicator,,0,1
+345,Package markings,Description of the markings on a consumer level package.,an..512,xsd:string,Text,,,1,24A,Marking,marking,,0,1
+395,Package volume,Volume of the package.,"n..16,6",xsd:decimal,Measure,,,1,93A,VolumeMeasure,volumeMeasure,,0,1
+482,Package weight,"Weight of a package excluding all outer packing (e.g. 1 carton and its contents alone, without any further outer packaging, such as pallet and wrapping or banding).","n..16,6",xsd:decimal,Measure,,,1,93A,WeightMeasure,weightMeasure,,0,1
+342,Packaging certification indicator,"Indicator that the packaging has the proper certification regarding weight, capacity and usage.",an1,xsd:boolean,Indicator,,,1,24A,CertificationIndicator,certificationIndicator,,0,1
+R137,Packer identifier,Identification of the party packing goods.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,01C,ID,id,S009 identification,0,1
+R136,Packer name,Name of the party packing goods.,an..70,xsd:string,Text,,,1,01C,Name,name,S008 name,0,1
+344,Packing material description,Description of the type of material for packaging covered by UN/Recommendation 21.,an..256,xsd:string,Text,,,1,93A,PackingMaterialDescription,packingMaterialDescription,,0,1
+343,Packing method description,"Description of the method used in packing the commodity (e.g. hermetically sealed, repacked in original container).",an..3,xsd:string,Text,,,1,24A,PackingMethodDescription,packingMethodDescription,,0,1
+163,Party relationship indicator code,Code specifying the effect of relationship existing between two parties such as financial relationship.,an..3,xsd:string,Code,"UN/EDIFACT code list 7365 subset (codes 135, 136 and 137)",PartyRelationshipCode,1,41A,PartyRelationshipCode,partyRelationshipCode,,0,1
+T026,Passive transport means identifier,Identification of the passive transport means.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,19C,ID,id,S050 identification,0,1
+T036,Passive transport means type code,Code specifying the type of passive means of transport that is being transported by the active means of transport.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,19C,TypeCode,typeCode,S052 type,0,1
+R121,Payer identifier,Identification of a third person paying an amount of duty.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,56B,ID,id,S009 identification,0,1
+R120,Payer name,Name of a third person paying an amount of duty.,an..70,xsd:string,Text,,,1,56B,Name,name,S008 name,0,1
+378,Payment amount,"Amount actually paid, or to be paid.","n..16,3",xsd:decimal,Amount,,,1,94A,PaymentAmount,paymentAmount,,0,1
+376,Payment due date/time,Date and time when an amount due should be made available to the creditor under the terms of payment.,an..35,xsd:dateTime,Date Time,,,1,94A,DueDateTime,dueDateTime,,0,1
+014,Payment identifier,Identification of the payment of a duty or tax by reference number.,an..35,xsd:string,Identifier,,,1,94A,ReferenceID,referenceId,,0,1
+G003,Payment office identifier,Identification of the location of a government office where payment can be or has been made.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,95A,ID,id,S001 identification,0,1
+610,Payment type code,Code specifying the type of payment.,an..3,xsd:string,Code,WCO code list/PaymentTypeCode,PaymentTypeCode,1,94A,TypeCode,typeCode,,0,1
+L073,Permitted port identifier,Identification of the authorized office through which the authorized party is allowed to bring the goods identified on the LPCO.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,96A,ID,id,S003 identification,0,1
+614,Person on board identifier,Identification of the person on board.,an..35,xsd:string,Identifier,,,1,67B,ID,id,,0,1
+458,Person type code,"Code specifying the type of person (e.g. Crew member, Passenger, Stowaway).",an..3,xsd:string,Code,UN/EDIFACT code list 3035,,2,60C; 96B,TypeCode,typeCode,,0,1
+432,PNR identifier,Identification of the passenger by Passenger Name Record Locator Number (or unique identifier).,an..35,xsd:string,Identifier,,,1,66B,PNRID,pnrid,,0,1
+R097,Port facility security officer name,Name of the individual (person) designated as the port facility security officer responsible for port security requirements.,an..70,xsd:string,Text,,,1,98A,Name,name,S008 name,0,1
+L109,Port of arrival identifier,"Identification of the arrival location. This would be a port for sea, airport for air and border post for land crossing.",an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,11C,ID,id,S003 identification,0,1
+R155,Port reception facility provider identifier,Identification of the port reception facility provider.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,38C,ID,id,S009 identification,0,1
+R154,Port reception facility provider name,Name of the port reception facility provider.,an..70,xsd:string,Text,,,1,38C,Name,name,S008 name,0,1
+280,Position of conveyance in port,Location of conveyance in port.,an..70,xsd:string,Text,,,1,15A,ConveyancePortLocation,conveyancePortLocation,,0,1
+245,Postcode identifier,Identification of the postal zone or address.,an..17,xsd:string,Identifier,User code list,,1,04A,PostcodeID,postcodeId,,0,1
+MD04,Preparation date/time,Date and time locally when an interchange or a functional group was prepared.,an..35,xsd:dateTime,Date Time,,,1,1MD,PreparationDateTime,preparationDateTime,,0,1
+G015,Presentation office identifier,Identification of the location of a government office of presentation.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,15C,ID,id,S001 identification,0,1
+D010,Previous document date/time,Date and time of the previous document in accordance with national legislation.,an..35,xsd:dateTime,Date Time,,,1,99A,IssueDateTime,issueDateTime,S032 issue,0,1
+D018,Previous document identifier,Identification of the previous document by number.,an..70,xsd:string,Identifier,,,1,99A,ID,id,S031 identification,0,1
+D019,Previous document type code,Code specifying the type of document used for declaration previously presented.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,99A,TypeCode,typeCode,S042 type,0,1
+161,Previous government procedure code,"Code specifying the government procedure, if any, which has been applied to the goods prior to the application of a different government procedure.",an..7,xsd:string,Code,"UN/EDIFACT code list 7365
+For Customs: User code list, categorized based on the revised Kyoto Convention",,1,70A,PreviousCode,previousCode,,0,1
+584,Previous movement identifier,Identification of the movement reference number assigned by customs to the pre-arrival declaration that was lodged first for the relevant consignment.,an..35,xsd:string,Identifier,,,1,55C,PreviousMovementReferenceNumber,previousMovementReferenceNumber,,0,1
+171,Previously recorded declaration line number,Number pertaining to the line in a previous customs filing.,n..6,xsd:decimal,Numeric,,,1,99A,LineNumeric,lineNumeric,,0,1
+617,Principal add date/time,Date and time the bond user is added to the bond.,an..35,xsd:dateTime,Date Time,,,1,68C,AddDateTime,addDateTime,,0,1
+618,Principal delete date/time,Date and time the bond user is removed from the bond.,an..35,xsd:dateTime,Date Time,,,1,68C,UserDeleteDateTime,userDeleteDateTime,,0,1
+R166,Principal identifier,"Identification of the party (i.e., Principal, Co-principal, or User) who is responsible for fulfilling the obligations covered by the Customs bond or who benefits from being able to obligate a Customs bond.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,68C,ID,id,S009 identification,0,1
+R165,Principal name,"Name of the party (i.e., Principal, Co-principal, or User) who is responsible for fulfilling the obligations covered by the Customs bond or who benefits from being able to obligate a Customs bond.",an..70,xsd:string,Text,,,1,68C,Name,name,S008 name,0,1
+616,Principal rider action code,Code specifying the bond user rider action.,an..3,xsd:string,Code,User code list,,1,68C,RiderActionCode,riderActionCode,,0,1
+R133,Processor identifier,Identification of a party or person who has or will apply a process.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,70B,ID,id,S009 identification,0,1
+R134,Processor name,Name of the party or person who has or will apply a process.,an..70,xsd:string,Text,,,1,70B,Name,name,S008 name,0,1
+R035,Producer identifier,Identification of the party or person who has produced the product.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,01B,ID,id,S009 identification,0,1
+R034,Producer name,Name of the party or person who has produced the product.,an..70,xsd:string,Text,,,1,01B,Name,name,S008 name,0,1
+266,Product best before date/time,Date and time specifying when a product will be of best flavor or quality.,an..35,xsd:dateTime,Date Time,,,2,03C; 23A,ProductBestBeforeDateTime,productBestBeforeDateTime,,0,1
+MD10,Product classification context identifier,Identification of the goods or services concerned in the collaboration.,an..35,xsd:string,Identifier,"Use relevant HS codes OR text.
+Default value ""ALL"" if no restrictions apply.",,1,2MD,ProductClassificationID,productClassificationId,,0,1
+354,Product expiration date/time,"Date and time of expiration of the document (e.g. license, visa, permit, certificate).",an..35,xsd:dateTime,Date Time,,,2,03C; 23A,ProductExpiryDateTime,productExpiryDateTime,,0,1
+147,Product identifier,"Identification of an object, for example the unique number affixed by the manufacturer to a product for identification purposes.",an..25,xsd:string,Identifier,,,1,46B,ID,id,,0,1
+632,Program name,Name of the country’s program or partner profile.,an..35,xsd:string,Text,,,1,72C,ProgramName,programName,,0,1
+634,Program partner profile type code,"Code specifying the type of program or partner profile (e.g. MRA (Mutual Recognition Arrangement/Agreement), JWP (the Joint Work Plan), PGA (Participating Government Agency)).",an..3,xsd:string,Code,WCO code list/ProgramPartnerProfileTypeCode,ProgramPartnerProfileTypeCode,1,72C,Type,type,,0,1
+633,Program partner signed date/time,Date and time the country’s program or partner profile was signed.,an..35,xsd:dateTime,Date Time,,,1,72C,SignedDateTime,signedDateTime,,0,1
+508,Proper shipping name,Name used to describe the hazard properties and the composition of dangerous goods in accordance with United Nations Recommendations on the Transport of Dangerous Goods Model Regulations. Volume 1.,an..256,xsd:string,Text,,,1,12C,ProperShippingName,properShippingName,,0,1
+R057,Property operator name,Name of the registered operator of a property.,an..70,xsd:string,Text,,,1,02B,Name,name,S008 name,0,1
+R098,Property owner identifier,Identification of the owner of the property.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,03B,ID,id,S009 identification,0,1
+R095,Property owner name,Name of the owner of the property.,an..70,xsd:string,Text,,,1,03B,Name,name,S008 name,0,1
+148,Purpose of call code,Code specifying the purpose of the conveyance call.,an..3,xsd:string,Code,UN/EDIFACT code list 8025,CallPurposeCode,1,93B,DescriptionCode,descriptionCode,,0,1
+124,Qualifier for apportioning freight charges code,Code specifying the method of the proportional allocation of freight charges for each consignment in a multi consignment declaration.,an..3,xsd:string,Code,WCO code list/FreightChargeApportioningMethodCode,FreightChargeApportioningMethodCode,1,41A,FreightChargeApportionmentCode,freightChargeApportionmentCode,,0,1
+401,Quota identifier,Identification of an order specifying a quota.,an..17,xsd:string,Identifier,,,2,50A; 57C,QuotaOrderID,quotaOrderId,,0,1
+500,Receptacle (postal) identifier,Identification of the postal receptacle.,an..35,xsd:string,Identifier,,,3,21C; 28A; 29A,PostalReceptacleID,postalReceptacleId,,0,1
+R161,Recipient identifier,Identification of the (message) recipient.,an..35,xsd:string,Identifier,,,1,4MD,ID,id,S009 identification,0,1
+R101,Recognized security organization name,Name of the security organization granting the security certificate.,an..70,xsd:string,Text,,,1,04B,Name,name,S008 name,0,1
+300,Reconciliation reason code,"Code specifying an issue eligible for reconciliation which allows certain issues to remain outstanding, pending final determination.",an..3,xsd:string,Code,UN/EDIFACT code list 4183,,1,03A,ReconciliationReasonCode,reconciliationReasonCode,,0,1
+475,Rectification of defects description,Description of the rectification of defects.,an..512,xsd:string,Text,,,1,04C,Rectification,rectification,,0,1
+601,Redemptions description,Description of the redemptions.,an..70,xsd:string,Text,,,1,63C,RedemptionsDescription,redemptionsDescription,,0,1
+587,Referral request identifier,"Identification of the referral request received.
+Note for EU CDM users:
+This data element shall only be provided where the declaration is amended upon a referral request (Annex B DA).",an..17,xsd:string,Identifier,,,2,42A; 999,ReferralRequestReferenceID,referralRequestReferenceId,,0,1
+R128,Refund recipient party identifier,Identification of the party to receive refund.,an..35,xsd:string,Identifier,,,1,59B,ID,id,S009 identification,0,1
+R127,Refund recipient party name,Name of the party to receive refund.,an..70,xsd:string,Text,,,1,59B,Name,name,S008 name,0,1
+088,Region of export identifier,Identification of country subdivision where goods begin their journey to export location.,an..9,xsd:string,Identifier,,,1,95B,RegionID,regionId,,0,1
+066,Region of origin identifier,"Identification of the region in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, or quantitative restrictions, or of any other measure related to trade.",an..9,xsd:string,Identifier,,,1,92A,RegionID,regionId,,0,1
+441,Region of routing identifier,Identification of the region through which goods or passengers are routed.,an..17,xsd:string,Identifier,,,1,81A,RoutingRegionID,routingRegionId,,0,1
+393,Region of routing name,Name of the region through which goods or passengers are routed.,an..256,xsd:string,Text,,,1,81A,RoutingRegion,routingRegion,,0,1
+L085,Registered facility name,Name of the facility that has been formally documented as compliant with regulations or statutes by a regulatory authority.,an..256,xsd:string,Text,,,1,05B,Name,name,S002 name,0,1
+L086,Registered facility name identifier,Identification of a facility that has been formally documented as compliant with regulations or statutes by a regulatory authority.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,05B,ID,id,S003 identification,0,1
+277,Release date/time,Date and time the goods have been released from government custody.,an..35,xsd:dateTime,Date Time,,,1,12B,ReleaseDateTime,releaseDateTime,,0,1
+G020,Release office identifier,Identification of a requested office where the decision to release the goods declaration from customs custody is to be made.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,31C,ID,id,S001 identification,0,1
+R114,Repair party identifier,Identification of the party responsible for substantial repair of transport equipment.,an..35,xsd:string,Identifier,,,1,52B,ID,id,S009 identification,0,1
+R113,Repair party name,Name of the party responsible for substantial repair of transport equipment.,an..70,xsd:string,Text,,,1,52B,Name,name,S008 name,0,1
+D040,Reply type code,Code specifying the type of reply required or transmitted.,an..3,xsd:string,Code,UN/EDIFACT code list 4343 OR User code list,,4,42A; 58C; 74B; 999,ReplyTypeCode,replyTypeCode,S045 replyType,0,1
+248,Representative function,Specification of the capacity in which the representative person acts on behalf of the party responsible for the declaration.,an..35,xsd:string,Text,,,1,06B,ContactFunction,contactFunction,,0,1
+R006,Representative name,Name of the representative of the party making the declaration.,an..70,xsd:string,Text,,,1,06B,Name,name,S008 name,0,1
+220,Requested government service date/time,Date and time requested by the government service requestor for service.,an..35,xsd:dateTime,Date Time,,,1,03A,RequestedInspectionDateTime,requestedInspectionDateTime,,0,1
+D042,Requested validity period quantity,"Quantity specifying the requested validity expressed in days (i.e., it will be a number of days indicated in the data field and not a period expressed as ""from ? until ?"").",n..3,xsd:decimal,Quantity,,,2,42A; 999,ValidityDurationQuantity,validityDurationQuantity,S046 validityDuration,0,1
+540,Requested validity period quantity,"Quantity specifying the requested validity expressed in days (i.e., it will be a number of days indicated in the data field and not a period expressed as ""from ? until ?"").",n..3,xsd:decimal,Quantity,,,2,34B; 38A,ValidityDurationQuantity,validityDuration,,0,1
+491,Reseal code,Code specifying if the seal is original or reseal and the possible reason for reseal.,an..3,xsd:string,Code,User code list,,1,44B,ResealCode,resealCode,,0,1
+004,Reservation shipment identifier,Identification of the carrier or its agent to identify a specific consignment by reference number.,an..35,xsd:string,Identifier,,,1,28A,CarrierAssignedID,carrierAssignedId,,0,1
+428,Residence country code,Code specifying the country of residence of a person.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,60C,ResidenceCountryCode,residenceCountryCode,,0,1
+MD22,Responsible agency code,"Code specifying the agency controlling the specification, maintenance and publication of the message type.",an..2,xsd:string,Code,UN/EDIFACT code list 0051,ResponsibleAgencyCode,1,3MD,ResponsibleAgencyCode,responsibleAgencyCode,,0,1
+MD23,Responsible agency name,"Name to identify the agency controlling the specification, maintenance and publication of the message type.",an..70,xsd:string,Text,,,1,3MD,ResponsibleAgencyName,responsibleAgencyName,,0,1
+MD21,Responsible country code,"Code specifying the country controlling the specification, maintenance and publication of the message type.",a2,xsd:string,Code,ISO 3166-1,CountryCode,1,3MD,ResponsibleCountryCode,responsibleCountryCode,,0,1
+G007,Responsible government agency identifier,"Identification of the government agency, responsible for regulatory and statutory obligations.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,08B,NameCode,nameCode,S001 identification,0,1
+R131,Right holder identifier,Identification of a right holder which refers to a legal entity or person with exclusive rights to an intellectual property.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,69B,ID,id,S009 identification,0,1
+R132,Right holder name,Name of the right holder that refers to a legal entity or person with exclusive rights to an intellectual property.,an..70,xsd:string,Text,,,1,69B,Name,name,S008 name,0,1
+R005,Role code,Code specifying the role of a party.,an..3,xsd:string,Code,UN/EDIFACT code list 3035,,84,01B; 01C; 02B; 02C; 03B; 04B; 05A; 06B; 08C; 09B; 10B; 12A; 13A; 13B; 16A; 16B; 16C; 17B; 17C; 18A; 18B; 18C; 19A; 19B; 20A; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 36A; 36B; 37A; 37B; 39A; 40B; 41B; 42B; 43A; 44A; 47A; 48A; 49A; 4MD; 50B; 50C; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 5MD; 62C; 68C; 69A; 69B; 70B; 71A; 71B; 72A; 73C; 74A; 75A; 76A; 77A; 80A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 98A,RoleCode,roleCode,S010 role,0,1
+594,Role code,Code specifying the role of a party.,an..3,xsd:string,Code,UN/EDIFACT code list 3035,,1,08B,RoleCode,roleCode,,0,1
+576,Role code,Code specifying the role assigned to the government agency office.,an..3,xsd:string,Code,User code list,,1,43C,SpecificationCode,specificationCode,,0,1
+436,Rule of origin code,Code specifying the criterion of determination as to whether a good qualifies as an originating good in accordance with the rules.,an..3,xsd:string,Code,User code list,,1,92A,RuleCode,ruleCode,,0,1
+588,Safety and security code,Code specifying whether the declaration is combined with safety and security related declarations.,n1,xsd:decimal,Code,"User code list (EU CDM codes available, could be the basis for new WCO codes)",,2,42A; 999,SafetySecurityCode,safetySecurityCode,,0,1
+205,Scheduled conveyance identifier,Identification of the number assigned to a regularly scheduled service of a means of transport.,an..10,xsd:string,Identifier,,,1,15A,ScheduledConveyanceID,scheduledConveyanceId,,0,1
+408,Seal condition code,Code specifying the condition of a seal.,an..3,xsd:string,Code,User code list,,1,44B,ConditionCode,conditionCode,,0,1
+165,Seal identifier,Identification of a seal affixed to a piece of transport equipment by number.,an..35,xsd:string,Identifier,,,1,44B,ID,id,,0,1
+407,Seal type code,Code specifying the type of seal applied on a unit of transport equipment.,an..3,xsd:string,Code,User code list,,1,44B,TypeCode,typeCode,,0,1
+R116,Sealing party name,Name of the party affixing or activating the seal for regulatory purposes.,an..70,xsd:string,Text,,,1,53B,Name,name,S008 name,0,1
+547,Sealing party type code,Code specifying the party affixing or activating the seal for regulatory purposes.,an..3,xsd:string,Code,UN/EDIFACT code list 9303,SealingPartyTypeCode,1,53B,TypeCode,typeCode,,0,1
+433,Seat or berth identifier,Identification of an assigned seat or berth.,an..35,xsd:string,Identifier,,,1,66B,SeatID,seatId,,0,1
+D057,Security amount,Amount of security in case that the type of security is in cash or in withdrawal from the security account.,"n..16,3",xsd:decimal,Amount,,,1,90A,AmountAmount,amountAmount,S022 amount,0,1
+101,Security details code,"Code specifying details regarding undertaking given in cash, bond or as a written guarantee to ensure that an obligation will be fulfilled (e.g. under a transit procedure).",an..3,xsd:string,Code,WCO code list/ObligationGuaranteeCode OR User code list,ObligationGuaranteeCode,2,90A; 92B,SecurityDetailsCode,securityDetailsCode,,0,1
+302,Security level code,Code specifying the security level.,an..3,xsd:string,Code,User code list,,2,15A; 81A,SecurityLevelCode,securityLevelCode,,0,1
+525,Security plan approved indicator,Indicator of whether the ship is provided with an approved security plan onboard.,an1,xsd:boolean,Indicator,,,1,15A,SecurityPlanApprovedIndicator,securityPlanApprovedIndicator,,0,1
+R051,Seller identifier,Identification of the party selling merchandise or services to a buyer.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,09B,ID,id,S009 identification,0,1
+R050,Seller name,Name of the party selling merchandise or services to a buyer.,an..70,xsd:string,Text,,,1,09B,Name,name,S008 name,0,1
+R162,Sender identifier,Identification of the (message) sender.,an..35,xsd:string,Identifier,,,1,5MD,ID,id,S009 identification,0,1
+234,Sensitive goods code,Code specifying goods presenting increased risks of fraud in the course of a transit procedure in accordance with national law.,an..3,xsd:string,Code,"UN/EDIFACT code list 7365 subset (codes 170, 171 and 172) OR User code list",,1,23A,SensitiveGoodsCode,sensitiveGoodsCode,,0,1
+006,Sequence number,Number indicating the position in a sequence.,n..5,xsd:decimal,Numeric,,,34,03A; 05C; 06C; 07C; 09A; 11C; 1MD; 21C; 23A; 23C; 28A; 29A; 31B; 39C; 44B; 45A; 48B; 51A; 54B; 60B; 65B; 65C; 66C; 67A; 67B; 68A; 73B; 78A; 78B; 79A; 81A; 93A; 93B; 97A,SequenceNumeric,sequenceNumeric,,0,1
+R141,Ship chandler identifier,"Identification of a retail dealer who specializes in supplies or equipment for ships, known as ship's stores.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,08C,ID,id,S009 identification,0,1
+R140,Ship chandler name,"Name of a retail dealer who specializes in supplies or equipment for ships, known as ship's stores.",an..70,xsd:string,Text,,,1,08C,Name,name,S008 name,0,1
+R102,Ship security officer name,Name of the officer who is appointed as Ship Security Officer.,an..70,xsd:string,Text,,,1,10B,Name,name,S008 name,0,1
+526,Ship-to-ship activity code,Code specifying the ship-to-ship activity.,an..17,xsd:string,Code,To be defined by IMO,,1,54B,IdentificationCode,identificationCode,,0,1
+364,Ship-to-ship activity description,Description of ship-to-ship activity.,an..512,xsd:string,Text,,,1,54B,Description,description,,0,1
+435,Ship-to-ship activity end date/time,Date and time of the end of a ship-to-ship activity period.,an..35,xsd:dateTime,Date Time,,,1,54B,EndDateTime,endDateTime,,0,1
+L104,Ship-to-ship activity location identifier,"Identification of a seaport, airport, freight terminal, rail station or other place at which a ship-to-ship activity takes place.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,45B,ID,id,S003 identification,0,1
+L105,Ship-to-ship activity location name,Name of the location where the ship-to-ship activity takes place.,an..256,xsd:string,Text,,,1,45B,Name,name,S002 name,0,1
+434,Ship-to-ship activity start date/time,Date and time of the start of a ship-to-ship activity period.,an..35,xsd:dateTime,Date Time,,,1,54B,StartDateTime,startDateTime,,0,1
+142,Shipping marks,Marks and or numbers on a transport unit or package.,an..512,xsd:string,Text,UN/ECE Recommendation 15,,1,93A,MarksNumbers,marksNumbers,,0,1
+396,Source country code,Code specifying the source country.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,11B,CountryCode,countryCode,,0,1
+286,Source geographic region name,Name of the source geographic region (non-political).,an..70,xsd:string,Text,,,1,11B,GeographicRegion,geographicRegion,,0,1
+292,Source political region code,"Code specifying the political subdivision in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, or quantitative restrictions, or of any other measure related to trade.",an..6,xsd:string,Code,ISO 3166-2 OR User code list,,1,11B,PoliticalRegionCode,politicalRegionCode,,0,1
+397,Source type code,Code specifying the type of source location.,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,11B,TypeCode,typeCode,,0,1
+504,Specific circumstances code,Code specifying circumstances for declarations.,an..3,xsd:string,Code,User code list,,2,42A; 999,SpecificCircumstancesCode,specificCircumstancesCode,,0,1
+589,Split consignment indicator,Indicator if the consignment covered by the related transport document was split.,n1,xsd:boolean,Indicator,,,1,55C,IndicationIndicator,indicationIndicator,,0,1
+406,Split declaration indicator,Indicator that the goods in the transport contract document are being cleared through multiple declarations.,n1,xsd:boolean,Indicator,,,1,30B,SplitIndicator,splitIndicator,,0,1
+509,Split-consignment identifier,Identification of a split-consignment in a transit declaration.,an..35,xsd:string,Identifier,,,1,28A,SplitID,splitId,,0,1
+290,State or province of registration of conveyance code,Code specifying the ISO for the country subdivision in which the means of transport is registered.,an..17,xsd:string,Code,ISO 3166-2,,1,15A,RegistrationCountrySubdivisionCode,registrationCountrySubdivisionCode,,0,1
+114,Statistical amount,Amount indicating the value declared for statistical purposes of those goods in a consignment which have the same statistical heading.,"n..16,3",xsd:decimal,Amount,,,1,68A,StatisticalValueAmount,statisticalValueAmount,,0,1
+380,Status date/time,Date and time a specified event becomes effective.,an..35,xsd:dateTime,Date Time,,,1,12B,EffectiveDateTime,effectiveDateTime,,0,1
+010,Stay reference identifier,Identification of the stay of a means of transport in a port or airport or other place of service.,an..35,xsd:string,Identifier,,,1,15A,StayID,stayId,,0,1
+R026,Stevedore identifier,Identification of the stevedoring company.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,13B,ID,id,S009 identification,0,1
+400,Storage country code,Code specifying the storage country.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,14B,CountryCode,countryCode,,0,1
+398,Storage geographic region name,Name of the geographic region (non-political) in which the goods have been stored.,an..70,xsd:string,Text,,,1,14B,GeographicRegion,geographicRegion,,0,1
+399,Storage political region code,Code specifying the political subdivision in which the goods have been stored.,an..6,xsd:string,Code,ISO 3166-2 OR User code list,,1,14B,PoliticalRegionCode,politicalRegionCode,,0,1
+321,Storage requirement temperature,"Temperature required to be maintained for a commodity, or in a container, or in a conveyance.",n..15,xsd:decimal,Measure,,,1,20B,StorageRequirementMeasure,storageRequirementMeasure,,0,1
+L041,Stow position identifier,Identification of the equipment location on the conveyance.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR BayRowTier OR User code list (based on IMO FAL Convention),,1,15B,ID,id,S003 identification,0,1
+239,Street and number/P.O. box,Specification of the postal delivery point such as street and number or post office box.,an..256,xsd:string,Text,,,1,04A,Line,line,,0,1
+519,Street name,Name of a street.,an..256,xsd:string,Text,,,1,04A,StreetName,streetName,,0,1
+R059,Submitter identifier,"Identification of the party who presents a document or data for the approval, consideration, or decision of another.",an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,17B,ID,id,S009 identification,0,1
+R058,Submitter name,"Name of the party who presents a document or data for the approval, consideration, or decision of another.",an..70,xsd:string,Text,,,1,17B,Name,name,S008 name,0,1
+323,Summer dead weight tonnage,"Weight in metric tons of cargo, ship's fuel, passengers and crew carried by a ship when loaded to its maximum summer load line.",an..18,xsd:decimal,Measure,,,1,15A,SummerDeadWeightTonnageMeasure,summerDeadWeightTonnageMeasure,,0,1
+G012,Supervising office identifier,Identification of the office responsible for supervising the discharge of a government procedure. It may be different from office of declaration or office of entry.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,97B,ID,id,S001 identification,0,1
+R146,Supplementary declarant identifier,Identification of the supplementary declarant.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,18C,ID,id,S009 identification,0,1
+590,Supplementary filing type code,Code specifying the level of transport contract.,an..3,xsd:string,Code,User code list (preferably new WCO codes),,1,18C,SupplementaryFilingTypeCode,supplementaryFilingTypeCode,,0,1
+R053,Supplier identifier,Identification of the party who supplies goods and/or services.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,18B,ID,id,S009 identification,0,1
+R052,Supplier name,Name of the party who supplies goods and/or services.,an..70,xsd:string,Text,,,1,18B,Name,name,S008 name,0,1
+D060,Supporting document identifier,Identification of the reference number of documents or certificates produced in support of the declaration.,an..70,xsd:string,Identifier,,,1,51C,ID,id,S031 identification,0,1
+D061,Supporting document type code,Code specifying the details required by any specific rules applicable together with reference data of the documents produced in support of the declaration.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,51C,TypeCode,typeCode,S042 type,0,1
+MD15,Supporting role context identifier,Identification of other significant parties that will be using the data in the messages. Determine their role in the overall process.,an..35,xsd:string,Identifier,"To be supplied by the producer of My IP.
+Default value ""ALL"" if no restrictions apply.",,1,2MD,SupportingRoleID,supportingRoleId,,0,1
+R055,Surety identifier,Identification of the party who agrees to be responsible for the debt or obligation of another.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,19B,ID,id,S009 identification,0,1
+619,Surety liability amount,Amount indicating the Surety's liability on the Customs bond.,"n..16,3",xsd:decimal,Amount,,,1,19B,LiabilityAmount,liabilityAmount,,0,1
+R054,Surety name,Name of the party who agrees to be responsible for the debt or obligation of another.,an..70,xsd:string,Text,,,1,19B,Name,name,S008 name,0,1
+MD05,Syntax identification code,Code specifying the agency controlling a syntax and syntax level used in an interchange.,a4,xsd:string,Code,UN/EDIFACT code list 0001,SyntaxIdentifierCode,1,1MD,SyntaxIdentificationCode,syntaxIdentificationCode,,0,1
+MD06,Syntax version code,Code specifying the version number of the syntax identified in the syntax identifier (e.g. 0001).,n1,xsd:decimal,Code,UN/EDIFACT code list 0002,SyntaxVersionCode,1,1MD,SyntaxVersionCode,syntaxVersionCode,,0,1
+MD16,System capabilities context identifier,"Identification of major restrictions derived from system, a class of systems or standard in the business situation. Identify the type of system.",an..35,xsd:string,Identifier,"To be supplied by the producer of My IP.
+Default value ""ALL"" if no restrictions apply.",,1,2MD,SystemCapabilitiesID,systemCapabilitiesId,,0,1
+381,Tag identifier,Identification of the data element tag.,an..4,xsd:string,Identifier,,,1,97A,TagID,tagId,,0,1
+481,Tare weight,Weight (mass) of transport equipment including permanent equipment but excluding goods and loose accessories.,"n..16,6",xsd:decimal,Measure,,,1,09C,TareWeightMeasure,tareWeightMeasure,,0,1
+496,Tariff class specification code,Code specifying an applicable rate or tariff class.,an..7,xsd:string,Code,UN/EDIFACT code list 5243,TariffClassSpecificationCode,2,40C; 50A,TariffClassSpecificationCode,tariffClassSpecificationCode,,0,1
+324,Tariff quantity amount,"Amount reported in 1st, 2nd, or 3rd tariff quantity.","n..16,3",xsd:decimal,Amount,,,1,65A,TariffQuantityAmount,tariffQuantityAmount,,0,1
+130,Tariff/supplementary quantity,"Quantity specifying the goods in the unit as required by customs for tariff, statistical, fiscal purposes or as indicated in ""type"".","n..16,6",xsd:decimal,Quantity,,,1,65A,TariffQuantity,tariffQuantity,,0,1
+591,Tax amount,"Amount calculated/separate tax of duties and/or taxes for each tax base, for the cases when more than one tax base per tax type exist.","n..16,3",xsd:decimal,Amount,,,1,56C,TaxAmount,taxAmount,,0,1
+382,Taxation date/time,Date and time on which tax or fee is due or calculated.,an..35,xsd:dateTime,Date Time,,,1,50A,TaxationDateTime,taxationDateTime,,0,1
+L048,Terminal location name,Name of the location where the terminal is situated.,an..256,xsd:string,Text,,,1,21B,Name,name,S002 name,0,1
+L049,Terminal location name identifier,Identification of the location of a terminal.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,21B,ID,id,S003 identification,0,1
+515,Termination type code,Code specifying the type of Transit operation termination.,an..3,xsd:string,Code,User code list,,1,84B,TypeCode,typeCode,,0,1
+301,Terms of payment code,"Code specifying the terms of payment expressed in international terms (e.g. Cash on Delivery (COD), 30/60/90 due dates, discounts, commissions) under which transaction is completed.",an..17,xsd:string,Code,UN/ECE Recommendation 17,PaymentTermsCode,1,41A,PaymentTermsCode,paymentTermsCode,,0,1
+MD07,Test indicator,Indicator that the interchange is a test.,n1,xsd:boolean,Indicator,,,1,1MD,TestIndicator,testIndicator,,0,1
+D067,Ticket reference identifier,Identification of the ticket.,an..35,xsd:string,Identifier,,,1,64C,ID,id,S031 identification,0,1
+513,Tolerance percentage,"Percentage of allowable tolerance (e.g. In order to take into account trade-related issues such as weight differences and moisture increase, an importer could enter up to 5% more than for which a certificate was issued. The number 5 will be recorded. Thus, on a certificate issued for 1000 tons, 1050 tons could be realized.
+In derogation from the general rule, preferential import arrangements may contain provisions showing that there is no tolerance. In such cases, the number 0 is entered).",n..10,xsd:decimal,Numeric,,,1,65A,TolerancePercentageNumeric,tolerancePercentageNumeric,,0,1
+109,Total invoice amount,Amount indicating the total of all invoice amounts in a single declaration.,"n..16,3",xsd:decimal,Amount,,,2,42A; 999,InvoiceAmount,invoiceAmount,,0,1
+D049,Total number of items,Quantity specifying the total number of goods items within a document.,n..5,xsd:decimal,Quantity,,,3,42A; 74B; 999,GoodsItemQuantity,goodsItemQuantity,S047 goodsItem,0,1
+146,Total number of packages,Quantity specifying the total number of packages of the entire document (e.g. declaration/consignment).,n..8,xsd:decimal,Quantity,,,3,28A; 42A; 999,TotalPackageQuantity,totalPackageQuantity,,0,1
+459,Total number of persons,"Quantity specifying the total number of persons (passengers and crew, including the captain/master) on board of a means of transport.",n..4,xsd:decimal,Quantity,,,1,96B,QuantityQuantity,quantityQuantity,,0,1
+009,Trader reference identifier,Identification of the number assigned by a declarant such as a trader reference or a carrier reference.,an..35,xsd:string,Identifier,,,1,35B,TraderAssignedReferenceID,traderAssignedReferenceId,,0,1
+R139,Trading party identifier,Identification of the party responsible for the trade of commercial products.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,02C,ID,id,S009 identification,0,1
+R138,Trading party name,Name of the party responsible for the trade of commercial products.,an..70,xsd:string,Text,,,1,02C,Name,name,S008 name,0,1
+L015,Transhipment location identifier,Identification of the location where goods are to be transferred from one means of transport to another during the course of one transport operation.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,23B,ID,id,S003 identification,0,1
+L014,Transhipment location name,Name of the location where goods are to be transferred from one means of transport to another during the course of one transport operation.,an..256,xsd:string,Text,,,1,23B,Name,name,S002 name,0,1
+L111,Transhipment location type code,Code specifying the type of location of transhipment.,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,23B,TypeCode,typeCode,S004 type,0,1
+T030,Transhipment means of transport name,Name to identify means of transport at transhipment.,an..70,xsd:string,Text,,,1,20C,Name,name,S049 name,0,1
+T031,Transhipment transport means identifier,Identification of the means of transport used at the time of transhipment.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,20C,ID,id,S050 identification,0,1
+027,Transit control days quantity,Quantity specifying the number of days a consignment is under transit control.,n..2,xsd:decimal,Quantity,,,1,24B,DurationInDaysQuantity,durationInDaysQuantity,,0,1
+L087,Transit departure location identifier,Identification of the location at which the goods depart under customs control of the transit procedure.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,25B,ID,id,S003 identification,0,1
+L008,Transit destination location identifier,Identification of the location at which the goods are destined under customs control of transit procedure.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,26B,ID,id,S003 identification,0,1
+L007,Transit destination location name,Name of the location at which the goods are destined under customs control of transit procedure.,an..256,xsd:string,Text,,,1,26B,Name,name,S002 name,0,1
+G006,Transit office identifier,Identification of the government office which is responsible for transit formalities enroute.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,27B,ID,id,S001 identification,0,1
+G011,Transit operation discharge office identifier,Identification of the location of the government agency office related to the transit operation.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,87B,ID,id,S001 identification,0,1
+443,Transit operation registration identifier,Identification of the number under which a transit operation is nationally/regionally registered.,an..35,xsd:string,Identifier,,,1,78B,RegistrationID,registrationId,,0,1
+G008,Transit operation start office identifier,Identification of the customs office starting a transit operation.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,81B,ID,id,S001 identification,0,1
+G010,Transit operation termination office identifier,Identification of the termination office.,an..17,xsd:string,Identifier,UN/LOCODE + User codes,,1,85B,ID,id,S001 identification,0,1
+431,Transit passenger indicator code,Code specifying if a person is a transit passenger.,n1,xsd:decimal,Code,WCO code list/TransitPassengerIndicatorCode,TransitPassengerIndicatorCode,1,67B,TransitIndicator,transitIndicator,,0,1
+R002,Transit principal identifier,Identification of the party accepting liability for goods held or moving under a customs authorization and - when applicable - a guarantee.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,28B,ID,id,S009 identification,0,1
+R001,Transit principal name,"Name of the party accepting liability for goods held or moving under a customs authorization and, when applicable, a guarantee.",an..70,xsd:string,Text,,,1,28B,Name,name,S008 name,0,1
+098,Transport charges method of payment code,Code specifying the payment method for transport charges.,an..3,xsd:string,Code,UN/EDIFACT code list 4215,FreightChargePaymentMethodCode,1,62A,PaymentMethodCode,paymentMethodCode,,0,1
+D023,Transport document identifier,Identification of the document evidencing a transport contract by reference number.,an..70,xsd:string,Identifier,,,1,30B,ID,id,S031 identification,0,1
+D020,Transport document issue date/time,Date and time of issue of a transport contract document.,an..35,xsd:dateTime,Date Time,,,1,30B,IssueDateTime,issueDateTime,S032 issue,0,1
+D021,Transport document issue location name,Name of the location where transport document is signed or otherwise authenticated.,an..256,xsd:string,Text,,,1,30B,IssueLocationName,issueLocationName,S034 issueLocationName,0,1
+D022,Transport document issuing party identifier,Identification of the party issuing the transport document.,an..17,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,30B,IssuingPartyID,issuingPartyId,S035 issuingParty,0,1
+D024,Transport document type code,Code specifying the type of a document evidencing a transport contract.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,30B,TypeCode,typeCode,S042 type,0,1
+279,Transport equipment license plate country code,Code specifying the license plate issuing country of a trailer used as transportation equipment.,a2,xsd:string,Code,ISO 3166-1,CountryCode,1,31B,LicensePlateIssuingCountryCode,licensePlateIssuingCountryCode,,0,1
+154,Transport equipment loaded status code,Code specifying how full a piece of transport equipment is.,an..3,xsd:string,Code,UN/EDIFACT code list 8169,TransportEquipmentFullnessCode,1,31B,FullnessCode,fullnessCode,,0,1
+L095,Transport equipment location identifier,Identification of the location of the transport equipment for which the position and status of a transport equipment is being reported.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,77B,ID,id,S003 identification,0,1
+L094,Transport equipment location name,Name of the location of the transport equipment for which the position and status of a transport equipment is being reported.,an..256,xsd:string,Text,,,1,77B,Name,name,S002 name,0,1
+358,Transport equipment name,Registered name of the equipment used to transport the cargo.,an..35,xsd:string,Text,,,1,31B,Name,name,,0,1
+R093,Transport equipment owner name,Name of the owner of the transport equipment.,an..70,xsd:string,Text,,,1,52A,Name,name,S008 name,0,1
+351,Transport equipment status code,Code specifying the status of the transport equipment.,an..3,xsd:string,Code,UN/EDIFACT code list 8249,ContainerStatusCode,1,12B,EventStatusCode,eventStatusCode,,0,1
+T002,Transport means at arrival identifier,Identification of the means of transport at the time of arrival.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,10A,ID,id,S050 identification,0,1
+T006,Transport means crossing the border identifier,Identification of the means of transport used in crossing the border.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,15A,ID,id,S050 identification,0,1
+604,Transport means direction code,"Code specifying the direction of the transport means (i.e., inbound or outbound).",an..3,xsd:string,Code,WCO code list/TransportMeansDirectionCode,TransportMeansDirectionCode,2,15A; 65C,DirectionCode,directionCode,,0,1
+T007,Transport means for transit identifier,Identification of the means of transport used for transit.,an..35,xsd:string,Identifier,"Sea: ITU Standard or Lloyd's number
+Air: IATA aircraft ID
+Road: national license plate
+Rail: locomotive number",,1,29B,ID,id,S050 identification,0,1
+T019,Transport means operation type code,Code specifying the type of commercial operation of a transport means.,an..3,xsd:string,Code,User code list (e.g. IATA code list),TransportMeansOperationTypeCode,1,15A,OperationTypeCode,operationTypeCode,S048 operationType,0,1
+R056,Transport means operator identifier,Identification of the registered operator of the means of transport.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,32B,ID,id,S009 identification,0,1
+R125,Transport means operator name,Name of the registered operator of the means of transport.,an..70,xsd:string,Text,,,1,32B,Name,name,S008 name,0,1
+R090,Transport means owner identifier,Identification of the registered owner of means the of transport.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,33B,ID,id,S009 identification,0,1
+R126,Transport means owner name,Name of the registered owner of the means of transport.,an..70,xsd:string,Text,,,1,33B,Name,name,S008 name,0,1
+494,Transport means registration location identifier,Identification of the location at which a means of transport has been officially registered.,an..35,xsd:string,Identifier,,,1,15A,RegistrationPlaceID,registrationPlaceId,,0,1
+493,Transport movement code,Code specifying a particular transport movement.,an..3,xsd:string,Code,UN/EDIFACT code list 8323,TransportMovementCode,2,42A; 999,TransportMovementCode,transportMovementCode,,0,1
+R164,Travel agency identifier,Identification of the travel agency.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,62C,ID,id,S009 identification,0,1
+R163,Travel agency name,Name of the travel agency that made the booking or reservation.,an..70,xsd:string,Text,,,1,62C,Name,name,S008 name,0,1
+603,Travel class code,Code specifying the class of travel.,an..3,xsd:string,Code,WCO code list/TravelClassCode,TravelClassCode,1,65C,TravelClassCode,travelClassCode,,0,1
+D035,Travel document identifier,Identification of the travel document by number.,an..70,xsd:string,Identifier,,,1,34B,ID,id,S031 identification,0,1
+D068,Travel document issue date/time,Date and time the travel document was issued.,an..35,xsd:dateTime,Date Time,,,1,34B,IssueDateTime,issueDateTime,S032 issue,0,1
+D036,Travel document issuer identifier,Identification of the party having issued the travel document.,an..17,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,34B,IssuingPartyID,issuingPartyId,S035 issuingParty,0,1
+D027,Travel document issuing country or political entity,Country or political entity issuing the travel document.,an..256,xsd:string,Text,,,1,34B,IssuingLocationName,issuingLocationName,S034 issueLocationName,0,1
+D044,Travel document issuing country or political entity identifier,Identification of the country or political entity issuing the travel document.,an..5,xsd:string,Identifier,UN/LOCODE,,1,34B,IssueLocationID,issueLocationId,S033 issueLocationIdentification,0,1
+D037,Travel document type code,Code specifying the name of a travel document.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,34B,TypeCode,typeCode,S042 type,0,1
+613,Travel group name,Name of the travelling group.,an..70,xsd:string,Text,,,1,66B,TravelGroupName,travelGroupName,,0,1
+429,Traveler status code,Code specifying the status of a person on board.,an..3,xsd:string,Code,"UN/EDIFACT code list 3035 
+UN/EDIFACT code list 7365",,1,60C,StatusCode,statusCode,,0,1
+R157,Treatment facility provider identifier,Identification of the treatment facility provider.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,46C,ID,id,S009 identification,0,1
+R156,Treatment facility provider name,Name of the treatment facility provider.,an..70,xsd:string,Text,,,1,46C,Name,name,S008 name,0,1
+164,Type of duty regime code,Code specifying a type of duty regime.,an..3,xsd:string,Code,UN/EDIFACT code list 9213 OR User code list,,2,50A; 57C,DutyRegimeCode,dutyRegimeCode,,0,1
+T017,Type of harvesting transport means code,Code specifying the type of means of transport used for harvesting.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,76B,TypeCode,typeCode,S052 type,0,1
+571,Type of identification code,Code specifying the type of identification used to identify a location.,a1,xsd:string,Code,User code list (see EU CDM code list for DE 16 15 046 000),GoodsLocationIdentificationTypeCode,1,64A,IdentificationTypeCode,identificationTypeCode,,0,1
+T034,Type of identification of means of transport at arrival code,Code specifying type of identifier of the means of transport used for the carriage of the goods at arrival.,an..17,xsd:string,Code,"E.g. IMO, MMSI, Call sign, External sign, ENI",TransportMeansIdentificationTypeCode,1,10A,IdentificationTypeCode,identificationTypeCode,S051 identificationType,0,1
+T029,Type of identification of means of transport at departure code,Code specifying the type of identifier of the means of transport at departure.,an..17,xsd:string,Code,"E.g. IMO, MMSI, Call sign, External sign, ENI",TransportMeansIdentificationTypeCode,1,46A,IdentificationTypeCode,identificationTypeCode,S051 identificationType,0,1
+T018,Type of identification of means of transport crossing the border code,Code specifying type of identifier of the means of transport used for the carriage of the goods in crossing the border.,an..17,xsd:string,Code,"E.g. IMO, MMSI, Call sign, External sign, ENI",TransportMeansIdentificationTypeCode,1,15A,IdentificationTypeCode,identificationTypeCode,S051 identificationType,0,1
+T027,Type of identification of passive transport means code,Code specifying type of identification of passive transport means.,an..17,xsd:string,Code,"E.g. IMO, MMSI, Call sign, External sign, ENI",TransportMeansIdentificationTypeCode,1,19C,IdentificationTypeCode,identificationTypeCode,S051 identificationType,0,1
+T032,Type of identification of transhipment transport means code,Code specifying the type of identification of transhipment transport means.,an..17,xsd:string,Code,"E.g. IMO, MMSI, Call sign, External sign, ENI",TransportMeansIdentificationTypeCode,1,20C,IdentificationTypeCode,identificationTypeCode,S051 identificationType,0,1
+D025,Type of invoice code,Code specifying the type of an invoice.,an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,78A,TypeCode,typeCode,S042 type,0,1
+D064,Type of IPR code,"Code specifying the type of IPR according to WTO TRIPS (e.g. copyright, trademarks, geographical indication, industrial designs, patents, integrated circuits layout designs, undisclosed information and trade secrets, curbing anti-competitive licensing contracts, enforcement: tough but fair, technology transfer, etc.).",an..3,xsd:string,Code,UN/EDIFACT code list 1001 OR User code list,,1,68B,TypeCode,typeCode,S042 type,0,1
+T008,Type of means of transport at arrival code,Code specifying means of transport used for the carriage of the goods at arrival.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,10A,TypeCode,typeCode,S052 type,0,1
+T009,Type of means of transport at departure code,Code specifying the type of means of transport used for the carriage of the goods at departure.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,46A,TypeCode,typeCode,S052 type,0,1
+T010,Type of means of transport crossing the border code,Code specifying type of means of transport used for the carriage of the goods in crossing the border.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,15A,TypeCode,typeCode,S052 type,0,1
+T011,Type of means of transport used for transit code,Code specifying the type of means of transport used for transit.,an..4,xsd:string,Code,UN/Recommendation 28,TransportMeansTypeCode,1,29B,TypeCode,typeCode,S052 type,0,1
+141,Type of packages identification code,Code specifying the type of package of an item.,an..2,xsd:string,Code,UN/ECE Recommendation 21 Annex VI,PackageTypeCode,1,93A,TypeCode,typeCode,,0,1
+016,UCR identifier,Identification of the unique number assigned to goods being subject to cross border transactions.,an..35,xsd:string,Identifier,ISO 15459 OR equivalent,,1,35B,ID,id,,0,1
+R061,Ultimate consignee identifier,Identification of the party who has been designated on the invoice or packing list as the final recipient of the stated merchandise.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,36B,ID,id,S009 identification,0,1
+R060,Ultimate consignee name,Name of the party who has been designated on the invoice or packing list as the final recipient of the cargo.,an..70,xsd:string,Text,,,1,36B,Name,name,S008 name,0,1
+506,United Nations Dangerous Goods (UNDG) identifier,Identification of the unique serial number assigned within the United Nations to substances and articles contained in a list of the dangerous goods most commonly carried.,n..4,xsd:decimal,Identifier,,,1,12C,UNDGID,undgid,,0,1
+173,Unloading location arrival date/time,Date and time of arrival at port or airport with the intent to unload.,an..35,xsd:dateTime,Date Time,,,1,38B,ArrivalDateTime,arrivalDateTime,,0,1
+L013,Unloading location identifier,"Identification of a seaport, airport, freight terminal, rail station or other location at which goods are unloaded from the means of transport having been used for their carriage.",an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,38B,ID,id,S003 identification,0,1
+L012,Unloading location name,"Name of the unloading location, seaport, airport, freight terminal, rail station or other location at which the cargo is to be unloaded from the means of transport having been used for their carriage.",an..256,xsd:string,Text,,,1,38B,Name,name,S002 name,0,1
+R112,Unloading party identifier,Identification of the party responsible for unloading of goods.,an..35,xsd:string,Identifier,,,1,51B,ID,id,S009 identification,0,1
+R111,Unloading party name,Name of the party responsible for unloading the goods.,an..70,xsd:string,Text,,,1,51B,Name,name,S008 name,0,1
+575,Validity end date/time,Date and time when the government agency office will no longer be operational.,an..35,xsd:dateTime,Date Time,,,1,45C,ValidityEndDateTime,validityEndDateTime,,0,1
+574,Validity start date/time,Date and time when the government agency office started to be operational.,an..35,xsd:dateTime,Date Time,,,1,45C,ValidityStartDateTime,validityStartDateTime,,0,1
+188,Valuation additions qualifier code,"Code specifying the type of ˜WTO valuation agreement addition article 8: Price influence, Royalties, Assists, Proceeds, Commissions.",an..4,xsd:string,Code,"UN/EDIFACT code list 7365 subset (codes 145, 146, 147, 148 and 149) OR User code list",,1,39B,AdditionCode,additionCode,,0,1
+125,Valuation adjustment amount,Amount by which the monetary valuation was adjusted.,"n..16,3",xsd:decimal,Amount,,,1,39B,AmountAmount,amountAmount,,0,1
+123,Valuation adjustment percentage,Percentage adjustment made to the valuation.,"n..10,2",xsd:decimal,Numeric,,,1,39B,PercentageNumeric,percentageNumeric,,0,1
+122,Valuation method code,Code specifying the method on which the customs value is determined.,an..3,xsd:string,Code,WCO code list/ValuationMethodCode,ValuationMethodCode,1,41A,MethodCode,methodCode,,0,1
+025,Vanning date/time,Date and time of loading cargo into a container.,an..35,xsd:dateTime,Date Time,,,1,16B,StuffingDateTime,stuffingDateTime,,0,1
+R025,Vanning party identifier,Identification of the party at whose physical location the goods are loaded into the transport equipment (stuffing establishment).,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,16B,ID,id,S009 identification,0,1
+R024,Vanning party name,Name of the party at whose physical location the goods are loaded into the transport equipment (stuffing establishment).,an..70,xsd:string,Text,,,1,16B,Name,name,S008 name,0,1
+R041,Vanning proof party name,Name of the authorized party responsible for certifying that the goods were loaded into the transport equipment (proof of vanning).,an..70,xsd:string,Text,,,1,84A,Name,name,S008 name,0,1
+R100,Vehicle owner identifier,Identification of the owner of the vehicle.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,40B,ID,id,S009 identification,0,1
+R099,Vehicle owner name,Name of the owner of the vehicle.,an..70,xsd:string,Text,,,1,40B,Name,name,S008 name,0,1
+R066,Verifier identifier,Identification of a person recognized under relevant legislation to undertake official assurance verification.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,41B,ID,id,S009 identification,0,1
+D055,Version identifier,Identification of the version of a specific document/message number.,an..9,xsd:string,Identifier,,,4,02A; 42A; 58C; 999,VersionID,versionId,S043 version,0,1
+307,Vessel bunker fuel amount,Amount indicating the value of the bunker fuel laden in a vessel upon arrival at the initial port of arrival.,"n..16,3",xsd:decimal,Amount,,,1,15A,BunkerFuelValueAmount,bunkerFuelValueAmount,,0,1
+318,Vessel bunker fuel quantity,Quantity specifying the bunker fuel on board a vessel upon arrival at the initial port of arrival.,n..16,xsd:decimal,Quantity,,,1,15A,BunkerFuelQuantity,bunkerFuelQuantity,,0,1
+312,Vessel bunker fuel value code,"Code specifying the type of fuel carried in ships bunker. Specify coal, diesel oil, or fuel oil.",an..3,xsd:string,Code,User code list,,1,15A,BunkerFuelTypeCode,bunkerFuelTypeCode,,0,1
+206,Vessel draft level,Level in meters of forward/after draft.,n..5,xsd:decimal,Measure,,,1,15A,MaximumDraftMeasure,maximumDraftMeasure,,0,1
+484,Vessel draft level aft,Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the stern.,n..5,xsd:decimal,Measure,,,1,15A,DraughtLevelAftMeasure,draughtLevelAftMeasure,,0,1
+485,Vessel draft level for,Depth of water from the surface of water to the bottom of the vessel measured at the draft mark of the bow.,n..5,xsd:decimal,Measure,,,1,15A,DraftLevelForMeasure,draftLevelForMeasure,,0,1
+207,Vessel length,Length of single vehicle expressed in meters.,n..6,xsd:decimal,Measure,,,1,15A,LengthMeasure,lengthMeasure,,0,1
+R104,Veterinarian identifier,Identification of the person who practices veterinary medicine.,an..35,xsd:string,Identifier,"International code list (e.g. DUNS, EAN) OR User code list",,1,42B,ID,id,S009 identification,0,1
+R103,Veterinarian name,Name of the person who practices veterinary medicine.,an..70,xsd:string,Text,,,1,42B,Name,name,S008 name,0,1
+409,Warehouse departure date/time,Date and time when declared goods were/will be carried out of the designated location.,an..35,xsd:dateTime,Date Time,,,1,43B,DepartureDateTime,departureDateTime,,0,1
+L019,Warehouse identifier,Identification of a warehouse where a particular goods shipment will be / is / has been stored.,an..35,xsd:string,Identifier,UN/LOCODE + User codes OR User code list,,1,43B,ID,id,S003 identification,0,1
+L018,Warehouse location name,Name of the location of a warehouse where a particular goods shipment will be / is / has been stored.,an..256,xsd:string,Text,,,1,43B,Name,name,S002 name,0,1
+L112,Warehouse type code,Code specifying the type of warehouse.,an..3,xsd:string,Code,"UN/EDIFACT code list 3227
+OR User code list",,1,43B,TypeCode,typeCode,S004 type,0,1
+L119,Warehouse type code,Code specifying the role of a warehouse.,an..3,xsd:string,Code,"UN/EDIFACT code list 3035
+User code list",,1,43B,RoleCode,roleCode,S005 role,0,1
+569,Waste delivery end date/time,Date and time of end of waste delivery.,an..35,xsd:dateTime,Date Time,,,1,36C,DeliveryEndDateTime,deliveryEndDateTime,,0,1
+L116,Waste delivery location identifier,Identification of the location/port where waste of any type was or will be delivered.,an..35,xsd:string,Identifier,UN/LOCODE + User codes,,1,37C,ID,id,S003 identification,0,1
+L117,Waste delivery location name,Name of the location/port where waste of any type was or will be delivered.,an..256,xsd:string,Text,,,1,37C,Name,name,S002 name,0,1
+L118,Waste delivery location type code,Code specifying the type of place/port where waste of any type was or will be delivered (e.g. last or next port).,an..3,xsd:string,Code,UN/EDIFACT code list 3227,,1,37C,TypeCode,typeCode,S004 type,0,1
+568,Waste delivery start date/time,Date and time of start of waste delivery.,an..35,xsd:dateTime,Date Time,,,1,36C,DeliveryStartDateTime,deliveryStartDateTime,,0,1
+530,Waste last delivery date/time,Date and time when waste of any type was last delivered.,an..35,xsd:dateTime,Date Time,,,1,36C,LastDeliveryDateTime,lastDeliveryDateTime,,0,1
+532,Waste type code,Code specifying the type of waste being delivered.,an..3,xsd:string,Code,To be defined,,1,07C,WasteTypeCode,wasteTypeCode,,0,1
+MD18,WCO category code,Code specifying the category within the WCO Data Model.,an..3,xsd:string,Code,WCO code list/WCOCategory,,1,3MD,WCOCategoryCode,wcoCategoryCode,,0,1
+MD17,WCO Data Model version code,Code specifying the version of the WCO Data Model (e.g. 3.40).,an..6,xsd:string,Code,WCO code list/WCODataModelVersion,,1,3MD,WCODataModelVersionCode,wcoDataModelVersionCode,,0,1
+503,Write-off amount,Amount to be written off a document.,"n..16,3",xsd:decimal,Amount,,,1,22C,AmountAmount,amountAmount,,0,1
+502,Write-off quantity,Quantity specifying the total number to be written off a document.,"n..16,6",xsd:decimal,Quantity,,,1,22C,QuantityQuantity,quantityQuantity,,0,1

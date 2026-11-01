@@ -1,0 +1,24 @@
+# WCO 原始发布包文件不纳入公开仓库（版权/再分发条款）
+sources/package/
+sources/xlsx/
+
+# 可重新生成的构建产物（可选取消忽略以纳入版本库）
+# data/model.json
+# site/assets/data.json
+# site/assets/data.js
+
+# Python / Node
+__pycache__/
+*.pyc
+node_modules/
+npm-cache/
+
+# 本地工具与临时文件
+.chrome*/
+*.part
+.DS_Store
+Thumbs.db
+
+# 凭据
+.gh_token
+.env

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this derived ontology, please cite it and the original WCO Data Model 4.3.0."
+title: "WCO Data Model 4.3.0 Ontology (derived knowledge base)"
+version: "1.0.0"
+date-released: "2026-10-31"
+url: "https://w3id.org/wco-dm/4.3.0"
+license: "No license granted over WCO source data; see NOTICE.md"
+abstract: >-
+  An OWL 2 DL ontology, SKOS code-list catalogue, SHACL shapes and static
+  visual explorer derived from the official WCO Data Model 4.3.0 LIB and OIS
+  workbooks. This is an independent derived work, not an official WCO
+  publication.
+keywords:
+  - WCO
+  - customs
+  - data model
+  - OWL
+  - SKOS
+  - SHACL
+  - linked data
+references:
+  - type: generic
+    title: "WCO Data Model 4.3.0 publication package"
+    url: "https://datamodel.wcoomd.org/#/package"
+  - type: generic
+    title: "WCO Data Model 4.3.0 Overall Information Structure"
+    url: "https://datamodel.wcoomd.org/datamodel/infopage/4.3.0"

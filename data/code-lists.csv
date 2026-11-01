@@ -1,0 +1,172 @@
+﻿name,source,code_count,codes,used_by_count,used_by
+ActionCode,UN/EDIFACT code list 1229 OR User code list,0,,2,460; 514
+AdditionalProcedureCode,User code list (see EU CDM code list for DE 11 10 001 000),0,,1,572
+AddressTypeCode,UN/EDIFACT code list 3131,0,,1,410
+AEOProgramTypeCode,WCO code list/AEOProgramTypeCode,3,C; F; S,1,629
+AgentFunctionCode,"UN/EDIFACT code list 4405
+For use with the EU CDM:
+- code 2 (Representative (direct representation within the meaning of Article 18(1 of the code))
+- code 3 (Representative (indirect representation within the meaning of Article 18(1 of the code))",0,,0,
+AgentQualityAssuranceCode,UN/EDIFACT code list 7365 subset (codes 166 and 167),0,,1,249
+AIPTypeCode,WCO code list/AIPTypeCode,2,1; 2,1,593
+ArrivalConfirmationCode,UN/EDIFACT code list 7365 subset (codes 164 and 165),0,,1,162
+BallastOrCargoTypeCode,UN/EDIFACT code list 7085,0,,1,336
+BondActivityTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+BunkerFuelTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+BusinessTypeCode,ISIC code list OR User codes,0,,0,
+CallPurposeCode,UN/EDIFACT code list 8025,0,,1,148
+CarrierSplitConsignmentCode,UN/EDIFACT code list 7365 subset (codes 156 and 157),0,,1,011
+ChangeReasonCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+CharacteristicCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+CharacteristicValueCode,UN/EDIFACT code list 7111 OR User codes,0,,0,
+ChargesTypeCode,"UN/EDIFACT code list 5025
+For use with the EU CDM:
+- AB Commissions and brokerage, except buying commissions 
+- AD Containers and packing 
+- AE Materials, components, parts and similar items incorporated in the imported goods 
+- AF Tools, dies, moulds and similar items used in the production of the imported goods 
+- AG Materials consumed in the production of the imported goods
+- AH Engineering, development, artwork, design work and plans and sketches undertaken elsewhere than in the European Union and necessary for the production of the imported goods 
+- AI Royalties and license fees
+- AJ Proceeds of any subsequent resale, disposal or use accruing to the seller 
+- AK Transport costs, loading and handling charges and insurance costs up to the place of introduction in the European Union 
+- AL Indirect payments and other payments (Article 70 of the code)
+- AN Additions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446. Deductions (As defined under Articles 72 of the Code) 
+- BA Costs of transport after arrival at the place of introduction 
+- BB Charges for construction, erection, assembly, maintenance or technical assistance undertaken after importation 
+- BC Import duties or other charges payable in the Union for reason of the import or sale of goods 
+- BD Interest charges 
+- BE Charges for the right to reproduce the imported goods in the European Union 
+- BF Buying commissions 
+- BG Deductions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446",0,,0,
+ClassificationNameCode,UN/EDIFACT code list 7357,0,,1,346
+CommodityCategoryCode,UN/EDIFACT code list 7009,0,,1,328
+CommodityCategoryQualifierCode,UN/EDIFACT code list 3055 OR User codes (1131),0,,0,
+CommodityCharacteristicQualifierCode,UN/EDIFACT code list 7081,0,,2,334; 335
+CommodityClassificationTypeCode,UN/EDIFACT code list 7143,0,,2,337; 338
+CommodityDangerousGoodsPackingGroupCode,UN/EDIFACT code list 7233,0,,1,341
+CommodityIdentifierTypeCode,UN/EDIFACT code list 7143,0,,2,337; 338
+CommodityIdentityNumberQualifierCode,UN/EDIFACT code list 7405,0,,1,347
+CommodityNameQualifierCode,UN/EDIFACT code list 7081,0,,2,334; 335
+CommodityPhysicalStateCode,UN/EDIFACT code list 7007,0,,1,325
+CommodityProcessTypeIdentificationCode,UN/EDIFACT code list 7187,0,,1,340
+CommunicationMeansTypeCode,UN/EDIFACT code list 3155,0,,1,253
+CommunicationQualifierCode,WCO code list/CommunicationSubTypeCode,0,,0,
+ConstituentElementOrComponentCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+ContactFunctionCode,UN/EDIFACT code list 3139,0,,1,487
+ContainerLegalStatusCode,UN/EDIFACT code list 7365 subset (codes 162 and 163),0,,1,157
+ContainerStatusCode,UN/EDIFACT code list 8249,0,,1,351
+ContainerTransportCode,"UN/EDIFACT code list 7365 subset (codes 68 and 69)
+For use with the EU CDM:
+- code 0 (Goods not transported in containers)
+- code 1 (Goods transported in containers)",0,,1,096
+ControlResultCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+ControlTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+CountryCode,ISO 3166-1,0,,20,062; 063; 064; 232; 242; 279; 296; 396; 400; 428; 447; 450; 463; 465; 545; 550; 592; 596; MD21; R147
+CountryRelationshipCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+CountrySubDivisionCode,ISO 3166-2 OR User codes,0,,0,
+CriteriaConformanceCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+CurrencyCode,ISO 4217,0,,1,135
+DangerousGoodsRegulationsCode,UN/EDIFACT code list 8273,0,,1,505
+DeclarantFunctionCode,UN/EDIFACT code list 4405,0,,2,303; 548
+DocumentCategoryCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+DocumentFunctionCode,UN/EDIFACT code list 1225,0,,1,D046
+DocumentMessageSectionCode,UN/EDIFACT code list 1049,0,,1,375
+DocumentStatusCode,UN/EDIFACT code list 1373,0,,1,D047
+DocumentTypeCode,UN/EDIFACT code list 1001 OR User codes,0,,0,
+DutyRegimeCode,UN/EDIFACT code list 9213 OR User codes,0,,0,
+EndorsementCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+EquipmentTypeCode,UN/EDIFACT code list 8053,0,,1,387
+ErrorCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+EventTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+FreeTradeZoneStatusCode,UN/EDIFACT code list 4405,0,,2,303; 548
+FreightChargeApportioningMethodCode,WCO code list/FreightChargeApportioningMethodCode,2,160; 161,1,124
+FreightChargePaymentMethodCode,UN/EDIFACT code list 4215,0,,1,098
+GoodsGroupNameCode,UN/EDIFACT code list 7059,0,,1,332
+GoodsLocationIdentificationTypeCode,User code list (see EU CDM code list for DE 16 15 046 000),0,,1,571
+GoodsMeasureFunctionCode,UN/EDIFACT code list 6311,0,,1,479
+GovernmentAgencyNameCode,UN/LOCODE (an..5) + User codes (an..12),0,,0,
+GovernmentAgencyTypeCode,UN/EDIFACT code list 9415,0,,3,G016; G018; G024
+GovernmentProcedureCode,"UN/EDIFACT code list 7365
+For Customs: User codes, categorized based on the revised Kyoto Convention",0,,0,
+GuaranteeActivityTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+HandlingCode,UN/EDIFACT code list 4079,0,,1,093
+INFShipClassCode,Chapter VII of SOLAS (Carriage of dangerous goods),3,INF1; INF2; INF3,1,471
+IntendedUseCode,WCO code list/IntendedUseCode OR User code list,0,,1,330
+IPRTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+LanguageCode,UN/EDIFACT code list 3453,0,,1,D041
+LocationFunctionCode,UN/EDIFACT code list 3227,0,,6,251; 397; L047; L111; L113; L118
+LPCOExemptionCode,UN/EDIFACT code list 4183,0,,2,300; 360
+MeasurementUnitCode,UN/EDIFACT code list 6411,0,,0,
+ObligationGuaranteeCode,WCO code list/ObligationGuaranteeCode OR User code list,10,M; O; P; Q; R; S; T; U; W; Z,1,101
+OriginRuleCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+OriginTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+PackageHierarchyCode,UN/EDIFACT code list 7075,0,,1,333
+PackageTypeCode,UN/ECE Recommendation 21 Annex VI,0,,1,141
+PartyRelationshipCode,"UN/EDIFACT code list 7365 subset (codes 135, 136 and 137)",0,,1,163
+PaymentMethodCode,WCO code list/PaymentMethodCode,17,A; B; C; D; E; G; H; J; K; L; O; P; R; S; T; U; V,1,107
+PaymentTermsCode,UN/ECE Recommendation 17,0,,1,301
+PaymentTypeCode,WCO code list/PaymentTypeCode,2,F; T,1,610
+PersonCategoryCode,User code list (preferably new WCO code list),0,,0,
+PersonGenderCode,UN/EDIFACT code list 3499,0,,1,427
+PersonNationalityCode,UN/EDIFACT code list 3207,0,,1,424
+PersonStatusCode,"UN/EDIFACT code list 3035
+UN/EDIFACT code list 7365",0,,0,
+PersonTypeCode,UN/EDIFACT code list 3035,0,,3,458; 594; R005
+ProgramPartnerProfileTypeCode,WCO code list/ProgramPartnerProfileTypeCode,0,,1,634
+RateTypeCode,UN/EDIFACT code list 5419,0,,1,309
+ReconciliationReasonCode,UN/EDIFACT code list 4183,0,,2,300; 360
+ReferenceTypeCode,"UN/EDIFACT code list 1153.
+For EU CDM usage:
+Additional references must be entered in the form of a code defined in Title I.
+The list of additional references and their respective codes can be found in the TARIC database, their format is a1an3.
+Member States may define national codes, national codes must have the format n1an3",0,,1,580
+ReplyTypeCode,EDIFACT 4343 OR User codes,0,,0,
+RequestOverrideCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+ResealCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+ResponsibleAgencyCode,UN/EDIFACT code list 0051,0,,1,MD22
+RoleCode,UN/EDIFACT code list 3035,0,,3,458; 594; R005
+SealConditionCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+SealingPartyTypeCode,UN/EDIFACT code list 9303,0,,1,547
+SealTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+SecurityCode,"User code list
+(EU CDM codes available, could be the basis for new WCO code list)",0,,0,
+SecurityLevelCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+SensitiveGoodsCode,"UN/EDIFACT code list 7365 subset (codes 170, 171 and 172) OR User codes",0,,0,
+SourceTypeCode,UN/EDIFACT code list 3227,0,,6,251; 397; L047; L111; L113; L118
+SpecificCircumstancesCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+StatementCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+StatementTypeCode,UN/EDIFACT code list 4451,0,,1,369
+StatusCode,UN/EDIFACT code list 4405 OR User codes,0,,0,
+SupplementaryFilingTypeCode,User code list (preferably new WCO code list),0,,0,
+SyntaxIdentifierCode,UN/EDIFACT code list 0001,0,,1,MD05
+SyntaxVersionCode,UN/EDIFACT code list 0002,0,,1,MD06
+TariffClassSpecificationCode,UN/EDIFACT code list 5243,0,,1,496
+TaxOrFeeTypeCode,UN/EDIFACT code list 5153 OR User codes,0,,0,
+TemperatureCategoryCode,UN/EDIFACT code list 6155,0,,1,319
+TerminationTypeCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+TradetermConditionCode,UN/EDIFACT code list 4053,0,,1,090
+TransactionNatureTypeCode,"WCO code list/TransactionNatureTypeCode (n1) + User code (n1)
+Remark:
+* First digit indicates WCO code table value;
+* Second digit can be used as additional user code to further define first digit",9,1; 2; 3; 4; 5; 6; 7; 8; 9,1,103
+TransitPassengerIndicatorCode,WCO code list/TransitPassengerIndicatorCode,3,0; 1; 2,1,431
+TransportContractDocumentConditionCode,UN/EDIFACT code list 4065,0,,1,091
+TransportEquipmentCharacteristicCode,"ISO, IATA, UN/EDIFACT code list 8053 or 8155 OR User codes",0,,0,
+TransportEquipmentFullnessCode,UN/EDIFACT code list 8169,0,,1,154
+TransportEquipmentSupplierPartyTypeCode,UN/EDIFACT code list 8077,0,,1,151
+TransportMeansDirectionCode,WCO code list/TransportMeansDirectionCode,2,I; O,1,604
+TransportMeansIdentificationTypeCode,"E.g. IMO, MMSI, Call sign, External sign, ENI",0,,5,T018; T027; T029; T032; T034
+TransportMeansModeCode,UN/Recommendation 19,0,,6,T020; T021; T022; T023; T024; T037
+TransportMeansMovementDescriptionCode,UN/EDIFACT code list 8335,0,,1,T025
+TransportMeansOperationTypeCode,User code list (e.g. IATA code list),0,,1,T019
+TransportMeansRegistrationNationalityCode,UN/EDIFACT code list 8453,0,,6,T012; T013; T014; T015; T028; T033
+TransportMeansTypeCode,UN/Recommendation 28,0,,7,T008; T009; T010; T011; T017; T035; T036
+TransportMovementCode,UN/EDIFACT code list 8323,0,,1,493
+TransportStatusCode,UN/EDIFACT code list 4405 OR User codes,0,,0,
+TravelClassCode,WCO code list/TravelClassCode,9,01; 02; 03; 04; 05; 06; 07; 08; 09,1,603
+UserRiderActionCode,User code list,0,,35,095; 099; 106; 226; 235; 245; 260; 302; 305; 312; 349; 359; 377; 394; 407; 408; 436; 444; 449; 453; 454; 491; 499; 501; 504; 515; 541; 549; 576; 616; 621; 623; D031; MD24; MD25
+ValuationAdditionsQualifierCode,"UN/EDIFACT code list 7365) subset (codes 145, 146, 147, 148 and 149) OR User codes",0,,0,
+ValuationMethodCode,WCO code list/ValuationMethodCode,7,138; 139; 140; 141; 142; 143; 144,1,122
+WasteTypeCode,"IMO codes
+See IMO Compendium, Section 3 Code List for IMO0183 (Waste type, coded)",0,,0,

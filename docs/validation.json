@@ -1,0 +1,58 @@
+{
+  "turtle": {
+    "triples": 26663,
+    "types": {
+      "http://www.w3.org/2002/07/owl#Ontology": 1,
+      "http://www.w3.org/2002/07/owl#AnnotationProperty": 50,
+      "http://www.w3.org/2002/07/owl#ObjectProperty": 276,
+      "http://www.w3.org/2002/07/owl#Class": 481,
+      "http://www.w3.org/2002/07/owl#DatatypeProperty": 837,
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme": 135,
+      "http://www.w3.org/2004/02/skos/core#Concept": 69
+    }
+  },
+  "rdfxml": {
+    "quads": 26663
+  },
+  "jsonld": {
+    "quads": 26663
+  },
+  "integrity": {
+    "classes": 481,
+    "datatypeProperties": 837,
+    "missing": []
+  },
+  "shacl": {
+    "wco-dm-4.3.0-sample.ttl": {
+      "conforms": true,
+      "results": 0,
+      "messages": []
+    },
+    "wco-dm-4.3.0-sample-invalid.ttl": {
+      "conforms": false,
+      "results": 1,
+      "messages": [
+        "Value does not have datatype <http://www.w3.org/2001/XMLSchema#dateTime>"
+      ]
+    }
+  },
+  "profiles": {
+    "triples": 25407,
+    "shapesTriples": 14248,
+    "shacl": {
+      "wco-dm-4.3.0-profiles-sample.ttl": {
+        "conforms": true,
+        "results": 0,
+        "messages": []
+      },
+      "wco-dm-4.3.0-profiles-sample-invalid.ttl": {
+        "conforms": false,
+        "results": 1,
+        "messages": [
+          "More than 1 values"
+        ]
+      }
+    }
+  },
+  "pass": true
+}

@@ -1,0 +1,275 @@
+﻿role,label,range_id,range_name,parent_count,parent_ids,xml_tag,json_tag,min_occurs,definition
+AcceptanceLocation,has acceptance location,01A,AcceptanceLocation,2,21C; 28A,AcceptanceLocation,acceptanceLocation,0,Associates a containing WCO DM class with its acceptance location component (AcceptanceLocation).
+Action,has action,24C,Action,1,999,Action,action,0,Associates a containing WCO DM class with its action component (Action).
+AdditionalDocument,has additional document,02A,AdditionalDocument,14,21C; 23A; 28A; 28C; 29A; 29B; 31B; 32C; 67A; 67B; 68A; 89A; 90A; 999,AdditionalDocument,additionalDocument,0,Associates a containing WCO DM class with its additional document component (AdditionalDocument).
+AdditionalIdentifier,has additional identifier,23C,AdditionalIdentifier,82,01B; 01C; 02B; 02C; 03B; 04B; 05A; 06B; 08B; 08C; 09B; 10B; 12A; 13A; 13B; 16A; 16B; 16C; 17B; 17C; 18A; 18B; 18C; 19A; 19B; 20A; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 36A; 36B; 37A; 37B; 38C; 39A; 40B; 41B; 42B; 43A; 44A; 46C; 47A; 48A; 49A; 4MD; 50B; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 5MD; 69B; 70B; 71A; 71B; 72A; 74A; 75A; 76A; 77A; 80A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 98A,AdditionalIdentifier,additionalIdentifier,0,Associates a containing WCO DM class with its additional identifier component (AdditionalIdentifier).
+AdditionalInformation,has additional information,03A,AdditionalInformation,22,06A; 12C; 21C; 23A; 25C; 28A; 29A; 32C; 38A; 50A; 51C; 54B; 60C; 67A; 67B; 68A; 80B; 81A; 84B; 90A; 999; 99A,AdditionalInformation,additionalInformation,0,Associates a containing WCO DM class with its additional information component (AdditionalInformation).
+AdditionalProcedure,has additional procedure,59C,AdditionalProcedure,1,70A,AdditionalProcedure,additionalProcedure,0,Associates a containing WCO DM class with its additional procedure component (AdditionalProcedure).
+AdditionalReference,has additional reference,52C,AdditionalReference,5,21C; 28A; 29A; 67A; 68A,AdditionalReference,additionalReference,0,Associates a containing WCO DM class with its additional reference component (AdditionalReference).
+Address,has address,04A,Address,87,01A; 01B; 01C; 02B; 02C; 03B; 04B; 05A; 06B; 08B; 08C; 09B; 10B; 12A; 13A; 13B; 16A; 16B; 17B; 18A; 18B; 19A; 19B; 20A; 23B; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 36A; 36B; 37A; 37B; 38B; 38C; 39A; 40B; 41B; 42B; 43A; 44A; 45C; 46C; 47A; 48A; 49A; 50B; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 62C; 64A; 66A; 67B; 69B; 69C; 70B; 71A; 72A; 74A; 75A; 76A; 77A; 80A; 83A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 94A; 98A,Address,address,0,Associates a containing WCO DM class with its address component (Address).
+AEOMutualRecognitionParty,has AEO mutual recognition party,16C,AEOMutualRecognitionParty,6,21C; 28A; 29A; 67A; 68A; 999,AEOMutualRecognitionParty,aeoMutualRecognitionParty,0,Associates a containing WCO DM class with its AEO mutual recognition party component (AEOMutualRecognitionParty).
+AEOProgramProfile,has AEO program profile,71C,AEOProgramProfile,1,999,AEOProgramProfile,aeoProgramProfile,0,Associates a containing WCO DM class with its AEO program profile component (AEOProgramProfile).
+Agent,has agent,05A,Agent,3,19B; 28A; 999,Agent,agent,0,Associates a containing WCO DM class with its agent component (Agent).
+AIP,has AIP,58C,AIP,1,OIS,AIP,aip,0,Associates a containing WCO DM class with its AIP component (AIP).
+Amendment,has amendment,06A,Amendment,1,999,Amendment,amendment,0,Associates a containing WCO DM class with its amendment component (Amendment).
+AppealOffice,has appeal office,07A,AppealOffice,1,999,AppealOffice,appealOffice,0,Associates a containing WCO DM class with its appeal office component (AppealOffice).
+Applicant,has applicant,30C,Applicant,1,02A,Applicant,applicant,0,Associates a containing WCO DM class with its applicant component (Applicant).
+ApprovedEstablishmentLocation,has approved establishment location,08A,ApprovedEstablishmentLocation,4,23A; 67A; 68A; 999,ApprovedEstablishmentLocation,approvedEstablishmentLocation,0,Associates a containing WCO DM class with its approved establishment location component (ApprovedEstablishmentLocation).
+ArrivalConveyanceFacility,has arrival conveyance facility,09A,ArrivalConveyanceFacility,2,15A; 81A,ArrivalConveyanceFacility,arrivalConveyanceFacility,0,Associates a containing WCO DM class with its arrival conveyance facility component (ArrivalConveyanceFacility).
+ArrivalLocation,has arrival location,11C,ArrivalLocation,2,15A; 65C,ArrivalLocation,arrivalLocation,0,Associates a containing WCO DM class with its arrival location component (ArrivalLocation).
+ArrivalTransportMeans,has arrival transport means,10A,ArrivalTransportMeans,1,28A,ArrivalTransportMeans,arrivalTransportMeans,0,Associates a containing WCO DM class with its arrival transport means component (ArrivalTransportMeans).
+Assembler,has assembler,50B,Assembler,1,23A,Assembler,assembler,0,Associates a containing WCO DM class with its assembler component (Assembler).
+AssigningParty,has assigning party,71B,AssigningParty,1,23A,AssigningParty,assigningParty,0,Associates a containing WCO DM class with its assigning party component (AssigningParty).
+AssociatedTransportDocument,has associated transport document,11A,AssociatedTransportDocument,1,28A,AssociatedTransportDocument,associatedTransportDocument,0,Associates a containing WCO DM class with its associated transport document component (AssociatedTransportDocument).
+Authentication,has authentication,61B,Authentication,3,02A; 04C; 999,Authentication,authentication,0,Associates a containing WCO DM class with its authentication component (Authentication).
+Authenticator,has authenticator,12A,Authenticator,8,02A; 11A; 30B; 34B; 61B; 78A; 999; 99A,Authenticator,authenticator,0,Associates a containing WCO DM class with its authenticator component (Authenticator).
+Authorization,has authorization,88B,Authorization,3,28B; 68A; 999,Authorization,authorization,0,Associates a containing WCO DM class with its authorization component (Authorization).
+AuthorizationHolder,has authorization holder,17C,AuthorizationHolder,3,68A; 88B; 999,AuthorizationHolder,authorizationHolder,0,Associates a containing WCO DM class with its authorization holder component (AuthorizationHolder).
+AuthorizationWithdrawal,has authorization withdrawal,90B,AuthorizationWithdrawal,1,88B,AuthorizationWithdrawal,authorizationWithdrawal,0,Associates a containing WCO DM class with its authorization withdrawal component (AuthorizationWithdrawal).
+AuthorizedPerson,has authorized person,13A,AuthorizedPerson,4,23A; 29A; 61B; 999,AuthorizedPerson,authorizedPerson,0,Associates a containing WCO DM class with its authorized person component (AuthorizedPerson).
+Bank,has bank,14A,Bank,1,999,Bank,bank,0,Associates a containing WCO DM class with its bank component (Bank).
+BerthLocation,has berth location,74C,BerthLocation,1,15A,BerthLocation,berthLocation,0,Associates a containing WCO DM class with its berth location component (BerthLocation).
+BinaryFile,has binary file,72B,BinaryFile,2,02A; 3MD,BinaryFile,binaryFile,0,Associates a containing WCO DM class with its binary file component (BinaryFile).
+BorderingOffice,has bordering office,42C,BorderingOffice,1,45C,BorderingOffice,borderingOffice,0,Associates a containing WCO DM class with its bordering office component (BorderingOffice).
+BorderTransportMeans,has border transport means,15A,BorderTransportMeans,3,21C; 28A; 999,BorderTransportMeans,borderTransportMeans,0,Associates a containing WCO DM class with its border transport means component (BorderTransportMeans).
+Bunker,has bunker,06C,Bunker,1,15A,Bunker,bunker,0,Associates a containing WCO DM class with its bunker component (Bunker).
+Buyer,has buyer,16A,Buyer,2,67A; 68A,Buyer,buyer,0,Associates a containing WCO DM class with its buyer component (Buyer).
+Cabin,has cabin,66C,Cabin,1,66B,Cabin,cabin,0,Associates a containing WCO DM class with its cabin component (Cabin).
+CallPurpose,has call purpose,93B,CallPurpose,2,09A; 15A,CallPurpose,callPurpose,0,Associates a containing WCO DM class with its call purpose component (CallPurpose).
+CargoFacilityLocation,has cargo facility location,17A,CargoFacilityLocation,1,15A,CargoFacilityLocation,cargoFacilityLocation,0,Associates a containing WCO DM class with its cargo facility location component (CargoFacilityLocation).
+CarriedTransportEquipment,has carried transport equipment,73B,CarriedTransportEquipment,1,31B,CarriedTransportEquipment,carriedTransportEquipment,0,Associates a containing WCO DM class with its carried transport equipment component (CarriedTransportEquipment).
+Carrier,has carrier,18A,Carrier,3,21C; 28A; 999,Carrier,carrier,0,Associates a containing WCO DM class with its carrier component (Carrier).
+CertificateOfResponsibilityHolder,has certificate of responsibility holder,19A,CertificateOfResponsibilityHolder,1,999,CertificateOfResponsibilityHolder,certificateOfResponsibilityHolder,0,Associates a containing WCO DM class with its certificate of responsibility holder component (CertificateOfResponsibilityHolder).
+Certifier,has certifier,20A,Certifier,2,38A; 60B,Certifier,certifier,0,Associates a containing WCO DM class with its certifier component (Certifier).
+Characteristic,has characteristic,94B,Characteristic,1,15A,Characteristic,characteristic,0,Associates a containing WCO DM class with its characteristic component (Characteristic).
+ChargeDeduction,has charge deduction,58B,ChargeDeduction,1,41A,ChargeDeduction,chargeDeduction,0,Associates a containing WCO DM class with its charge deduction component (ChargeDeduction).
+CIS,has CIS,999,ContentInformationStructure,1,OIS,CIS,CIS,0,Associates a containing WCO DM class with its CIS component (ContentInformationStructure).
+Classification,has classification,21A,Classification,2,13C; 23A,Classification,classification,0,Associates a containing WCO DM class with its classification component (Classification).
+CommercialDriversLicense,has commercial drivers license,22A,CommercialDriversLicense,1,87A,CommercialDriversLicense,commercialDriversLicense,0,Associates a containing WCO DM class with its commercial drivers license component (CommercialDriversLicense).
+Commodity,has commodity,23A,Commodity,5,05C; 06C; 07C; 29A; 68A,Commodity,commodity,0,Associates a containing WCO DM class with its commodity component (Commodity).
+CommodityRelatedPackaging,has commodity related packaging,24A,CommodityRelatedPackaging,1,23A,CommodityRelatedPackaging,commodityRelatedPackaging,0,Associates a containing WCO DM class with its commodity related packaging component (CommodityRelatedPackaging).
+Communication,has communication,25A,Communication,84,01B; 02B; 03B; 04B; 05A; 06B; 08B; 08C; 09B; 10B; 12A; 13A; 13B; 15A; 16A; 16B; 17B; 18A; 18B; 19A; 19B; 20A; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 34A; 35A; 36A; 36B; 37A; 37B; 38C; 39A; 40B; 41B; 42B; 43A; 44A; 44C; 45C; 46C; 47A; 48A; 49A; 4MD; 50B; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 5MD; 67B; 69A; 69B; 70B; 71A; 71C; 72A; 74A; 75A; 76A; 77A; 80A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 98A,Communication,communication,0,Associates a containing WCO DM class with its communication component (Communication).
+CommunicationMetaData,has communication meta data,1MD,CommunicationMetaData,1,3MD,CommunicationMetaData,communicationMetaData,0,Associates a containing WCO DM class with its communication meta data component (CommunicationMetaData).
+CompanySecurityOfficer,has company security officer,26A,CompanySecurityOfficer,1,999,CompanySecurityOfficer,companySecurityOfficer,0,Associates a containing WCO DM class with its company security officer component (CompanySecurityOfficer).
+ConnectionTransportMeans,has connection transport means,65C,ConnectionTransportMeans,1,67B,ConnectionTransportMeans,connectionTransportMeans,0,Associates a containing WCO DM class with its connection transport means component (ConnectionTransportMeans).
+Consignee,has consignee,27A,Consignee,5,21C; 28A; 29A; 67A; 68A,Consignee,consignee,0,Associates a containing WCO DM class with its consignee component (Consignee).
+Consignment,has consignment,28A,Consignment,4,67A; 80B; 84B; 999,Consignment,consignment,0,Associates a containing WCO DM class with its consignment component (Consignment).
+ConsignmentItem,has consignment item,29A,ConsignmentItem,2,21C; 28A,ConsignmentItem,consignmentItem,0,Associates a containing WCO DM class with its consignment item component (ConsignmentItem).
+Consignor,has consignor,30A,Consignor,5,21C; 28A; 29A; 67A; 68A,Consignor,consignor,0,Associates a containing WCO DM class with its consignor component (Consignor).
+Consolidator,has consolidator,31A,Consolidator,1,30B,Consolidator,consolidator,0,Associates a containing WCO DM class with its consolidator component (Consolidator).
+ConsortiumCarrier,has consortium carrier,32A,ConsortiumCarrier,1,15A,ConsortiumCarrier,consortiumCarrier,0,Associates a containing WCO DM class with its consortium carrier component (ConsortiumCarrier).
+Constituent,has constituent,33A,Constituent,3,23A; 60B; 68B,Constituent,constituent,0,Associates a containing WCO DM class with its constituent component (Constituent).
+Contact,has contact,34A,Contact,78,01B; 02B; 03B; 04B; 05A; 06B; 08C; 09B; 10B; 12A; 13A; 13B; 16A; 16B; 17B; 18A; 18B; 19A; 19B; 20A; 26A; 27A; 28B; 28C; 30A; 30C; 31A; 32A; 32B; 33B; 35A; 36A; 36B; 36C; 37A; 37B; 38C; 39A; 40B; 41B; 42B; 43A; 44A; 46C; 47A; 48A; 49A; 50B; 51B; 52A; 52B; 55A; 55B; 56B; 57A; 57B; 59A; 59B; 62C; 64A; 69B; 70B; 71A; 71C; 72A; 74A; 75A; 76A; 77A; 80A; 84A; 85A; 86A; 87A; 88A; 89A; 91A; 98A,Contact,contact,0,Associates a containing WCO DM class with its contact component (Contact).
+ContactOffice,has contact office,35A,ContactOffice,2,23A; 999,ContactOffice,contactOffice,0,Associates a containing WCO DM class with its contact office component (ContactOffice).
+ContainerOperator,has container operator,36A,ContainerOperator,1,28A,ContainerOperator,containerOperator,0,Associates a containing WCO DM class with its container operator component (ContainerOperator).
+ContainerTerminalOperator,has container terminal operator,37A,ContainerTerminalOperator,1,999,ContainerTerminalOperator,containerTerminalOperator,0,Associates a containing WCO DM class with its container terminal operator component (ContainerTerminalOperator).
+ContextMetaData,has context meta data,2MD,ContextMetaData,1,3MD,ContextMetaData,contextMetaData,0,Associates a containing WCO DM class with its context meta data component (ContextMetaData).
+Control,has control,38A,Control,9,23A; 25C; 28A; 29A; 67A; 68A; 80B; 84B; 999,Control,control,0,Associates a containing WCO DM class with its control component (Control).
+ControlOffice,has control office,47C,ControlOffice,1,64A,ControlOffice,controlOffice,0,Associates a containing WCO DM class with its control office component (ControlOffice).
+ControlResult,has control result,83B,ControlResult,1,38A,ControlResult,controlResult,0,Associates a containing WCO DM class with its control result component (ControlResult).
+Counterpart,has counterpart,44C,Counterpart,1,38A,Counterpart,counterpart,0,Associates a containing WCO DM class with its counterpart component (Counterpart).
+CrewMember,has crew member,39A,CrewMember,1,15A,CrewMember,crewMember,0,Associates a containing WCO DM class with its crew member component (CrewMember).
+CurrencyExchange,has currency exchange,40A,CurrencyExchange,2,58B; 999,CurrencyExchange,currencyExchange,0,Associates a containing WCO DM class with its currency exchange component (CurrencyExchange).
+CustomsValuation,has customs valuation,41A,CustomsValuation,4,21C; 67A; 68A; 83A,CustomsValuation,customsValuation,0,Associates a containing WCO DM class with its customs valuation component (CustomsValuation).
+DangerousGoods,has dangerous goods,12C,DangerousGoods,2,13C; 23A,DangerousGoods,dangerousGoods,0,Associates a containing WCO DM class with its dangerous goods component (DangerousGoods).
+DangerousGoodsContactParty,has dangerous goods contact party,37B,DangerousGoodsContactParty,2,12C; 28A,DangerousGoodsContactParty,dangerousGoodsContactParty,0,Associates a containing WCO DM class with its dangerous goods contact party component (DangerousGoodsContactParty).
+Declarant,has declarant,57B,Declarant,1,999,Declarant,declarant,0,Associates a containing WCO DM class with its declarant component (Declarant).
+Declaration,has declaration,42A,Declaration,1,OIS,Declaration,declaration,0,Associates a containing WCO DM class with its declaration component (Declaration).
+DeclarationGuarantee,has declaration guarantee,92B,DeclarationGuarantee,1,999,DeclarationGuarantee,declarationGuarantee,0,Associates a containing WCO DM class with its declaration guarantee component (DeclarationGuarantee).
+DeclarationOffice,has declaration office,10C,DeclarationOffice,1,999,DeclarationOffice,declarationOffice,0,Associates a containing WCO DM class with its declaration office component (DeclarationOffice).
+Deconsolidator,has deconsolidator,43A,Deconsolidator,1,30B,Deconsolidator,deconsolidator,0,Associates a containing WCO DM class with its deconsolidator component (Deconsolidator).
+Defects,has defects,04C,Defects,1,15A,Defects,defects,0,Associates a containing WCO DM class with its defects component (Defects).
+DeferredPayment,has deferred payment,53C,DeferredPayment,1,999,DeferredPayment,deferredPayment,0,Associates a containing WCO DM class with its deferred payment component (DeferredPayment).
+DeliveryDestinationParty,has delivery destination party,44A,DeliveryDestinationParty,4,23A; 28A; 29A; 67A,DeliveryDestinationParty,deliveryDestinationParty,0,Associates a containing WCO DM class with its delivery destination party component (DeliveryDestinationParty).
+DepartureConveyanceFacility,has departure conveyance facility,45A,DepartureConveyanceFacility,2,15A; 81A,DepartureConveyanceFacility,departureConveyanceFacility,0,Associates a containing WCO DM class with its departure conveyance facility component (DepartureConveyanceFacility).
+DepartureLocation,has departure location,98B,DepartureLocation,3,15A; 29A; 65C,DepartureLocation,departureLocation,0,Associates a containing WCO DM class with its departure location component (DepartureLocation).
+DepartureTransportMeans,has departure transport means,46A,DepartureTransportMeans,2,21C; 28A,DepartureTransportMeans,departureTransportMeans,0,Associates a containing WCO DM class with its departure transport means component (DepartureTransportMeans).
+DestinationLocation,has destination location,99B,DestinationLocation,6,21C; 23A; 28A; 29A; 67A; 68A,DestinationLocation,destinationLocation,0,Associates a containing WCO DM class with its destination location component (DestinationLocation).
+DisembarkationLocation,has disembarkation location,63B,DisembarkationLocation,2,66B; 67B,DisembarkationLocation,disembarkationLocation,0,Associates a containing WCO DM class with its disembarkation location component (DisembarkationLocation).
+DispatchCountry,has dispatch country,54C,DispatchCountry,5,21C; 28A; 29A; 67A; 68A,DispatchCountry,dispatchCountry,0,Associates a containing WCO DM class with its dispatch country component (DispatchCountry).
+Distiller,has distiller,47A,Distiller,1,23A,Distiller,distiller,0,Associates a containing WCO DM class with its distiller component (Distiller).
+Distributor,has distributor,48A,Distributor,1,67A,Distributor,distributor,0,Associates a containing WCO DM class with its distributor component (Distributor).
+DomesticDutyTaxParty,has domestic duty tax party,55B,DomesticDutyTaxParty,2,67A; 68A,DomesticDutyTaxParty,domesticDutyTaxParty,0,Associates a containing WCO DM class with its domestic duty tax party component (DomesticDutyTaxParty).
+DraymanOrLighterman,has drayman or lighterman,49A,DraymanOrLighterman,1,28A,DraymanOrLighterman,draymanOrLighterman,0,Associates a containing WCO DM class with its drayman or lighterman component (DraymanOrLighterman).
+DutyTaxFee,has duty tax fee,50A,DutyTaxFee,3,23A; 57C; 999,DutyTaxFee,dutyTaxFee,0,Associates a containing WCO DM class with its duty tax fee component (DutyTaxFee).
+DutyTaxFeeAssessmentBasis,has duty tax fee assessment basis,39C,DutyTaxFeeAssessmentBasis,1,50A,DutyTaxFeeAssessmentBasis,dutyTaxFeeAssessmentBasis,0,Associates a containing WCO DM class with its duty tax fee assessment basis component (DutyTaxFeeAssessmentBasis).
+EconomicOperator,has economic operator,50C,EconomicOperator,1,64A,EconomicOperator,economicOperator,0,Associates a containing WCO DM class with its economic operator component (EconomicOperator).
+Effects,has effects,65B,Effects,1,67B,Effects,effects,0,Associates a containing WCO DM class with its effects component (Effects).
+EmbarkationLocation,has embarkation location,64B,EmbarkationLocation,2,66B; 67B,EmbarkationLocation,embarkationLocation,0,Associates a containing WCO DM class with its embarkation location component (EmbarkationLocation).
+EmergencySchedule,has emergency schedule,34C,EmergencySchedule,1,12C,EmergencySchedule,emergencySchedule,0,Associates a containing WCO DM class with its emergency schedule component (EmergencySchedule).
+EntryOffice,has entry office,51A,EntryOffice,2,67A; 999,EntryOffice,entryOffice,0,Associates a containing WCO DM class with its entry office component (EntryOffice).
+EquipmentOwner,has equipment owner,52A,EquipmentOwner,1,31B,EquipmentOwner,equipmentOwner,0,Associates a containing WCO DM class with its equipment owner component (EquipmentOwner).
+Error,has error,53A,Error,1,999,Error,error,0,Associates a containing WCO DM class with its error component (Error).
+Event,has event,69C,Event,1,28A,Event,"event
+consignmentEvent",0,Associates a containing WCO DM class with its event component (Event).
+ExaminationLocation,has examination location,54A,ExaminationLocation,5,15A; 23A; 28A; 29A; 68A,ExaminationLocation,examinationLocation,0,Associates a containing WCO DM class with its examination location component (ExaminationLocation).
+Exclusion,has exclusion,89B,Exclusion,1,88B,Exclusion,exclusion,0,Associates a containing WCO DM class with its exclusion component (Exclusion).
+Exhibitor,has exhibitor,55A,Exhibitor,1,23A,Exhibitor,exhibitor,0,Associates a containing WCO DM class with its exhibitor component (Exhibitor).
+ExitOffice,has exit office,56A,ExitOffice,2,67A; 999,ExitOffice,exitOffice,0,Associates a containing WCO DM class with its exit office component (ExitOffice).
+ExportCountry,has export country,95B,ExportCountry,4,23A; 29A; 67A; 68A,ExportCountry,exportCountry,0,Associates a containing WCO DM class with its export country component (ExportCountry).
+Exporter,has exporter,57A,Exporter,3,67A; 68A; 999,Exporter,exporter,0,Associates a containing WCO DM class with its exporter component (Exporter).
+ExportOffice,has export office,49C,ExportOffice,1,999,ExportOffice,exportOffice,0,Associates a containing WCO DM class with its export office component (ExportOffice).
+FacilityLocation,has facility location,58A,FacilityLocation,2,23A; 26B,FacilityLocation,facilityLocation,0,Associates a containing WCO DM class with its facility location component (FacilityLocation).
+FeedlotParty,has feedlot party,59A,FeedlotParty,1,23A,FeedlotParty,feedlotParty,0,Associates a containing WCO DM class with its feedlot party component (FeedlotParty).
+FinalTransportMeansLoadingLocation,has final transport means loading location,60A,FinalTransportMeansLoadingLocation,2,28A; 999,FinalTransportMeansLoadingLocation,finalTransportMeansLoadingLocation,0,Associates a containing WCO DM class with its final transport means loading location component (FinalTransportMeansLoadingLocation).
+FinancialCard,has financial card,67C,FinancialCard,1,94A,FinancialCard,financialCard,0,Associates a containing WCO DM class with its financial card component (FinancialCard).
+FreeTradeZone,has free trade zone,61A,FreeTradeZone,3,23A; 28A; 67A,FreeTradeZone,freeTradeZone,0,Associates a containing WCO DM class with its free trade zone component (FreeTradeZone).
+Freight,has freight,62A,Freight,4,21C; 28A; 29A; 68A,Freight,freight,0,Associates a containing WCO DM class with its freight component (Freight).
+GeoLocation,has geo location,48C,GeoLocation,3,45B; 64A; 77B,GeoLocation,geoLocation,0,Associates a containing WCO DM class with its geo location component (GeoLocation).
+GoodsConsignedLocation,has goods consigned location,63A,GoodsConsignedLocation,2,28A; 29A,GoodsConsignedLocation,goodsConsignedLocation,0,Associates a containing WCO DM class with its goods consigned location component (GoodsConsignedLocation).
+GoodsItem,has goods item,68A,GoodsItem,2,28A; 67A,GoodsItem,goodsItem,0,Associates a containing WCO DM class with its goods item component (GoodsItem).
+GoodsLocation,has goods location,64A,GoodsLocation,5,05C; 06C; 28A; 29A; 68A,GoodsLocation,goodsLocation,0,Associates a containing WCO DM class with its goods location component (GoodsLocation).
+GoodsMeasure,has goods measure,65A,GoodsMeasure,14,02A; 05C; 06C; 07C; 12C; 21C; 22C; 23A; 28A; 29A; 31B; 67A; 68A; 999,GoodsMeasure,goodsMeasure,0,Associates a containing WCO DM class with its goods measure component (GoodsMeasure).
+GoodsReceiptLocation,has goods receipt location,66A,GoodsReceiptLocation,2,21C; 28A,GoodsReceiptLocation,goodsReceiptLocation,0,Associates a containing WCO DM class with its goods receipt location component (GoodsReceiptLocation).
+GoodsShipment,has goods shipment,67A,GoodsShipment,2,21C; 999,GoodsShipment,goodsShipment,0,Associates a containing WCO DM class with its goods shipment component (GoodsShipment).
+GovernmentOfficer,has government officer,69A,GovernmentOfficer,1,08B,GovernmentOfficer,governmentOfficer,0,Associates a containing WCO DM class with its government officer component (GovernmentOfficer).
+GovernmentProcedure,has government procedure,70A,GovernmentProcedure,6,05A; 23A; 28A; 29A; 68A; 999,GovernmentProcedure,governmentProcedure,0,Associates a containing WCO DM class with its government procedure component (GovernmentProcedure).
+GovernmentServiceRequestor,has government service requestor,71A,GovernmentServiceRequestor,1,23A,GovernmentServiceRequestor,governmentServiceRequestor,0,Associates a containing WCO DM class with its government service requestor component (GovernmentServiceRequestor).
+Grower,has grower,72A,Grower,1,23A,Grower,grower,0,Associates a containing WCO DM class with its grower component (Grower).
+GuaranteeOffice,has guarantee office,14C,GuaranteeOffice,1,90A,GuaranteeOffice,guaranteeOffice,0,Associates a containing WCO DM class with its guarantee office component (GuaranteeOffice).
+Handling,has handling,73A,Handling,2,28A; 29A,Handling,handling,0,Associates a containing WCO DM class with its handling component (Handling).
+HarvestingTransportMeans,has harvesting transport means,76B,HarvestingTransportMeans,1,23A,HarvestingTransportMeans,harvestingTransportMeans,0,Associates a containing WCO DM class with its harvesting transport means component (HarvestingTransportMeans).
+HouseConsignment,has house consignment,21C,HouseConsignment,1,28A,HouseConsignment,houseConsignment,0,Associates a containing WCO DM class with its house consignment component (HouseConsignment).
+IMOCompany,has IMO company,33C,IMOCompany,1,15A,IMOCompany,imoCompany,0,Associates a containing WCO DM class with its IMO company component (IMOCompany).
+Importer,has importer,74A,Importer,2,67A; 999,Importer,importer,0,Associates a containing WCO DM class with its importer component (Importer).
+InsuranceCompany,has insurance company,75A,InsuranceCompany,7,02A; 11A; 30B; 34B; 78A; 999; 99A,InsuranceCompany,insuranceCompany,0,Associates a containing WCO DM class with its insurance company component (InsuranceCompany).
+IntermediateCarrier,has intermediate carrier,76A,IntermediateCarrier,1,28A,IntermediateCarrier,intermediateCarrier,0,Associates a containing WCO DM class with its intermediate carrier component (IntermediateCarrier).
+IntermediateConsignee,has intermediate consignee,77A,IntermediateConsignee,1,28A,IntermediateConsignee,intermediateConsignee,0,Associates a containing WCO DM class with its intermediate consignee component (IntermediateConsignee).
+Invoice,has invoice,78A,Invoice,2,29A; 67A,Invoice,invoice,0,Associates a containing WCO DM class with its invoice component (Invoice).
+InvoiceLine,has invoice line,79A,InvoiceLine,1,23A,InvoiceLine,invoiceLine,0,Associates a containing WCO DM class with its invoice line component (InvoiceLine).
+IPR,has IPR,68B,IPR,1,23A,IPR,ipr,0,Associates a containing WCO DM class with its IPR component (IPR).
+ISPSResponsibleParty,has ISPS responsible party,80A,ISPSResponsibleParty,1,999,ISPSResponsibleParty,ispsResponsibleParty,0,Associates a containing WCO DM class with its ISPS responsible party component (ISPSResponsibleParty).
+Issuer,has issuer,70C,Issuer,1,78A,Issuer,issuer,0,Associates a containing WCO DM class with its issuer component (Issuer).
+Itinerary,has itinerary,81A,Itinerary,7,15A; 21C; 23A; 28A; 29B; 66B; 80B,Itinerary,itinerary,0,Associates a containing WCO DM class with its itinerary component (Itinerary).
+ItineraryOffice,has itinerary office,82B,ItineraryOffice,1,81A,ItineraryOffice,itineraryOffice,0,Associates a containing WCO DM class with its itinerary office component (ItineraryOffice).
+LandingLocation,has landing location,82A,LandingLocation,1,999,LandingLocation,landingLocation,0,Associates a containing WCO DM class with its landing location component (LandingLocation).
+LoadingLocation,has loading location,83A,LoadingLocation,5,21C; 28A; 41A; 56A; 999,LoadingLocation,loadingLocation,0,Associates a containing WCO DM class with its loading location component (LoadingLocation).
+LoadingProofParty,has loading proof party,84A,LoadingProofParty,1,68A,LoadingProofParty,loadingProofParty,0,Associates a containing WCO DM class with its loading proof party component (LoadingProofParty).
+LoyaltyProgram,has loyalty program,63C,LoyaltyProgram,1,67B,LoyaltyProgram,loyaltyProgram,0,Associates a containing WCO DM class with its loyalty program component (LoyaltyProgram).
+LPCO,has LPCO,74B,LPCO,1,OIS,LPCO,lpco,0,Associates a containing WCO DM class with its LPCO component (LPCO).
+LPCOAuthorizedParty,has LPCO authorized party,85A,LPCOAuthorizedParty,2,02A; 999,LPCOAuthorizedParty,lpcoAuthorizedParty,0,Associates a containing WCO DM class with its LPCO authorized party component (LPCOAuthorizedParty).
+Manufacturer,has manufacturer,86A,Manufacturer,3,15A; 23A; 68A,Manufacturer,manufacturer,0,Associates a containing WCO DM class with its manufacturer component (Manufacturer).
+MasterDataOffice,has master data office,45C,MasterDataOffice,1,999,MasterDataOffice,masterDataOffice,0,Associates a containing WCO DM class with its master data office component (MasterDataOffice).
+MasterDataParty,has master data party,28C,MasterDataParty,1,999,MasterDataParty,masterDataParty,0,Associates a containing WCO DM class with its master data party component (MasterDataParty).
+MasterDataRecipient,has master data recipient,26C,MasterDataRecipient,1,999,MasterDataRecipient,masterDataRecipient,0,Associates a containing WCO DM class with its master data recipient component (MasterDataRecipient).
+MasterDataSender,has master data sender,27C,MasterDataSender,1,999,MasterDataSender,masterDataSender,0,Associates a containing WCO DM class with its master data sender component (MasterDataSender).
+MDIP,has MDIP,3MD,MDIP,1,OIS,MDIP,mdip,0,Associates a containing WCO DM class with its MDIP component (MDIP).
+NationalReference,has national reference,91B,NationalReference,2,02A; 999,NationalReference,nationalReference,0,Associates a containing WCO DM class with its national reference component (NationalReference).
+NonVesselOperatingCarrier,has non vessel operating carrier,88A,NonVesselOperatingCarrier,1,15A,NonVesselOperatingCarrier,nonVesselOperatingCarrier,0,Associates a containing WCO DM class with its non vessel operating carrier component (NonVesselOperatingCarrier).
+NotifyParty,has notify party,89A,NotifyParty,4,21C; 28A; 67A; 90A,NotifyParty,notifyParty,0,Associates a containing WCO DM class with its notify party component (NotifyParty).
+ObligationGuarantee,has obligation guarantee,90A,ObligationGuarantee,2,94A; 999,ObligationGuarantee,obligationGuarantee,0,Associates a containing WCO DM class with its obligation guarantee component (ObligationGuarantee).
+OperationDischarge,has operation discharge,86B,OperationDischarge,1,78B,OperationDischarge,operationDischarge,0,Associates a containing WCO DM class with its operation discharge component (OperationDischarge).
+OperationStart,has operation start,80B,OperationStart,1,78B,OperationStart,operationStart,0,Associates a containing WCO DM class with its operation start component (OperationStart).
+OperationTermination,has operation termination,84B,OperationTermination,1,78B,OperationTermination,operationTermination,0,Associates a containing WCO DM class with its operation termination component (OperationTermination).
+Operator,has operator,87A,Operator,1,15A,Operator,operator,0,Associates a containing WCO DM class with its operator component (Operator).
+OrganicCertifyingOrganization,has organic certifying organization,91A,OrganicCertifyingOrganization,1,23A,OrganicCertifyingOrganization,organicCertifyingOrganization,0,Associates a containing WCO DM class with its organic certifying organization component (OrganicCertifyingOrganization).
+Origin,has origin,92A,Origin,4,23A; 29A; 33A; 68A,Origin,origin,0,Associates a containing WCO DM class with its origin component (Origin).
+Packaging,has packaging,93A,Packaging,6,12C; 22C; 29A; 31B; 68A; 999,Packaging,packaging,0,Associates a containing WCO DM class with its packaging component (Packaging).
+Packer,has packer,01C,Packer,1,93A,Packer,packer,0,Associates a containing WCO DM class with its packer component (Packer).
+PassiveTransportMeans,has passive transport means,19C,PassiveTransportMeans,3,21C; 28A; 29A,PassiveTransportMeans,passiveTransportMeans,0,Associates a containing WCO DM class with its passive transport means component (PassiveTransportMeans).
+Payer,has payer,56B,Payer,3,67A; 68A; 999,Payer,payer,0,Associates a containing WCO DM class with its payer component (Payer).
+Payment,has payment,94A,Payment,2,50A; 66B,Payment,payment,0,Associates a containing WCO DM class with its payment component (Payment).
+PaymentOffice,has payment office,95A,PaymentOffice,1,999,PaymentOffice,paymentOffice,0,Associates a containing WCO DM class with its payment office component (PaymentOffice).
+PermittedPort,has permitted port,96A,PermittedPort,2,23A; 67A,PermittedPort,permittedPort,0,Associates a containing WCO DM class with its permitted port component (PermittedPort).
+PersonData,has person data,60C,PersonData,4,33B; 40B; 67B; 87A,PersonData,personData,0,Associates a containing WCO DM class with its person data component (PersonData).
+PersonOnBoard,has person on board,67B,PersonOnBoard,2,15A; 66B,PersonOnBoard,personOnBoard,0,Associates a containing WCO DM class with its person on board component (PersonOnBoard).
+Pointer,has pointer,97A,Pointer,5,03A; 06A; 12B; 24C; 53A,Pointer,pointer,0,Associates a containing WCO DM class with its pointer component (Pointer).
+PortFacilitySecurityOfficer,has port facility security officer,98A,PortFacilitySecurityOfficer,1,999,PortFacilitySecurityOfficer,portFacilitySecurityOfficer,0,Associates a containing WCO DM class with its port facility security officer component (PortFacilitySecurityOfficer).
+PortReceptionFacilityProvider,has port reception facility provider,38C,PortReceptionFacilityProvider,1,36C,PortReceptionFacilityProvider,portReceptionFacilityProvider,0,Associates a containing WCO DM class with its port reception facility provider component (PortReceptionFacilityProvider).
+PresentationOffice,has presentation office,15C,PresentationOffice,1,999,PresentationOffice,presentationOffice,0,Associates a containing WCO DM class with its presentation office component (PresentationOffice).
+PreviousDocument,has previous document,99A,PreviousDocument,7,21C; 23A; 28A; 29A; 67A; 68A; 999,PreviousDocument,previousDocument,0,Associates a containing WCO DM class with its previous document component (PreviousDocument).
+Principal,has principal,68C,Principal,1,90A,Principal,principal,0,Associates a containing WCO DM class with its principal component (Principal).
+Process,has process,60B,Process,2,23A; 90A,Process,process,0,Associates a containing WCO DM class with its process component (Process).
+Processor,has processor,70B,Processor,1,60B,Processor,processor,0,Associates a containing WCO DM class with its processor component (Processor).
+Producer,has producer,01B,Producer,1,23A,Producer,producer,0,Associates a containing WCO DM class with its producer component (Producer).
+Product,has product,46B,Product,2,23A; 68B,Product,product,0,Associates a containing WCO DM class with its product component (Product).
+ProductCharacteristics,has product characteristics,48B,ProductCharacteristics,1,23A,ProductCharacteristics,productCharacteristics,0,Associates a containing WCO DM class with its product characteristics component (ProductCharacteristics).
+ProductCriteriaConformance,has product criteria conformance,49B,ProductCriteriaConformance,1,23A,ProductCriteriaConformance,productCriteriaConformance,0,Associates a containing WCO DM class with its product criteria conformance component (ProductCriteriaConformance).
+ProductName,has product name,47B,ProductName,2,23A; 68B,ProductName,productName,0,Associates a containing WCO DM class with its product name component (ProductName).
+ProductUsage,has product usage,03C,ProductUsage,1,23A,ProductUsage,productUsage,0,Associates a containing WCO DM class with its product usage component (ProductUsage).
+ProgramPartnerProfile,has program partner profile,72C,ProgramPartnerProfile,1,71C,ProgramPartnerProfile,programProfilePartner,0,Associates a containing WCO DM class with its program partner profile component (ProgramPartnerProfile).
+PropertyOperator,has property operator,02B,PropertyOperator,4,23A; 28A; 67A; 999,PropertyOperator,propertyOperator,0,Associates a containing WCO DM class with its property operator component (PropertyOperator).
+PropertyOwner,has property owner,03B,PropertyOwner,4,23A; 28A; 67A; 999,PropertyOwner,propertyOwner,0,Associates a containing WCO DM class with its property owner component (PropertyOwner).
+Rate,has rate,40C,Rate,1,50A,Rate,rate,0,Associates a containing WCO DM class with its rate component (Rate).
+Recipient,has recipient,4MD,Recipient,1,1MD,Recipient,recipient,0,Associates a containing WCO DM class with its recipient component (Recipient).
+RecognizedSecurityOrganization,has recognized security organization,04B,RecognizedSecurityOrganization,1,999,RecognizedSecurityOrganization,recognizedSecurityOrganization,0,Associates a containing WCO DM class with its recognized security organization component (RecognizedSecurityOrganization).
+RefundRecipientParty,has refund recipient party,59B,RefundRecipientParty,1,68A,RefundRecipientParty,refundRecipientParty,0,Associates a containing WCO DM class with its refund recipient party component (RefundRecipientParty).
+RefusalToStart,has refusal to start,25C,RefusalToStart,1,78B,RefusalToStart,refusalToStart,0,Associates a containing WCO DM class with its refusal to start component (RefusalToStart).
+RegisteredFacility,has registered facility,05B,RegisteredFacility,2,67A; 68A,RegisteredFacility,registeredFacility,0,Associates a containing WCO DM class with its registered facility component (RegisteredFacility).
+ReleaseOffice,has release office,31C,ReleaseOffice,1,999,ReleaseOffice,releaseOffice,0,Associates a containing WCO DM class with its release office component (ReleaseOffice).
+RepairParty,has repair party,52B,RepairParty,1,23A,RepairParty,repairParty,0,Associates a containing WCO DM class with its repair party component (RepairParty).
+RepresentativePerson,has representative person,06B,RepresentativePerson,1,999,RepresentativePerson,representativePerson,0,Associates a containing WCO DM class with its representative person component (RepresentativePerson).
+Reservation,has reservation,66B,Reservation,1,15A,Reservation,reservation,0,Associates a containing WCO DM class with its reservation component (Reservation).
+ResponsibleGovernmentAgency,has responsible government agency,08B,ResponsibleGovernmentAgency,4,04C; 23A; 70A; 999,ResponsibleGovernmentAgency,responsibleGovernmentAgency,0,Associates a containing WCO DM class with its responsible government agency component (ResponsibleGovernmentAgency).
+RightHolder,has right holder,69B,RightHolder,1,68B,RightHolder,rightHolder,0,Associates a containing WCO DM class with its right holder component (RightHolder).
+Role,has role,43C,Role,1,45C,Role,role,0,Associates a containing WCO DM class with its role component (Role).
+Seal,has seal,44B,Seal,1,31B,Seal,seal,0,Associates a containing WCO DM class with its seal component (Seal).
+SealingParty,has sealing party,53B,SealingParty,1,44B,SealingParty,sealingParty,0,Associates a containing WCO DM class with its sealing party component (SealingParty).
+Security,has security,32C,Security,1,15A,Security,security,0,Associates a containing WCO DM class with its security component (Security).
+Seller,has seller,09B,Seller,2,67A; 68A,Seller,seller,0,Associates a containing WCO DM class with its seller component (Seller).
+Sender,has sender,5MD,Sender,1,1MD,Sender,sender,0,Associates a containing WCO DM class with its sender component (Sender).
+ShipChandler,has ship chandler,08C,ShipChandler,1,999,ShipChandler,shipChandler,0,Associates a containing WCO DM class with its ship chandler component (ShipChandler).
+ShipSecurityOfficer,has ship security officer,10B,ShipSecurityOfficer,1,999,ShipSecurityOfficer,shipSecurityOfficer,0,Associates a containing WCO DM class with its ship security officer component (ShipSecurityOfficer).
+ShipToShipActivity,has ship to ship activity,54B,ShipToShipActivity,2,15A; 81A,ShipToShipActivity,shipToShipActivity,0,Associates a containing WCO DM class with its ship to ship activity component (ShipToShipActivity).
+ShipToShipActivityLocation,has ship to ship activity location,45B,ShipToShipActivityLocation,3,15A; 54B; 999,ShipToShipActivityLocation,shipToShipActivityLocation,0,Associates a containing WCO DM class with its ship to ship activity location component (ShipToShipActivityLocation).
+Source,has source,11B,Source,1,23A,Source,source,0,Associates a containing WCO DM class with its source component (Source).
+SpecificTaxBaseRate,has specific tax base rate,41C,SpecificTaxBaseRate,1,40C,SpecificTaxBaseRate,specificTaxBaseRate,0,Associates a containing WCO DM class with its specific tax base rate component (SpecificTaxBaseRate).
+SplitConsignment,has split consignment,55C,SplitConsignment,1,999,SplitConsignment,splitConsignment,0,Associates a containing WCO DM class with its split consignment component (SplitConsignment).
+Status,has status,12B,Status,4,23A; 31B; 67A; 999,Status,status,0,Associates a containing WCO DM class with its status component (Status).
+Stevedore,has stevedore,13B,Stevedore,1,999,Stevedore,stevedore,0,Associates a containing WCO DM class with its stevedore component (Stevedore).
+Storage,has storage,14B,Storage,1,28A,Storage,storage,0,Associates a containing WCO DM class with its storage component (Storage).
+StoresItem,has stores item,05C,StoresItem,1,15A,StoresItem,storesItem,0,Associates a containing WCO DM class with its stores item component (StoresItem).
+StowPosition,has stow position,15B,StowPosition,2,15A; 31B,StowPosition,stowPosition,0,Associates a containing WCO DM class with its stow position component (StowPosition).
+StuffingEstablishment,has stuffing establishment,16B,StuffingEstablishment,2,28A; 67A,StuffingEstablishment,stuffingEstablishment,0,Associates a containing WCO DM class with its stuffing establishment component (StuffingEstablishment).
+Submitter,has submitter,17B,Submitter,7,02A; 11A; 30B; 34B; 78A; 999; 99A,Submitter,submitter,0,Associates a containing WCO DM class with its submitter component (Submitter).
+SubsequentDeclarationOffice,has subsequent declaration office,61C,SubsequentDeclarationOffice,1,999,SubsequentDeclarationOffice,subsequentDeclarationOffice,0,Associates a containing WCO DM class with its subsequent declaration office component (SubsequentDeclarationOffice).
+SubsidiaryRisk,has subsidiary risk,35C,SubsidiaryRisk,1,12C,SubsidiaryRisk,subsidiaryRisk,0,Associates a containing WCO DM class with its subsidiary risk component (SubsidiaryRisk).
+SupervisingOffice,has supervising office,97B,SupervisingOffice,2,68A; 999,SupervisingOffice,supervisingOffice,0,Associates a containing WCO DM class with its supervising office component (SupervisingOffice).
+SupplementaryDeclarant,has supplementary declarant,18C,SupplementaryDeclarant,4,21C; 28A; 29A; 999,SupplementaryDeclarant,supplementaryDeclarant,0,Associates a containing WCO DM class with its supplementary declarant component (SupplementaryDeclarant).
+Supplier,has supplier,18B,Supplier,2,23A; 67A,Supplier,supplier,0,Associates a containing WCO DM class with its supplier component (Supplier).
+SupportingDocument,has supporting document,51C,SupportingDocument,4,28A; 29A; 67A; 68A,SupportingDocument,supportingDocument,0,Associates a containing WCO DM class with its supporting document component (SupportingDocument).
+Surety,has surety,19B,Surety,4,67A; 68A; 90A; 999,Surety,surety,0,Associates a containing WCO DM class with its surety component (Surety).
+TaxBase,has tax base,56C,TaxBase,1,50A,TaxBase,taxBase,0,Associates a containing WCO DM class with its tax base component (TaxBase).
+TaxCalculation,has tax calculation,57C,TaxCalculation,1,23A,TaxCalculation,taxCalculation,0,Associates a containing WCO DM class with its tax calculation component (TaxCalculation).
+Temperature,has temperature,20B,Temperature,5,23A; 28A; 29A; 67A; 999,Temperature,temperature,0,Associates a containing WCO DM class with its temperature component (Temperature).
+Terminal,has terminal,21B,Terminal,1,15A,Terminal,terminal,0,Associates a containing WCO DM class with its terminal component (Terminal).
+Ticket,has ticket,64C,Ticket,1,67B,Ticket,ticket,0,Associates a containing WCO DM class with its ticket component (Ticket).
+TotalPersons,has total persons,96B,TotalPersons,2,15A; 66B,TotalPersons,totalPersons,0,Associates a containing WCO DM class with its total persons component (TotalPersons).
+TradeRole,has trade role,73C,TradeRole,1,71C,TradeRole,tradeRole,0,Associates a containing WCO DM class with its trade role component (TradeRole).
+TradeTerms,has trade terms,22B,TradeTerms,3,28A; 67A; 999,TradeTerms,tradeTerms,0,Associates a containing WCO DM class with its trade terms component (TradeTerms).
+TradingParty,has trading party,02C,TradingParty,1,28A,TradingParty,tradingParty,0,Associates a containing WCO DM class with its trading party component (TradingParty).
+TranshipmentLocation,has transhipment location,23B,TranshipmentLocation,1,28A,TranshipmentLocation,transhipmentLocation,0,Associates a containing WCO DM class with its transhipment location component (TranshipmentLocation).
+TranshipmentTransportMeans,has transhipment transport means,20C,TranshipmentTransportMeans,1,23B,TranshipmentTransportMeans,transhipmentTransportMeans,0,Associates a containing WCO DM class with its transhipment transport means component (TranshipmentTransportMeans).
+TransitControl,has transit control,24B,TransitControl,1,28A,TransitControl,transitControl,0,Associates a containing WCO DM class with its transit control component (TransitControl).
+TransitDepartureLocation,has transit departure location,25B,TransitDepartureLocation,1,28A,TransitDepartureLocation,transitDepartureLocation,0,Associates a containing WCO DM class with its transit departure location component (TransitDepartureLocation).
+TransitDestinationLocation,has transit destination location,26B,TransitDestinationLocation,1,28A,TransitDestinationLocation,transitDestinationLocation,0,Associates a containing WCO DM class with its transit destination location component (TransitDestinationLocation).
+TransitOffice,has transit office,27B,TransitOffice,2,28A; 80B,TransitOffice,transitOffice,0,Associates a containing WCO DM class with its transit office component (TransitOffice).
+TransitOperation,has transit operation,78B,TransitOperation,1,90A,TransitOperation,transitOperation,0,Associates a containing WCO DM class with its transit operation component (TransitOperation).
+TransitOperationDischargeOffice,has transit operation discharge office,87B,TransitOperationDischargeOffice,1,86B,TransitOperationDischargeOffice,transitOperationDischargeOffice,0,Associates a containing WCO DM class with its transit operation discharge office component (TransitOperationDischargeOffice).
+TransitOperationStartOffice,has transit operation start office,81B,TransitOperationStartOffice,3,25C; 80B; 999,TransitOperationStartOffice,transitOperationStartOffice,0,Associates a containing WCO DM class with its transit operation start office component (TransitOperationStartOffice).
+TransitOperationTerminationOffice,has transit operation termination office,85B,TransitOperationTerminationOffice,1,84B,TransitOperationTerminationOffice,transitOperationTerminationOffice,0,Associates a containing WCO DM class with its transit operation termination office component (TransitOperationTerminationOffice).
+TransitPrincipal,has transit principal,28B,TransitPrincipal,3,28A; 90A; 999,TransitPrincipal,transitPrincipal,0,Associates a containing WCO DM class with its transit principal component (TransitPrincipal).
+TransitTransportMeans,has transit transport means,29B,TransitTransportMeans,1,28A,TransitTransportMeans,transitTransportMeans,0,Associates a containing WCO DM class with its transit transport means component (TransitTransportMeans).
+TransportContractDocument,has transport contract document,30B,TransportContractDocument,4,21C; 28A; 29A; 68A,TransportContractDocument,transportContractDocument,0,Associates a containing WCO DM class with its transport contract document component (TransportContractDocument).
+TransportedCommodity,has transported commodity,13C,TransportedCommodity,1,31B,TransportedCommodity,transportedCommodity,0,Associates a containing WCO DM class with its transported commodity component (TransportedCommodity).
+TransportEquipment,has transport equipment,31B,TransportEquipment,5,15A; 21C; 23A; 28A; 29A,TransportEquipment,transportEquipment,0,Associates a containing WCO DM class with its transport equipment component (TransportEquipment).
+TransportEquipmentLocation,has transport equipment location,77B,TransportEquipmentLocation,1,31B,TransportEquipmentLocation,transportEquipmentLocation,0,Associates a containing WCO DM class with its transport equipment location component (TransportEquipmentLocation).
+TransportEquipmentMeasure,has transport equipment measure,09C,TransportEquipmentMeasure,1,31B,TransportEquipmentMeasure,transportEquipmentMeasure,0,Associates a containing WCO DM class with its transport equipment measure component (TransportEquipmentMeasure).
+TransportMeansOperator,has transport means operator,32B,TransportMeansOperator,1,15A,TransportMeansOperator,transportMeansOperator,0,Associates a containing WCO DM class with its transport means operator component (TransportMeansOperator).
+TransportMeansOwner,has transport means owner,33B,TransportMeansOwner,1,15A,TransportMeansOwner,transportMeansOwner,0,Associates a containing WCO DM class with its transport means owner component (TransportMeansOwner).
+TravelAgency,has travel agency,62C,TravelAgency,1,66B,TravelAgency,travelAgency,0,Associates a containing WCO DM class with its travel agency component (TravelAgency).
+TravelDocument,has travel document,34B,TravelDocument,3,67B; 68A; 999,TravelDocument,travelDocument,0,Associates a containing WCO DM class with its travel document component (TravelDocument).
+TreatmentFacilityProvider,has treatment facility provider,46C,TreatmentFacilityProvider,1,36C,TreatmentFacilityProvider,treatmentFacilityProvider,0,Associates a containing WCO DM class with its treatment facility provider component (TreatmentFacilityProvider).
+UCR,has UCR,35B,UCR,9,15A; 21C; 28A; 29A; 31B; 67A; 68A; 73B; 999,UCR,ucr,0,Associates a containing WCO DM class with its UCR component (UCR).
+UltimateConsignee,has ultimate consignee,36B,UltimateConsignee,3,23A; 28A; 67A,UltimateConsignee,ultimateConsignee,0,Associates a containing WCO DM class with its ultimate consignee component (UltimateConsignee).
+UnloadingLocation,has unloading location,38B,UnloadingLocation,3,07C; 28A; 999,UnloadingLocation,unloadingLocation,0,Associates a containing WCO DM class with its unloading location component (UnloadingLocation).
+UnloadingParty,has unloading party,51B,UnloadingParty,2,21C; 28A,UnloadingParty,unloadingParty,0,Associates a containing WCO DM class with its unloading party component (UnloadingParty).
+ValuationAdjustment,has valuation adjustment,39B,ValuationAdjustment,2,67A; 68A,ValuationAdjustment,valuationAdjustment,0,Associates a containing WCO DM class with its valuation adjustment component (ValuationAdjustment).
+VehicleOwner,has vehicle owner,40B,VehicleOwner,1,23A,VehicleOwner,vehicleOwner,0,Associates a containing WCO DM class with its vehicle owner component (VehicleOwner).
+Verifier,has verifier,41B,Verifier,1,23A,Verifier,verifier,0,Associates a containing WCO DM class with its verifier component (Verifier).
+Veterinarian,has veterinarian,42B,Veterinarian,1,23A,Veterinarian,veterinarian,0,Associates a containing WCO DM class with its veterinarian component (Veterinarian).
+Warehouse,has warehouse,43B,Warehouse,14,09A; 10C; 11C; 26B; 28A; 31C; 38B; 51A; 56A; 63A; 66A; 67A; 82A; 99B,Warehouse,warehouse,0,Associates a containing WCO DM class with its warehouse component (Warehouse).
+Waste,has waste,36C,Waste,1,15A,Waste,waste,0,Associates a containing WCO DM class with its waste component (Waste).
+WasteDeliveryLocation,has waste delivery location,37C,WasteDeliveryLocation,2,07C; 36C,WasteDeliveryLocation,wasteDeliveryLocation,0,Associates a containing WCO DM class with its waste delivery location component (WasteDeliveryLocation).
+WasteItem,has waste item,07C,WasteItem,2,15A; 36C,WasteItem,wasteItem,0,Associates a containing WCO DM class with its waste item component (WasteItem).
+WriteOff,has write off,22C,WriteOff,2,02A; 99A,WriteOff,writeOff,0,Associates a containing WCO DM class with its write off component (WriteOff).
