@@ -139,6 +139,8 @@ async function commitAndPush() {
     ref: 'main',
     force: false,
     http,
+    corsProxy: undefined,
+    timeout: 120000,
     onAuth: () => ({ username: token, password: 'x-oauth-basic' }),
   });
   console.log('push:', result.ok ? 'ok' : JSON.stringify(result.error || result));
